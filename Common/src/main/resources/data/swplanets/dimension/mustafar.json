@@ -1,0 +1,13 @@
+{
+  "type": "swplanets:mustafar",
+  "forge:use_server_seed": false,
+  "generator": {
+    "biome_source": {
+      "biome": "swplanets:mustafar_hill",
+      "type": "minecraft:fixed"
+    },
+    "seed": 286956243,
+    "settings": "swplanets:mustafar",
+    "type": "minecraft:noise"
+  }
+}

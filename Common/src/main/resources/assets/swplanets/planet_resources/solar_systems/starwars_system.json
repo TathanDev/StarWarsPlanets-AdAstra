@@ -1,0 +1,13 @@
+{
+    "galaxy": "swplanets:galaxy_far_away",
+    "solar_system": "swplanets:starwars_system",
+    "sun": "ad_astra:textures/block/cheese_block.png",
+    "sun_scale": 30,
+    "button_color": "yellow",
+    "ring_color": {
+        "r": 255,
+        "g": 255,
+        "b": 102,
+        "a": 200
+    }
+}

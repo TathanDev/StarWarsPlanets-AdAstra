@@ -1,0 +1,10 @@
+{
+  "title": {
+    "translate": "swplanets.tip.tatooine_houses.title",
+    "bold": true,
+    "color": "orange"
+    },
+  "tip": {
+    "translate": "swplanets.tip.tatooine_houses"
+  }
+}

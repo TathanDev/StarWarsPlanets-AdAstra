@@ -1,0 +1,13 @@
+{
+  "type": "swplanets:tatooine",
+  "forge:use_server_seed": false,
+  "generator": {
+    "biome_source": {
+      "biome": "swplanets:tatooine_desert",
+      "type": "minecraft:fixed"
+    },
+    "seed": 286956243,
+    "settings": "swplanets:tatooine",
+    "type": "minecraft:noise"
+  }
+}

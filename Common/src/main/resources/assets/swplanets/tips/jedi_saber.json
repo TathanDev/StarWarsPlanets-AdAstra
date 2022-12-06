@@ -1,0 +1,10 @@
+{
+  "title": {
+    "translate": "swplanets.tip.jedi_saber.title",
+    "bold": true,
+    "color": "red"
+  },
+  "tip": {
+    "translate": "swplanets.tip.jedi_saber"
+  }
+}

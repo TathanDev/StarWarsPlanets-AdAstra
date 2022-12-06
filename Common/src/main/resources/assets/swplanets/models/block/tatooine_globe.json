@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "swplanets:block/globes/tatooine_globe",
+    "up": "swplanets:block/globes/tatooine_globe",
+    "north": "swplanets:block/globes/tatooine_globe",
+    "east": "swplanets:block/globes/tatooine_globe",
+    "south": "swplanets:block/globes/tatooine_globe",
+    "west": "swplanets:block/globes/tatooine_globe",
+    "particle": "swplanets:block/globes/tatooine_globe"
+  }
+}

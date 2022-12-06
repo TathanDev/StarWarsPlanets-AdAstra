@@ -1,0 +1,99 @@
+{
+  "gui.swplanets.planet_selection.solar_system_button": "The Galaxy",
+  "gui.swplanets.planet_selection.tatooine": "Tatooine",
+  "gui.swplanets.planet_selection.kamino": "Kamino",
+  "gui.swplanets.planet_selection.endor": "Endor",
+  "gui.swplanets.planet_selection.hot": "Hot",
+  "gui.swplanets.planet_selection.mustafar": "Mustafar",
+  "gui.swplanets.text.galaxy_far_away": "A galaxy Far Far away",
+
+
+  "advancements.tatooine.title": "Tatooine",
+  "advancements.tatooine.descr": "Welcome to Tatooine !",
+  "advancements.kamino.title": "Kamino !",
+  "advancements.kamino.descr": "Welcome to Kamino !",
+  "advancements.endor.title": "Endor !",
+  "advancements.endor.descr": "Welcome to Endor !",
+  "advancements.hot.title": "Hot !",
+  "advancements.hot.descr": "You're Hot !",
+  "advancements.mustafar.descr": "Welcome to Mustafar !",
+  "advancements.mustafar.title": "Mustafar !",
+
+
+  "item.swplanets.star_wars_opening_music_disc": "Music Disc",
+  "item.swplanets.star_wars_opening_music_disc.desc": "John Williams - Star Wars Opening",
+  "item.swplanets.kyber_crystal": "Kyber Crystal",
+  "item.swplanets.kyber_crystal_ore": "Kyber Crystal Ore",
+  "item.swplanets.kyber_crystal_ore_sandstone": "Sandstone Kyber Crystal Ore ",
+  "item.swplanets.mustafar_stone": "Mustafar Stone",
+  "item.swplanets.mustafar_sand": "Mustafar Sand",
+
+
+
+  "item.swplanets.light_saber_base": "Light Saber Base",
+  "item.swplanets.light_saber_red": "Red Light Saber",
+  "item.swplanets.light_saber_blue": "Blue Light Saber ",
+  "item.swplanets.light_saber_green": "Green Light Saber ",
+  "item.swplanets.light_saber_violet": "Violet Light Saber ",
+  "item.swplanets.light_saber_dark_maul": "Darth Maul's lightsaber ",
+  "item.swplanets.light_saber_kylo_ren": "Kylo Ren's lightsaber ",
+
+  "item.swplanets.star_manual": "Star Manual ",
+
+
+
+  "item.swplanets.stormtrooper_mask": "Stormtrooper Helmet",
+  "item.swplanets.stormtrooper_chestplate": "Stormtrooper ChestPlate",
+  "item.swplanets.stormtrooper_leggings": "Stormtrooper Legging",
+  "item.swplanets.stormtrooper_boots": "Stormtrooper Boots",
+  "item.swplanets.plastic_plate": "Plastic Plate ",
+  "item.swplanets.speeder": "Speeder",
+
+  "entity.swplanets.speeder": "Speeder",
+
+  "tooltip.swplanets.jedilightsaber.tooltip.shift": "A weapon used by the greatest §1Jedi",
+  "tooltip.swplanets.jedilightsaber.tooltip.shift.two": "May the force be with you !",
+
+  "tooltip.swplanets.sithlightsaber.tooltip.shift": "A weapon used by the darkest §4Sith",
+  "tooltip.swplanets.sithlightsaber.tooltip.shift.two": "Join the dark side of the force !",
+
+
+
+  "block.swplanets.kyber_crystal_ore": "Kyber Crystal Ore",
+  "block.swplanets.kyber_crystal_cluster": "Kyber Crystal Cluster",
+  "block.swplanets.kyber_crystal_ore_sandstone": "Sandstone Kyber Crystal Ore ",
+  "block.swplanets.mustafar_stone": "Mustafar Stone",
+  "block.swplanets.mustafar_sand": "Mustafar Sand",
+
+
+
+
+  "message.swplanets.error.patchouli": "I think &4patchouli&r is not installed. You need this mod to use this item",
+
+
+  "itemGroup.swplanets_tab": "Star Wars Planets",
+
+  "swplanets.tip.kyber_crystal.title": "Kyber Crystals",
+  "swplanets.tip.kyber_crystal": "Kyber Crystals are an inexhaustible source of energy",
+
+  "swplanets.tip.sith_saber": "The most dangerous weapon in the galaxy used by the most dangerous people in the galaxy",
+  "swplanets.tip.sith_saber.title": "Sith Light Saber",
+
+  "swplanets.tip.jedi_saber": "The most dangerous weapon in the galaxy used to keep the peace in the galaxy",
+  "swplanets.tip.jedi_saber.title": "Jedi Light Saber",
+
+  "swplanets.tip.tatooine_houses": "You can find communities of tatooine inhabitants in the desert",
+  "swplanets.tip.tatooine_houses.title": "Tatooine Houses",
+
+  "biome.swplanets.endor_taiga": "Taiga of Endor",
+  "biome.swplanets.hot_desert": "Desert of Hot",
+  "biome.swplanets.kamino_ocean": "Ocean of Kamino",
+  "biome.swplanets.mustafar_hill": "Mustafar Hills",
+  "biome.swplanets.tatooine_desert": "Tatooine Desert"
+
+
+
+
+
+
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "swplanets:block/mustafar_stone",
+    "up": "swplanets:block/mustafar_stone",
+    "north": "swplanets:block/mustafar_stone",
+    "east": "swplanets:block/mustafar_stone",
+    "south": "swplanets:block/mustafar_stone",
+    "west": "swplanets:block/mustafar_stone",
+    "particle": "swplanets:block/mustafar_stone"
+  }
+}
+

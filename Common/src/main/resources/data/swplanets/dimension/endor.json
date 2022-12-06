@@ -1,0 +1,13 @@
+{
+  "type": "swplanets:endor",
+  "forge:use_server_seed": false,
+  "generator": {
+    "biome_source": {
+      "biome": "swplanets:endor_taiga",
+      "type": "minecraft:fixed"
+    },
+    "seed": 286956243,
+    "settings": "minecraft:overworld",
+    "type": "minecraft:noise"
+  }
+}

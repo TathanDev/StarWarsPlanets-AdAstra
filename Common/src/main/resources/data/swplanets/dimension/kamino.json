@@ -1,0 +1,13 @@
+{
+  "type": "swplanets:kamino",
+  "forge:use_server_seed": false,
+  "generator": {
+    "biome_source": {
+      "biome": "swplanets:kamino_ocean",
+      "type": "minecraft:fixed"
+    },
+    "seed": 286956243,
+    "settings": "swplanets:kamino",
+    "type": "minecraft:noise"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/deepslate_top",
+    "up": "minecraft:block/deepslate_top",
+    "north": "swplanets:block/kyber_crystal_ore",
+    "east": "swplanets:block/kyber_crystal_ore",
+    "south": "swplanets:block/kyber_crystal_ore",
+    "west": "swplanets:block/kyber_crystal_ore",
+    "particle": "swplanets:block/kyber_crystal_ore"
+  }
+}
+

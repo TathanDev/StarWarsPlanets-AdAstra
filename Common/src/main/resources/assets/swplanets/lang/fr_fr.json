@@ -1,0 +1,86 @@
+{
+  "gui.swplanets.planet_selection.solar_system_button": "La Galaxie",
+  "gui.swplanets.planet_selection.tatooine": "Tatooine",
+  "gui.swplanets.planet_selection.kamino": "Kamino",
+  "gui.swplanets.planet_selection.endor": "Endor",
+  "gui.swplanets.planet_selection.hot": "Hot",
+  "gui.swplanets.planet_selection.mustafar": "Mustafar",
+
+  "advancements.tatooine.title": "Tatooine",
+  "advancements.tatooine.descr": "Bienvenue sur Tatooine !",
+  "advancements.kamino.title": "Kamino !",
+  "advancements.kamino.descr": "Bienvenue sur Kamino !",
+  "advancements.endor.title": "Endor !",
+  "advancements.endor.descr": "Bienvenue sur Endor !",
+  "advancements.hot.title": "Hot !",
+  "advancements.hot.descr": "Bienvenue sur Hot !",
+  "advancements.mustafar.descr": "Bienvenue sur Mustafar !",
+  "advancements.mustafar.title": "Mustafar !",
+
+
+  "item.swplanets.star_wars_opening_music_disc": "Star Wars Opening Music Disc",
+  "item.swplanets.star_wars_opening_music_disc.desc": "John Williams",
+  "item.swplanets.kyber_crystal": "Cristal Kyber",
+  "item.swplanets.kyber_crystal_ore": "Minerai de Kyber",
+  "item.swplanets.kyber_crystal_ore_sandstone": "Sandstone Kyber Crystal Ore ",
+  "item.swplanets.mustafar_stone": "Pierre de Mustafar",
+  "item.swplanets.mustafar_sand": "Sable de Mustafar",
+
+
+
+  "item.swplanets.light_saber_base": "Base de Sabre Laser",
+  "item.swplanets.light_saber_red": "Sabre Laser Rouge",
+  "item.swplanets.light_saber_blue": "Sabre Laser Bleu",
+  "item.swplanets.light_saber_green": "Sabre Laser Vert",
+  "item.swplanets.light_saber_violet": "Sabre Laser Violet ",
+  "item.swplanets.light_saber_dark_maul": "Sabre Laser de Dark Maul ",
+  "item.swplanets.light_saber_kylo_ren": "Sabre Laser de Kylo Ren ",
+
+  "item.swplanets.star_manual": "Star Manual ",
+
+
+  "item.swplanets.stormtrooper_mask": "Casque de Stormtrooper",
+  "item.swplanets.stormtrooper_chestplate": "Armure de Stormtrooper",
+  "item.swplanets.stormtrooper_leggings": "Stormtrooper ChestPlate",
+  "item.swplanets.stormtrooper_boots": "Stormtrooper ChestPlate",
+  "item.swplanets.plastic_plate": "Plaque de Plastique ",
+  "item.swplanets.speeder": "Speeder",
+
+  "entity.swplanets.speeder": "Speeder",
+
+  "tooltip.swplanets.jedilightsaber.tooltip.shift": "Une arme utilisée par les plus grands §1Jedi",
+  "tooltip.swplanets.jedilightsaber.tooltip.shift.two": "Que le force soit avec toi !",
+
+  "tooltip.swplanets.sithlightsaber.tooltip.shift": "Une arme utilisée par les pires §4Sith",
+  "tooltip.swplanets.sithlightsaber.tooltip.shift.two": "Rejoins le côté obscur de la force !",
+
+
+
+  "block.swplanets.kyber_crystal_ore": "Minerai de Kyber",
+  "block.swplanets.kyber_crystal_cluster": "Cristal Kyber",
+  "block.swplanets.kyber_crystal_ore_sandstone": "Minerai de Kyber SandStone ",
+  "block.swplanets.mustafar_stone": "Pierre de Mustafar",
+  "block.swplanets.mustafar_sand": "Sable de Mustafar",
+
+  "message.swplanets.error.patchouli": "Je pense que le mod &4patchouli&r n'est pas installé. Vous devez avoir ce mod pour utiliser cet item.",
+  "itemGroup.swplanets_tab": "Star Wars Planètes",
+
+  "swplanets.tip.kyber_crystal.title": "Cristaux Kybers",
+  "swplanets.tip.kyber_crystal": "Les cristaux Kybers sont une source d'énergie inépuisable",
+
+  "swplanets.tip.sith_saber": "The most dangerous weapon in the galaxy used by the most dangerous people in the galaxy",
+  "swplanets.tip.sith_saber.title": "Sabre Lasers des Sith",
+
+  "swplanets.tip.jedi_saber": "L'arme la plus dangereuse de la galaxie utilisé pour maintenir la paix dans la galaxie",
+  "swplanets.tip.jedi_saber.title": "Sabre Lasers des Jedi",
+
+  "swplanets.tip.tatooine_houses": "  Vous pouvez trouver des communautés d'habitants de Tatooine dans le désert.",
+  "swplanets.tip.tatooine_houses.title": "Maisons de Tatooine",
+
+  "biome.swplanets.endor_taiga": "Taiga d'Endor",
+  "biome.swplanets.hot_desert": "Desert de Hot",
+  "biome.swplanets.kamino_ocean": "Ocean de Kamino",
+  "biome.swplanets.mustafar_hill": "Collines de Mustafar",
+  "biome.swplanets.tatooine_desert": "Desert de Tatooine"
+
+}

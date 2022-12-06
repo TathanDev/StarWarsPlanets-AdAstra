@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "swplanets",
+  "version": "${version}",
+
+  "name": "Star Wars Planets ",
+  "description": "This Mod is a Addon for Beyond Earth.\nIt add planets from Star Wars and Light Saber :)",
+  "authors": [
+    "TATHAN"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/star-wars-planets",
+    "sources": "https://github.com/TathanDev/StarWarsPlanets"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.tathan.swplanets.SWPlanets"
+    ]
+  },
+  "mixins": [
+    "swplanets.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

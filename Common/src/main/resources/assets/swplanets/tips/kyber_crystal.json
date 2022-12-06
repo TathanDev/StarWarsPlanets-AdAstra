@@ -1,0 +1,10 @@
+{
+  "title": {
+    "translate": "swplanets.tip.kyber_crystal.title",
+    "bold": true,
+    "color": "cyan"
+  },
+  "tip": {
+    "translate": "swplanets.tip.kyber_crystal"
+  }
+}

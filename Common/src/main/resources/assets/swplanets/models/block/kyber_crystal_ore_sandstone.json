@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/sandstone_bottom",
+    "up": "minecraft:block/sandstone_top",
+    "north": "swplanets:block/kyber_crystal_ore_sandstone",
+    "east": "swplanets:block/kyber_crystal_ore_sandstone",
+    "south": "swplanets:block/kyber_crystal_ore_sandstone",
+    "west": "swplanets:block/kyber_crystal_ore_sandstone",
+    "particle": "swplanets:block/kyber_crystal_ore_sandstone"
+  }
+}
+
