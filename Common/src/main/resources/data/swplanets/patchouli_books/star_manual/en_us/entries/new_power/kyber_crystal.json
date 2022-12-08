@@ -1,0 +1,14 @@
+{
+  "name": "An interesting Ore",
+  "icon": "swplanets:kyber_crystal",
+  "category": "swplanets:new_power",
+  "stornum": 1,
+  "pages": [
+    {
+
+      "type": "patchouli:spotlight",
+      "item":"swplanets:kyber_crystal",
+      "text": "While you are mining, you find a mysterious Ore... You decide to mine it..."
+    }
+  ]
+}

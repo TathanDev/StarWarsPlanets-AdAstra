@@ -5,8 +5,9 @@
   "gui.swplanets.planet_selection.endor": "Endor",
   "gui.swplanets.planet_selection.hot": "Hot",
   "gui.swplanets.planet_selection.mustafar": "Mustafar",
-  "gui.swplanets.text.galaxy_far_away": "A galaxy Far Far away",
-
+  "gui.swplanets.text.galaxy_far_away": "The Galaxy",
+  "gui.swplanets.text.outer_rims": "Outer Rims",
+  "gui.swplanets.text.extragalactics": "Extragalactics",
 
   "advancements.tatooine.title": "Tatooine",
   "advancements.tatooine.descr": "Welcome to Tatooine !",

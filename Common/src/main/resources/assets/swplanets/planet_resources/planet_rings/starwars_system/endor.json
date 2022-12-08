@@ -1,8 +1,0 @@
-{
-    "galaxy": "swplanets:starwarus",
-    "solar_system": "swplanets:starwars_system",
-    "texture": "swplanets:textures/sky/endor.png",
-    "speed": 70,
-    "scale": 14,
-    "radius": 2.0
-}

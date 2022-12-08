@@ -1,0 +1,24 @@
+{
+  "name": "Tatooine!",
+  "icon": "swplanets:textures/sky/tatooine.png",
+  "category": "swplanets:new_planets",
+  "sortnum": 2,
+  "advancement": "swplanets:tatooine_advancements",
+  "pages": [
+    {
+
+      "type": "patchouli:text",
+      "title":"Tatooine",
+      "text": "At first sight, this planet does not look very hospitable with just desert. But after a few small observations, you can find some villages of autoctones and some structures different from what you can see on Earth (When the dev will have added them)"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["swplanets:textures/gui/background/tatooine.png"],
+      "border": true
+
+    }
+
+
+
+  ]
+}

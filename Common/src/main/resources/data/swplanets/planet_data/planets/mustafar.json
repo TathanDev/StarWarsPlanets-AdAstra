@@ -1,7 +1,7 @@
 {
     "translation": "gui.swplanets.planet_selection.mustafar",
     "galaxy": "swplanets:galaxy_far_away",
-    "solar_system": "swplanets:starwars_sytem",
+    "solar_system": "swplanets:outer_rims",
     "world": "swplanets:mustafar",
     "orbit_world": "swplanets:mustafar_orbit",
     "rocket_tier": 3,

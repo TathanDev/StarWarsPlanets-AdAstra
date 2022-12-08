@@ -1,0 +1,24 @@
+{
+  "name": "Mustafar!",
+  "icon": "swplanets:textures/sky/mustafar.png",
+  "category": "swplanets:new_planets",
+  "sortnum": 5,
+  "advancement": "swplanets:mustafar_advancements",
+  "pages": [
+    {
+
+      "type": "patchouli:text",
+      "title":"Mustafar",
+      "text": "What a beautiful planet ! Oh, I got the wrong paper... I start again : What a horrible planet ! Just hot sand (very hot), lava (also very hot) and... that's it ! "
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["swplanets:textures/gui/background/mustafar.png"],
+      "border": true
+
+    }
+
+
+
+  ]
+}

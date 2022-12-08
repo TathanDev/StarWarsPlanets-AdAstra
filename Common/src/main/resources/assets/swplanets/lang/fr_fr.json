@@ -6,6 +6,10 @@
   "gui.swplanets.planet_selection.hot": "Hot",
   "gui.swplanets.planet_selection.mustafar": "Mustafar",
 
+  "gui.swplanets.text.galaxy_far_away": "The Galaxy",
+  "gui.swplanets.text.outer_rims": "Bordure Exterieure",
+  "gui.swplanets.text.extragalactics": "Espace Sauvage",
+
   "advancements.tatooine.title": "Tatooine",
   "advancements.tatooine.descr": "Bienvenue sur Tatooine !",
   "advancements.kamino.title": "Kamino !",

@@ -51,7 +51,7 @@ public class JediLightSaber extends SwordItem {
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
         pTarget.setSecondsOnFire(6);
-        return false;
+        return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
 
     @Override

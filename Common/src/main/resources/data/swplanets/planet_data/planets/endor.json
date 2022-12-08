@@ -1,7 +1,7 @@
 {
     "translation": "gui.swplanets.planet_selection.endor",
     "galaxy": "swplanets:galaxy_far_away",
-    "solar_system": "swplanets:starwars_sytem",
+    "solar_system": "swplanets:outer_rims",
     "world": "swplanets:endor",
     "orbit_world": "swplanets:endor_orbit",
     "rocket_tier": 3,

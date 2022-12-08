@@ -1,0 +1,13 @@
+{
+    "galaxy": "swplanets:galaxy_far_away",
+    "solar_system": "swplanets:outer_rims",
+    "sun": "minecraft:textures/environment/sun.png",
+    "sun_scale": 15,
+    "button_color": "green",
+    "ring_color": {
+        "r": 0,
+        "g": 128,
+        "b": 0,
+        "a": 200
+    }
+}

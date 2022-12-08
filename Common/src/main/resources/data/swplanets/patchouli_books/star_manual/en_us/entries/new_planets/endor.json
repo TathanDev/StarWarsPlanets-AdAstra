@@ -1,0 +1,24 @@
+{
+  "name": "Endor!",
+  "icon": "swplanets:textures/sky/endor.png",
+  "category": "swplanets:new_planets",
+  "sortnum": 4,
+  "advancement": "swplanets:endor_advancements",
+  "pages": [
+    {
+
+      "type": "patchouli:text",
+      "title":"Endor",
+      "text": "Forest, Forest and... Forest !! There is just forest ! In your hand, you are thinking 'Why we need to go on this planet ?'. It's very simple : if you love tree, go on this planet or if you need to hide yourself, it's a good place."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["swplanets:textures/gui/background/endor.png"],
+      "border": true
+
+    }
+
+
+
+  ]
+}

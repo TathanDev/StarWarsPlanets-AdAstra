@@ -27,7 +27,6 @@ import java.util.Random;
 public class SithLightSaber extends SwordItem {
 
 
-
     public SithLightSaber(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
 

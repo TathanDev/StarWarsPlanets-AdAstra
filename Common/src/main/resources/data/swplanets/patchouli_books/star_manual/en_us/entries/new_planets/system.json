@@ -1,0 +1,19 @@
+{
+  "name": "New System!",
+  "icon": "swplanets:kyber_crystal",
+  "category": "swplanets:new_planets",
+  "stornum": 1,
+  "pages": [
+    {
+
+      "type": "patchouli:text",
+      "title":"A New Adventure",
+      "text": "Now, you have a very nice Tier4 Rocket and you can go everywhere you want! So, after preparing a new expedition, you'are rocket start to flight and after few seconds, you are in the Space! You can see the planets Earth and all the Solar Systems Planets and new planets... Wait, new Planets ?$(br2)$(l)A New System !$()$(br)Indeed, a new System stands out from our good old Solar System. Intrigued, you decide to go and see and you discover some planets, very different from those you knew..."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["beyond_earth:textures/sky/gui/milky_way.png"]
+
+    }
+  ]
+}

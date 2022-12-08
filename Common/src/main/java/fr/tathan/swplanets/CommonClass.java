@@ -1,6 +1,7 @@
 package fr.tathan.swplanets;
 
 import fr.tathan.swplanets.platform.Services;
+import fr.tathan.swplanets.registry.BlocksRegistry;
 import fr.tathan.swplanets.registry.ItemsRegistry;
 import fr.tathan.swplanets.registry.SoundsRegistry;
 import net.minecraft.core.Registry;
@@ -21,7 +22,10 @@ public class CommonClass {
 
 
         ItemsRegistry.init();
+        BlocksRegistry.init();
         SoundsRegistry.init();
+
+
         Constants.LOG.info("Hello from Common init on {}! we are currently in a {} environment!", Services.PLATFORM.getPlatformName(), Services.PLATFORM.isDevelopmentEnvironment() ? "development" : "production");
         Constants.LOG.info("Diamond Item >> {}", Registry.ITEM.getKey(Items.DIAMOND));
     }

@@ -1,0 +1,18 @@
+{
+  "name": "Learn the Force",
+  "icon": "swplanets:light_saber_base",
+  "category": "swplanets:new_power",
+  "stornum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swplanets:light_saber_base",
+      "text": "With the crystal you find, you can create one of the most powerful weapon of the universe ! But Before that, you need to choose your side..."
+    },
+    {
+
+      "type": "patchouli:crafting",
+      "recipe": "swplanets:light_saber_base"
+    }
+  ]
+}

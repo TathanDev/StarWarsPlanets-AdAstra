@@ -1,0 +1,24 @@
+{
+  "name": "Tatooine!",
+  "icon": "swplanets:textures/sky/kamino.png",
+  "category": "swplanets:new_planets",
+  "sortnum": 3,
+  "advancement": "swplanets:kamino_advancements",
+  "pages": [
+    {
+
+      "type": "patchouli:text",
+      "title":"Kamino",
+      "text": "Water, water and... Water ! Yes, Kamino it's just water. But do you know what's under the sea ? Ores, a lot of ores ! And not only, as for example, a lot of oil! "
+    },
+    {
+      "type":"patchouli:image",
+      "images": ["swplanets:textures/gui/background/kamino.png"],
+      "border": true
+
+    }
+
+
+
+  ]
+}

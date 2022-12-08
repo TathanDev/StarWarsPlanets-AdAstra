@@ -1,0 +1,12 @@
+{
+  "name": "Star Manual",
+  "landing_text": "Now, you have a Tier 4 rockets and a lot of new Galaxies can be discovered...",
+  "version": 1,
+  "book_texture": "patchouli:textures/gui/book_blue.png",
+  "model": "swplanets:star_manual",
+  "custom_book_item": "swplanets:star_manual",
+  "dont_generate_book": true,
+  "show_progress": false,
+  "use_blocky_font": true,
+  "i18n": true
+}

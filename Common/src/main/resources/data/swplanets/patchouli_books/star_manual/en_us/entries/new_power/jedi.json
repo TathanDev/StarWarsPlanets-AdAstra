@@ -1,0 +1,19 @@
+{
+  "name": "Become a Jedi...",
+  "icon": "swplanets:light_saber_green",
+  "category": "swplanets:new_power",
+  "stornum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "You can choose to be a Jedi, defenders of peace or freedom !"
+    },
+    {
+
+      "type": "patchouli:crafting",
+      "recipe": "swplanets:light_saber_green",
+      "recipe2": "swplanets:light_saber_blue",
+      "title": "The Light Saber of the Jedi"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Or a Sith",
+  "icon": "swplanets:light_saber_red",
+  "category": "swplanets:new_power",
+  "stornum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Want to rule the galaxy for a \"better\" world or exterminate all Jedi? This side is for you!"
+    },
+    {
+
+      "type": "patchouli:crafting",
+      "recipe": "swplanets:light_saber_red",
+      "title": "The Light Saber of the Sith"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Hot!",
+  "icon": "swplanets:textures/sky/hot.png",
+  "category": "swplanets:new_planets",
+  "sortnum": 6,
+  "advancement": "swplanets:hot_advancements",
+  "pages": [
+    {
+
+      "type": "patchouli:text",
+      "title":"Hot",
+      "text": "It's Freezing here... Fortunetly, you can find abandonned AT-AT"
+    },
+    {
+      "type":"patchouli:image",
+      "images": ["swplanets:textures/gui/background/hot.png"],
+      "border": true
+
+    }
+
+
+
+  ]
+}
