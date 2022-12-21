@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#swplanets:starwars_biome"
+    "swplanets:tatooine_desert",
+    "swplanet"
   ]
 }
