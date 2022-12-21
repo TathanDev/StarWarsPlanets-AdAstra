@@ -28,29 +28,26 @@ public class JediLightSaber extends SwordItem {
 
     }
 
+
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+        pTarget.setSecondsOnFire(6);
+
 
         Random rand = new Random();
 
         int random_sound = rand.nextInt(4);
 
         if(random_sound == 0) {
-            player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1f, 1f);
+            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1f, 1f);
         }  else if (random_sound == 1){
-            player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_2.get(), 1f, 1f);
+            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_2.get(), 1f, 1f);
         }    else if (random_sound == 2){
-            player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_3.get(), 1f, 1f);
+            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_3.get(), 1f, 1f);
         }  else if (random_sound == 3){
-            player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_4.get(), 1f, 1f);
+            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_4.get(), 1f, 1f);
         }
 
-        return InteractionResultHolder.pass(player.getItemInHand(hand));
-    }
-
-    @Override
-    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        pTarget.setSecondsOnFire(6);
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
 

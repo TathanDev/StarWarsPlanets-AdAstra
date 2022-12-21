@@ -14,7 +14,7 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "",
+  "icon": "logo.png",
 
   "environment": "*",
   "entrypoints": {

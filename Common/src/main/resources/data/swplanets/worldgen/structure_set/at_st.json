@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "swplanets:at_st",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136474,
+
+    "spacing": 30,
+
+    "separation": 10,
+
+    "type": "minecraft:random_spread"
+  }
+}

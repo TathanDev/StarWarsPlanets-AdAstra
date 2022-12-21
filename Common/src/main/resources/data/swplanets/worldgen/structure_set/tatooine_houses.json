@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "swplanets:tatooine_houses",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 164269696474,
+
+    "spacing": 30,
+
+    "separation": 10,
+
+    "type": "minecraft:random_spread"
+  }
+}

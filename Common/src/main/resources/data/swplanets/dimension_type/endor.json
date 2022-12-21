@@ -1,6 +1,6 @@
 {
   "ultrawarm": false,
-  "natural": false,
+  "natural": true,
   "piglin_safe": false,
   "respawn_anchor_works": false,
   "bed_works": true,
@@ -13,7 +13,7 @@
   "infiniburn": "#minecraft:infiniburn_overworld",
   "min_y": -64,
   "height": 384,
-  "effects": "swplanets:endor",
+  "effects": "minecraft:overworld",
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "value": {

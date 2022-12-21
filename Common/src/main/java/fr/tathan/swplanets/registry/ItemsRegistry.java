@@ -4,12 +4,14 @@ import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.items.JediLightSaber;
 import fr.tathan.swplanets.items.SithLightSaber;
 import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.Potions;
 
 import java.util.function.Supplier;
 
 public class ItemsRegistry {
-
 
 
     public static final RegistrationProvider<Item> ITEMS = RegistrationProvider.get(Registry.ITEM, Constants.MODID);
