@@ -3,11 +3,9 @@ package fr.tathan.swplanets.registry;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.items.JediLightSaber;
 import fr.tathan.swplanets.items.SithLightSaber;
-import fr.tathan.swplanets.items.StarManual;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
 
 public class ItemsRegistry {
 
@@ -35,7 +33,7 @@ public class ItemsRegistry {
     public static final RegistryObject<BlockItem> MUSTAFAR_STONE_ITEM = ITEMS.register("mustafar_stone", () -> new BlockItem(BlocksRegistry.MUSTAFAR_STONE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> MUSTAFAR_SAND_ITEM = ITEMS.register("mustafar_sand", () -> new BlockItem(BlocksRegistry.MUSTAFAR_SAND.get(), new Item.Properties()));
 
-    public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
+    //public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
 
 
     public static void init() {

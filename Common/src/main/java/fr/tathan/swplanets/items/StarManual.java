@@ -1,16 +1,8 @@
 package fr.tathan.swplanets.items;
-
+/**
 import fr.tathan.swplanets.Constants;
-import fr.tathan.swplanets.platform.Services;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 
 public class StarManual extends Item {
 
@@ -21,16 +13,13 @@ public class StarManual extends Item {
         super(properties);
     }
 
+
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player playerIn, InteractionHand handIn) {
-        if (Services.PLATFORM.isModLoaded("patchouli")) {
+        if (!Services.PLATFORM.isModLoaded("patchouli")) {
             if (level.isClientSide) {
-                vazkii.patchouli.api.PatchouliAPI.get().openBookGUI(new ResourceLocation("swplanets:star_manual"));
+                playerIn.displayClientMessage(PATCHOULI_ERROR, false);
 
-            }
-        } else {
-            if (level.isClientSide) {
-                playerIn.displayClientMessage(PATCHOULI_ERROR, true);
             }
         }
 
@@ -46,3 +35,4 @@ public class StarManual extends Item {
 
 
 }
+*/
