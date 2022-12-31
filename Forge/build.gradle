@@ -82,6 +82,11 @@ dependencies {
     implementation fg.deobf( "com.terraformersmc:modmenu:$rootProject.modmenu_version")
     implementation fg.deobf("curse.maven:adastra-$rootProject.ad_astra_projectid:4120441")
 
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.19.2-77")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.19.2-77:api")
+
+
+
 
 }
 
