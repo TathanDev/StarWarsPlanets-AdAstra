@@ -4,6 +4,9 @@ import fr.tathan.swplanets.platform.Services;
 import fr.tathan.swplanets.registry.BlocksRegistry;
 import fr.tathan.swplanets.registry.ItemsRegistry;
 import fr.tathan.swplanets.registry.SoundsRegistry;
+import fr.tathan.swplanets.registry.TagsRegistry;
+import fr.tathan.swplanets.world.features.ModConfiguredFeatures;
+import fr.tathan.swplanets.world.features.ModPlacedFeatures;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
@@ -24,26 +27,13 @@ public class CommonClass {
         ItemsRegistry.init();
         BlocksRegistry.init();
         SoundsRegistry.init();
+        ModPlacedFeatures.init();
+        ModConfiguredFeatures.init();
+        TagsRegistry.init();
 
 
-        Constants.LOG.info("Hello from Common init on {}! we are currently in a {} environment!", Services.PLATFORM.getPlatformName(), Services.PLATFORM.isDevelopmentEnvironment() ? "development" : "production");
-        Constants.LOG.info("Diamond Item >> {}", Registry.ITEM.getKey(Items.DIAMOND));
+        Constants.LOG.info("Hello There !");
     }
 
-    // This method serves as a hook to modify item tooltips. The vanilla game
-    // has no mechanism to load tooltip listeners so this must be registered
-    // by a mod loader like Forge or Fabric.
-    public static void onItemTooltip(ItemStack stack, TooltipFlag context, List<Component> tooltip) {
 
-        if (!stack.isEmpty()) {
-
-            final FoodProperties food = stack.getItem().getFoodProperties();
-
-            if (food != null) {
-
-                tooltip.add(Component.literal("Nutrition: " + food.getNutrition()));
-                tooltip.add(Component.literal("Saturation: " + food.getSaturationModifier()));
-            }
-        }
-    }
 }

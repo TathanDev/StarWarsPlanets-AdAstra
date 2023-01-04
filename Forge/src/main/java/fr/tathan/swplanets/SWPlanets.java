@@ -8,16 +8,12 @@ import net.minecraftforge.fml.common.Mod;
 public class SWPlanets {
     
     public SWPlanets() {
-    
-        Constants.LOG.info("Hello Forge world!");
+
+        Constants.LOG.info("Star Wars Planets 🚀!");
         CommonClass.init();
     
-        MinecraftForge.EVENT_BUS.addListener(this::onItemTooltip);
-        
+
     }
     
-    private void onItemTooltip(ItemTooltipEvent event) {
-        
-        CommonClass.onItemTooltip(event.getItemStack(), event.getFlags(), event.getToolTip());
-    }
+
 }
