@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "B",
+    "R"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blue_dye"
+    },
+    "B": {
+      "item": "minecraft:beacon"
+    },
+    "R": {
+      "item": "swplanets:light_saber_base"
+    }
+  },
+  "result": {
+    "item": "swplanets:light_saber_blue",
+    "count": 1
+  }
+}

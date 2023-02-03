@@ -18,22 +18,18 @@ import java.util.function.Supplier;
 
 public class ModConfiguredFeatures {
 
-
     public static final RegistrationProvider<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES  = RegistrationProvider.get(Registry.CONFIGURED_FEATURE_REGISTRY, Constants.MODID);
-
-
 
     public static final Supplier<List<OreConfiguration.TargetBlockState>> TATOOINE_KYBER_CRYSTALS = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.SANDSTONE), BlocksRegistry.CRYSTAL_KYBER_ORE_SANDSTONE.get().defaultBlockState())));
     public static final Supplier<List<OreConfiguration.TargetBlockState>> DEEPSLATE_KYBER_CRYSTAL = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, BlocksRegistry.CRYSTAL_KYBER_ORE.get().defaultBlockState())));
 
-    public static final RegistryObject<ConfiguredFeature<?, ?>> SANDSTONE_KYBER_CRYSTAL = CONFIGURED_FEATURES.register("zircon_ore",
+    public static final RegistryObject<ConfiguredFeature<?, ?>> SANDSTONE_KYBER_CRYSTAL = CONFIGURED_FEATURES.register("kyber_crystal_sandstone",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(TATOOINE_KYBER_CRYSTALS.get(),7)));
 
-    public static final RegistryObject<ConfiguredFeature<?, ?>> KYBER_CRYSTAL = CONFIGURED_FEATURES.register("zircon_ore",
+    public static final RegistryObject<ConfiguredFeature<?, ?>> KYBER_CRYSTAL = CONFIGURED_FEATURES.register("kyber_crystal",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(DEEPSLATE_KYBER_CRYSTAL.get(),7)));
-
 
     public static void init() {
     }

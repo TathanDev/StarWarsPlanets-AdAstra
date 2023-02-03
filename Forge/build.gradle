@@ -80,8 +80,8 @@ dependencies {
     implementation fg.deobf ("com.teamresourceful.resourcefulconfig:resourcefulconfig-forge-$resourcefulconfig_version")
     implementation fg.deobf( "com.teamresourceful.resourcefullib:resourcefullib-forge-$resourcefullib_version")
     implementation fg.deobf( "com.terraformersmc:modmenu:$rootProject.modmenu_version")
-    implementation fg.deobf("curse.maven:adastra-$rootProject.ad_astra_projectid:4120441")
 
+    implementation fg.deobf("earth.terrarium:ad_astra-forge-$rootProject.minecraft_version:$rootProject.ad_astra_version")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.19.2-77")
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.19.2-77:api")
 

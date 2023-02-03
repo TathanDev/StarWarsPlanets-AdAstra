@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "D",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "item": "swplanets:kyber_crystal"
+    }
+  },
+  "result": {
+    "item": "swplanets:light_saber_base",
+    "count": 1
+  }
+}

@@ -14,12 +14,10 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.CarpetBlock;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -34,25 +32,18 @@ public class SithLightSaber extends SwordItem {
 
     }
 
+
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        pTarget.setSecondsOnFire(6);
 
-        Random rand = new Random();
 
-        int random_sound = rand.nextInt(4);
-
-        if(random_sound == 0) {
-            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1f, 1f);
-        }  else if (random_sound == 1){
-            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_2.get(), 1f, 1f);
-        }    else if (random_sound == 2){
-            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_3.get(), 1f, 1f);
-        }  else if (random_sound == 3){
-            pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_4.get(), 1f, 1f);
-        }
+        if (pAttacker instanceof Player player) {
+         player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1.0f, 1.0f);
+         }
         return super.hurtEnemy(pStack, pTarget, pAttacker);
+
     }
+
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
