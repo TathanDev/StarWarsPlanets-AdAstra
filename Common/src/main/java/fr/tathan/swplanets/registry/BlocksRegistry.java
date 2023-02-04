@@ -2,6 +2,7 @@ package fr.tathan.swplanets.registry;
 
 import fr.tathan.swplanets.Constants;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,7 +12,7 @@ import net.minecraft.world.level.material.MaterialColor;
 
 public class BlocksRegistry {
 
-    public static final RegistrationProvider<Block> BLOCKS = RegistrationProvider.get(Registry.BLOCK, Constants.MODID);
+    public static final RegistrationProvider<Block> BLOCKS = RegistrationProvider.get(Registries.BLOCK, Constants.MODID);
 
 
     /** ORES */

@@ -3,6 +3,7 @@ import fr.tathan.swplanets.registry.RegistrationProvider;
 import fr.tathan.swplanets.registry.RegistryObject;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 
@@ -12,16 +13,16 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Supplier;
 
-public class FabricRegistrationFactory implements RegistrationProvider.Factory {
+public class FabricRegistrationFactory  implements RegistrationProvider.Factory {
 
     @Override
     public <T> RegistrationProvider<T> create(ResourceKey<? extends Registry<T>> resourceKey, String modId) {
-        return new Provider<>(modId, resourceKey);
+        return new FabricRegistrationFactory.Provider<>(modId, resourceKey);
     }
 
     @Override
     public <T> RegistrationProvider<T> create(Registry<T> registry, String modId) {
-        return new Provider<>(modId, registry);
+        return new FabricRegistrationFactory.Provider<>(modId, registry);
     }
 
     private static class Provider<T> implements RegistrationProvider<T> {
@@ -35,7 +36,7 @@ public class FabricRegistrationFactory implements RegistrationProvider.Factory {
         private Provider(String modId, ResourceKey<? extends Registry<T>> key) {
             this.modId = modId;
 
-            final var reg = Registry.REGISTRY.get(key.location());
+            final var reg = BuiltInRegistries.REGISTRY.get(key.location());
             if (reg == null) {
                 throw new RuntimeException("Registry with name " + key.location() + " was not found!");
             }
@@ -72,7 +73,7 @@ public class FabricRegistrationFactory implements RegistrationProvider.Factory {
 
                 @Override
                 public Holder<I> asHolder() {
-                    return (Holder<I>) registry.getOrCreateHolder((ResourceKey<T>) this.key);
+                    return (Holder<I>) registry.getHolderOrThrow((ResourceKey<T>) this.key);
                 }
             };
             entries.add((RegistryObject<T>) ro);

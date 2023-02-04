@@ -9,9 +9,5 @@ public class SWPlanets {
 
         Constants.LOG.info("Star Wars Planets 🚀!");
         CommonClass.init();
-    
-
     }
-    
-
 }

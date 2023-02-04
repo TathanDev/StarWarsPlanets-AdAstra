@@ -18,13 +18,13 @@ It add planets from Star Wars and Light Saber :)
 [[dependencies.swplanets]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[43,)" #mandatory
+    versionRange="[44,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.swplanets]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.20)"
+    versionRange="[1.19.3,1.20)"
     ordering="NONE"
     side="BOTH"

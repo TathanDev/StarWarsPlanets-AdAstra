@@ -4,13 +4,14 @@ import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.items.JediLightSaber;
 import fr.tathan.swplanets.items.SithLightSaber;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
 
 public class ItemsRegistry {
 
 
-    public static final RegistrationProvider<Item> ITEMS = RegistrationProvider.get(Registry.ITEM, Constants.MODID);
+    public static final RegistrationProvider<Item> ITEMS = RegistrationProvider.get(Registries.ITEM, Constants.MODID);
 
     public static final RegistryObject<Item> KYBER_CRYSTAL = ITEMS.register("kyber_crystal", () -> new Item(new Item.Properties().stacksTo(16)));
 

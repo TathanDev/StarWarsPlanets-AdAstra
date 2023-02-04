@@ -19,7 +19,7 @@ subprojects {
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_author,
                 'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                'Timestamp'              : System.currentTimeMillis(),
+                'Timestamp'               : System.currentTimeMillis(),
                 'Built-On-Java'           : "${System.getProperty('java.vm.version')} (${System.getProperty('java.vm.vendor')})",
                 'Built-On-Minecraft'      : minecraft_version
             ])
@@ -46,7 +46,6 @@ subprojects {
         maven { url "https://maven.shedaniel.me/" }
         maven { url "https://maven.terraformersmc.com" }
         maven { url 'https://maven.blamejared.com' }
-        maven { url "https://nexus.resourcefulbees.com/repository/maven-public/" }
         maven {
             url "https://cursemaven.com"
             content {

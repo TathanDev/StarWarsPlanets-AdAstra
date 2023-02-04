@@ -9,10 +9,5 @@ public class SWPlanets implements ModInitializer {
 
 		Constants.LOG.info("Star Wars Planets 🚀!");
 		CommonClass.init();
-		OreGeneration.generateOres();
 	}
-
-
-
-
 }

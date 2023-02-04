@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.12-SNAPSHOT'
+    id 'fabric-loom' version '1.0-SNAPSHOT'
     id 'maven-publish'
     id 'idea'
 }
@@ -15,14 +15,14 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 
     /** Ad Astra*/
-    //modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4120440"
-    modImplementation "earth.terrarium:ad_astra-fabric-$rootProject.minecraft_version:$rootProject.ad_astra_version"
+    modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4337382"
+    //modImplementation "earth.terrarium:ad_astra-fabric-$rootProject.minecraft_version:$rootProject.ad_astra_version"
 
     /** Requirements*/
     modApi ("earth.terrarium:botarium-fabric-$rootProject.minecraft_version:$rootProject.botarium_version")
     modApi ("com.teamresourceful.resourcefullib:resourcefullib-fabric-$rootProject.resourcefullib_version")
     modApi ("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-$rootProject.resourcefulconfig_version")
-    //modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
+    modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
     modImplementation "vazkii.patchouli:Patchouli:1.19.2-77"
 
 
