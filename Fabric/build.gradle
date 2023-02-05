@@ -20,8 +20,8 @@ dependencies {
 
     /** Requirements*/
     modApi ("earth.terrarium:botarium-fabric-$rootProject.minecraft_version:$rootProject.botarium_version")
-    modApi ("com.teamresourceful.resourcefullib:resourcefullib-fabric-$rootProject.resourcefullib_version")
-    modApi ("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-$rootProject.resourcefulconfig_version")
+    modApi ("com.teamresourceful.resourcefullib:resourcefullib-fabric-$rootProject.minecraft_version:$rootProject.resourcefullib_version")
+    modApi ("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-$rootProject.minecraft_version:$rootProject.resourcefulconfig_version")
     modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
     modImplementation "vazkii.patchouli:Patchouli:1.19.2-77"
 
