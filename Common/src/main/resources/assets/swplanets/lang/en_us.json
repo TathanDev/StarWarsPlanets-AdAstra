@@ -72,7 +72,7 @@
   "message.swplanets.error.patchouli": "I think &4patchouli&r is not installed. You need this mod to use this item",
 
 
-  "itemGroup.swplanets_tab": "Star Wars Planets",
+  "itemGroup.swplanets.main": "Star Wars Planets",
 
   "swplanets.tip.kyber_crystal.title": "Kyber Crystals",
   "swplanets.tip.kyber_crystal": "Kyber Crystals are an inexhaustible source of energy",

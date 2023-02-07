@@ -4,9 +4,14 @@ import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.items.JediLightSaber;
 import fr.tathan.swplanets.items.SithLightSaber;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
+import org.apache.logging.log4j.util.TriConsumer;
+
+import java.util.List;
 
 public class ItemsRegistry {
 
@@ -40,6 +45,9 @@ public class ItemsRegistry {
     public static void init() {
     }
 
+    public static void onRegisterCreativeTabs(TriConsumer<ResourceLocation, RegistryObject<Item>, List<Item>> consumer) {
+        consumer.accept(new ResourceLocation(Constants.MODID, "main"), ItemsRegistry.BLUE_LIGHT_SABER, BuiltInRegistries.ITEM.stream().filter(i -> BuiltInRegistries.ITEM.getKey(i).getNamespace().equals(Constants.MODID)).toList());
+    }
 
 
 

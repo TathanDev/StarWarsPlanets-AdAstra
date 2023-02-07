@@ -67,7 +67,7 @@
   "block.swplanets.mustafar_sand": "Sable de Mustafar",
 
   "message.swplanets.error.patchouli": "Je pense que le mod &4patchouli&r n'est pas installé. Vous devez avoir ce mod pour utiliser cet item.",
-  "itemGroup.swplanets_tab": "Star Wars Planètes",
+  "itemGroup.swplanets.main": "Star Wars Planètes",
 
   "swplanets.tip.kyber_crystal.title": "Cristaux Kybers",
   "swplanets.tip.kyber_crystal": "Les cristaux Kybers sont une source d'énergie inépuisable",

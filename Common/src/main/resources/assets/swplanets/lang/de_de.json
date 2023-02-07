@@ -56,7 +56,7 @@
   "block.swplanets.mustafar_stone": "Mustafar Stein",
   "block.swplanets.mustafar_sand": "Mustafar Sand",
   "message.swplanets.error.patchouli": "&4Patchouli&r ist nicht installiert!",
-  "itemGroup.swplanets_tab": "Star Wars Planeten",
+  "itemGroup.swplanets.main": "Star Wars Planeten",
   "swplanets.tip.kyber_crystal.title": "Kyber-Kristall",
   "swplanets.tip.kyber_crystal": "Kyber-Kristalle sind eine unerschöpfliche Energiequelle",
   "swplanets.tip.sith_saber": "Die gefährlichste Waffe der Galaxie wird von den gefährlichsten Menschen der Galaxie benutzt",
