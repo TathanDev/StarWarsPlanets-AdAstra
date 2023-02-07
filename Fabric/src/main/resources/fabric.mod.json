@@ -4,12 +4,12 @@
   "version": "${version}",
 
   "name": "Star Wars Planets ",
-  "description": "This Mod is a Addon for Beyond Earth.\nIt add planets from Star Wars and Light Saber :)",
+  "description": "This Mod is an Addon for Ad Astra.\nIt add planets from Star Wars and Light Sabers :)",
   "authors": [
     "TATHAN"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/star-wars-planets",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/star-wars-planets-ad-astra/",
     "sources": "https://github.com/TathanDev/StarWarsPlanets"
   },
 
