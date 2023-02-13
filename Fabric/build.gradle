@@ -15,15 +15,20 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 
     /** Ad Astra*/
-    //modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4120440"
     modImplementation "earth.terrarium:ad_astra-fabric-$rootProject.minecraft_version:$rootProject.ad_astra_version"
 
     /** Requirements*/
-    modApi ("earth.terrarium:botarium-fabric-$rootProject.minecraft_version:$rootProject.botarium_version")
+    modApi('curse.maven:botarium-704113:4306550')
     modApi ("com.teamresourceful.resourcefullib:resourcefullib-fabric-$rootProject.resourcefullib_version")
     modApi ("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-$rootProject.resourcefulconfig_version")
-    //modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
-    modImplementation "vazkii.patchouli:Patchouli:1.19.2-77"
+
+    modApi "com.terraformersmc:modmenu:$rootProject.modmenu_version"
+    modImplementation "vazkii.patchouli:Patchouli:$rootProject.minecraft_version-$rootProject.patchouli_version-FABRIC"
+
+    modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:$rootProject.rei_version"
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:$rootProject.rei_version"
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rootProject.rei_version"
+    modCompileOnly "dev.emi:emi:$rootProject.emi_version+$rootProject.minecraft_version"
 
 
     implementation project(":Common")

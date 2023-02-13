@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Star Wars Planets ",
-  "description": "This Mod is a Addon for Beyond Earth.\nIt add planets from Star Wars and Light Saber :)",
+  "description": "This Mod is a Addon for Ad Astra!.\nIt add planets from Star Wars and Light Saber :)\n THIS IS A TEST VERSION, IT IS NOT FINISHED !",
   "authors": [
     "TATHAN"
   ],
@@ -22,12 +22,8 @@
       "fr.tathan.swplanets.SWPlanets"
     ]
   },
-  "mixins": [
-    "swplanets.mixins.json"
-  ],
-
   "depends": {
-    "fabricloader": ">=0.14.11",
+    "fabricloader": ">=0.14.12",
     "fabric": "*",
     "minecraft": "~1.19",
     "java": ">=17"

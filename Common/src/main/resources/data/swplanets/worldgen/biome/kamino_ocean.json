@@ -51,14 +51,15 @@
       "minecraft:ore_diamond",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
-      "swplanets:kyber_crystal_ore_deepslate",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "swplanets:kyber_crystal_ore"
+
     ],
     [],
     [

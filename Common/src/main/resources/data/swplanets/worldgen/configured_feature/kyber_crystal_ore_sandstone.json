@@ -1,8 +1,8 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 9,
-    "discard_chance_on_air_exposure": 0.5,
+    "size": 3,
+    "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
@@ -10,7 +10,7 @@
           "tag": "swplanets:tatooine_ore_replaceables"
         },
         "state": {
-          "Name": "swplanets:kyber_crystal_ore_tatooine"
+          "Name": "swplanets:kyber_crystal_ore_sandstone"
         }
       }
     ]

@@ -5,15 +5,6 @@ import fr.tathan.swplanets.registry.BlocksRegistry;
 import fr.tathan.swplanets.registry.ItemsRegistry;
 import fr.tathan.swplanets.registry.SoundsRegistry;
 import fr.tathan.swplanets.registry.TagsRegistry;
-import fr.tathan.swplanets.world.features.ModConfiguredFeatures;
-import fr.tathan.swplanets.world.features.ModPlacedFeatures;
-import net.minecraft.core.Registry;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.TooltipFlag;
-
 import java.util.List;
 
 public class CommonClass {
@@ -27,8 +18,6 @@ public class CommonClass {
         ItemsRegistry.init();
         BlocksRegistry.init();
         SoundsRegistry.init();
-        ModPlacedFeatures.init();
-        ModConfiguredFeatures.init();
         TagsRegistry.init();
 
 
