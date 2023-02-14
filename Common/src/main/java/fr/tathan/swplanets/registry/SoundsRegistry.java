@@ -18,7 +18,6 @@ public class SoundsRegistry {
     public static final RegistryObject<SoundEvent> SABER_ATTACK_SOUND_3 = SOUNDS.register("saber_attack_sound_3", () -> new SoundEvent(new ResourceLocation(Constants.MODID, "saber_attack_sound_3")));
     public static final RegistryObject<SoundEvent> SABER_ATTACK_SOUND_4 = SOUNDS.register("saber_attack_sound_4", () -> new SoundEvent(new ResourceLocation(Constants.MODID, "saber_attack_sound_4")));
 
-
     public static void init() {
     }
 

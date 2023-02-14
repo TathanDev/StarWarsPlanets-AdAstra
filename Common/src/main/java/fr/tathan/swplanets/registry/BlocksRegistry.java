@@ -2,7 +2,6 @@ package fr.tathan.swplanets.registry;
 
 import fr.tathan.swplanets.Constants;
 import net.minecraft.core.Registry;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -13,7 +12,6 @@ public class BlocksRegistry {
 
     public static final RegistrationProvider<Block> BLOCKS = RegistrationProvider.get(Registry.BLOCK, Constants.MODID);
 
-
     /** ORES */
     public static final RegistryObject<Block> CRYSTAL_KYBER_ORE = BLOCKS.register("kyber_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.0F, 3.0F).explosionResistance(3).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRYSTAL_KYBER_ORE_SANDSTONE = BLOCKS.register("kyber_crystal_ore_sandstone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.0F, 3.0F).explosionResistance(3).requiresCorrectToolForDrops()));
@@ -22,5 +20,4 @@ public class BlocksRegistry {
 
     public static void init() {
     }
-
 }
