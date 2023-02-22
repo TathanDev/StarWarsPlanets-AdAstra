@@ -16,7 +16,6 @@ public class SWPlanets {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
 
     }
-
     public static void onRegisterCreativeTabs(CreativeModeTabEvent.Register event) {
         ItemsRegistry.onRegisterCreativeTabs((loc, item, items) -> event.registerCreativeModeTab(loc, b -> b
                 .title(Component.translatable("itemGroup." + loc.getNamespace() + "." + loc.getPath()))

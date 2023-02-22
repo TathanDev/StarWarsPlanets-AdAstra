@@ -17,6 +17,5 @@ public class SWPlanets implements ModInitializer {
 				.icon(() -> item.get().getDefaultInstance())
 				.displayItems((featureFlagSet, output, bl) -> items.forEach(output::accept))
 				.build());
-
 	}
 }

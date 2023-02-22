@@ -1,6 +1,8 @@
 modLoader="javafml"
 loaderVersion="[43,)"
 license="All rights reserved"
+issueTrackerURL="https://github.com/TathanDev/StarWarsPlanets-AdAstra/issues"
+
 
 
 [[mods]]
@@ -28,3 +30,11 @@ It add planets from Star Wars and Light Sabers :)
     versionRange="[1.19.3,1.20)"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.swplanets]]
+    modId="ad_astra"
+    mandatory=true
+    versionRage="[${ad_astra_version},)"
+    ordering="AFTER"
+    side="BOTH"
+

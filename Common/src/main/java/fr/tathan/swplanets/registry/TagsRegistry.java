@@ -1,18 +1,14 @@
 package fr.tathan.swplanets.registry;
 
 import fr.tathan.swplanets.Constants;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
-
 public class TagsRegistry {
 
     public static final TagKey<Biome> STARWARS_PLANETS;
     public static final TagKey<Biome> TATOOINE_LIKE;
-
-
 
     public static void init() {
     }
@@ -22,8 +18,6 @@ public class TagsRegistry {
         TATOOINE_LIKE = TagKey.create(Registries.BIOME, new ResourceLocation(Constants.MODID, "tatooine_like"));
 
     }
-
-
 
 
 }
