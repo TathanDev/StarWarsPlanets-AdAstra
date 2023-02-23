@@ -5,22 +5,24 @@
   "gui.swplanets.planet_selection.endor": "Endor",
   "gui.swplanets.planet_selection.hot": "Hot",
   "gui.swplanets.planet_selection.mustafar": "Mustafar",
+  "gui.swplanets.planet_selection.mandalore": "Mandalore",
+
 
   "gui.swplanets.text.galaxy_far_away": "The Galaxy",
   "gui.swplanets.text.outer_rims": "Bordure Exterieure",
   "gui.swplanets.text.extragalactics": "Espace Sauvage",
 
-  "advancements.tatooine.title": "Tatooine",
-  "advancements.tatooine.descr": "Bienvenue sur Tatooine !",
-  "advancements.kamino.title": "Kamino !",
-  "advancements.kamino.descr": "Bienvenue sur Kamino !",
-  "advancements.endor.title": "Endor !",
-  "advancements.endor.descr": "Bienvenue sur Endor !",
-  "advancements.hot.title": "Hot !",
-  "advancements.hot.descr": "Bienvenue sur Hot !",
-  "advancements.mustafar.descr": "Bienvenue sur Mustafar !",
-  "advancements.mustafar.title": "Mustafar !",
+  "advancements.pro_hyperspace.title": "Un pro de l'Hyper Espace !",
+  "advancements.pro_hyperspace.descr": "A visitez toutes les planètes de la galaxie",
 
+  "advancements.swplanets.title": "Une nouvelle Galaxie",
+  "advancements.swplanets.descr": "Bienvenue dans La Galaxie",
+
+  "advancements.find_kyber.title": "Ho ! Ca brille !!",
+  "advancements.find_kyber.descr": "Vous venez de trouver un crystal kyber !",
+
+  "advancements.craft_saber.title": "Que la force soit avec vous !",
+  "advancements.craft_saber.descr": "Vous êtes maintenant un Jedi ! Ou pas....",
 
   "item.swplanets.star_wars_opening_music_disc": "Star Wars Opening Music Disc",
   "item.swplanets.star_wars_opening_music_disc.desc": "John Williams",

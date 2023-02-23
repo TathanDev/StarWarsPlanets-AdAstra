@@ -5,20 +5,23 @@
   "gui.swplanets.planet_selection.endor": "Endor",
   "gui.swplanets.planet_selection.hot": "Hot",
   "gui.swplanets.planet_selection.mustafar": "Mustafar",
+  "gui.swplanets.planet_selection.mandalore": "Mandalore",
   "gui.swplanets.text.galaxy_far_away": "The Galaxy",
   "gui.swplanets.text.outer_rims": "Outer Rims",
   "gui.swplanets.text.extragalactics": "Extragalactics",
 
-  "advancements.tatooine.title": "Tatooine",
-  "advancements.tatooine.descr": "Welcome to Tatooine !",
-  "advancements.kamino.title": "Kamino !",
-  "advancements.kamino.descr": "Welcome to Kamino !",
-  "advancements.endor.title": "Endor !",
-  "advancements.endor.descr": "Welcome to Endor !",
-  "advancements.hot.title": "Hot !",
-  "advancements.hot.descr": "You're Hot !",
-  "advancements.mustafar.descr": "Welcome to Mustafar !",
-  "advancements.mustafar.title": "Mustafar !",
+  "advancements.pro_hyperspace.title": "A pro of the hyperspace !",
+  "advancements.pro_hyperspace.descr": "Visit all the planets in The Galaxy",
+
+  "advancements.swplanets.title": "A new Galaxy",
+  "advancements.swplanets.descr": "Welcome to The Galaxy !",
+
+  "advancements.find_kyber.title": "Ho ! It's shiny !",
+  "advancements.find_kyber.descr": "You just find a kyber crystal !",
+
+  "advancements.craft_saber.title": "May the force be with you !",
+  "advancements.craft_saber.descr": "You are now a Jedi ! Or maybe not...",
+
 
 
   "item.swplanets.star_wars_opening_music_disc": "Music Disc",
@@ -66,11 +69,7 @@
   "block.swplanets.mustafar_stone": "Mustafar Stone",
   "block.swplanets.mustafar_sand": "Mustafar Sand",
 
-
-
-
   "message.swplanets.error.patchouli": "I think &4patchouli&r is not installed. You need this mod to use this item",
-
 
   "itemGroup.swplanets.main": "Star Wars Planets",
 

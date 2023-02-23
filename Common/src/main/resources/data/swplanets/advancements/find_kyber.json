@@ -1,0 +1,31 @@
+{
+  "parent": "swplanets:swplanets",
+  "display": {
+    "icon": {
+      "item": "swplanets:kyber_crystal"
+    },
+    "title": {
+      "translate": "advancements.find_kyber.title"
+    },
+    "description": {
+      "translate": "advancements.find_kyber.descr"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "swplanets:kyber_crystal"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

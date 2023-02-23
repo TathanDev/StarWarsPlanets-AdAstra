@@ -1,0 +1,29 @@
+{
+  "parent": "swplanets:find_kyber",
+  "display": {
+    "icon": {
+      "item": "swplanets:light_saber_base"
+    },
+    "title": {
+      "translate": "advancements.craft_saber.title"
+    },
+    "description": {
+      "translate": "advancements.craft_saber.descr"
+    },
+    "frame": "goal",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "swplanets:light_sabers"
+          }
+        ]
+      }
+    }
+  }
+}
