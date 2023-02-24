@@ -82,7 +82,7 @@ dependencies {
     implementation fg.deobf("com.teamresourceful.resourcefulconfig:resourcefulconfig-forge-$rootProject.minecraft_version:$rootProject.resourcefulconfig_version")
 
 
-    implementation fg.deobf("curse.maven:adastra-$rootProject.ad_astra_projectid:4337383")
+    implementation fg.deobf("curse.maven:adastra-$rootProject.ad_astra_projectid:4390126")
 
     //implementation fg.deobf("earth.terrarium:ad_astra-forge-$rootProject.minecraft_version:$rootProject.ad_astra_version")
     //runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.19.2-77")

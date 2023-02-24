@@ -1,13 +1,9 @@
 package fr.tathan.swplanets.registry;
 
 import fr.tathan.swplanets.Constants;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.item.Item;
-
-import java.util.function.Supplier;
 
 public class SoundsRegistry {
 

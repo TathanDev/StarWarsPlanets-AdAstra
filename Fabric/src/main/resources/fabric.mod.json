@@ -10,7 +10,9 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/star-wars-planets-ad-astra/",
-    "sources": "https://github.com/TathanDev/StarWarsPlanets"
+    "sources": "https://github.com/TathanDev/StarWarsPlanets",
+    "issues": "https://github.com/TathanDev/StarWarsPlanets-AdAstra/issues"
+
   },
 
   "license": "CC0-1.0",
@@ -30,7 +32,8 @@
     "fabricloader": ">=0.14.11",
     "fabric": "*",
     "minecraft": "1.19.3",
-    "java": ">=17"
+    "java": ">=17",
+    "ad_astra": ">=1.13.4"
   },
   "suggests": {
     "another-mod": "*"

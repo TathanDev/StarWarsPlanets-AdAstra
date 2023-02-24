@@ -1,6 +1,5 @@
 package fr.tathan.swplanets.items;
 
-
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.registry.SoundsRegistry;
 import net.minecraft.client.gui.screens.Screen;
@@ -26,12 +25,10 @@ import java.util.Random;
 
 public class SithLightSaber extends SwordItem {
 
-
     public SithLightSaber(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
 
     }
-
 
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
@@ -43,7 +40,6 @@ public class SithLightSaber extends SwordItem {
         return super.hurtEnemy(pStack, pTarget, pAttacker);
 
     }
-
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
