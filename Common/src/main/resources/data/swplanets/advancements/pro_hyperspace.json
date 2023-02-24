@@ -1,0 +1,51 @@
+{
+  "parent": "swplanets:craft_light_saber",
+  "display": {
+    "icon": {
+      "item": "swplanets:light_saber_blue"
+    },
+    "title": {
+      "translate": "advancements.pro_hyperspace.title"
+    },
+    "description": {
+      "translate": "advancements.pro_hyperspace.descr"
+    },
+    "background": "minecraft:textures/block/sand.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tatooine": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "swplanets:tatooine"
+      }
+    },
+    "hot": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "swplanets:hot"
+      }
+    },
+    "mustafar": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "swplanets:mustafar"
+      }
+    },
+    "kamino": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "swplanets:kamino"
+      }
+    },
+    "endor": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "swplanets:endor"
+      }
+    }
+  }
+}

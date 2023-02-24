@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "swplanets:light_saber_blue",
+    "swplanets:light_saber_green",
+    "swplanets:light_saber_violet",
+    "swplanets:light_saber_red",
+    "swplanets:light_saber_kylo_ren",
+    "swplanets:light_saber_dark_maul"
+  ]
+}

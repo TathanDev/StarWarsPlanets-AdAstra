@@ -12,16 +12,17 @@
   "gui.swplanets.text.outer_rims": "Bordure Exterieure",
   "gui.swplanets.text.extragalactics": "Espace Sauvage",
 
-  "advancements.tatooine.title": "Tatooine",
-  "advancements.tatooine.descr": "Willkommen auf Tatooine !",
-  "advancements.kamino.title": "Kamino !",
-  "advancements.kamino.descr": "Willkommen auf Kamino !",
-  "advancements.endor.title": "Endor !",
-  "advancements.endor.descr": "Willkommen auf Endor !",
-  "advancements.hot.title": "Hot !",
-  "advancements.hot.descr": "Du bist Heiß !",
-  "advancements.mustafar.descr": "Willkomen auf Mustafar !",
-  "advancements.mustafar.title": "Mustafar !",
+  "advancements.pro_hyperspace.title": "Ein Profi des Hyperraums !",
+  "advancements.pro_hyperspace.descr": "Besuche alle Planeten der Galaxis",
+
+  "advancements.swplanets.title": "Eine neue Galaxie",
+  "advancements.swplanets.descr": "Willkommen in der Galaxis !",
+
+  "advancements.find_kyber.title": "Ho! Es glänzt!",
+  "advancements.find_kyber.descr": "Du hast gerade einen Kyber-Kristall gefunden!",
+
+  "advancements.craft_saber.title": "Möge die Macht mit Ihnen sein!",
+  "advancements.craft_saber.descr": "Du bist jetzt ein Jedi! Oder vielleicht auch nicht...",
 
   "item.swplanets.star_wars_opening_music_disc": "Schallplate",
   "item.swplanets.star_wars_opening_music_disc.desc": "John Williams - Star Wars Opening",

@@ -3,8 +3,10 @@ package fr.tathan.swplanets.items;
 import fr.tathan.swplanets.Constants;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+ import vazkii.patchouli.api.PatchouliAPI;
 
-public class StarManual extends Item {
+
+ public class StarManual extends Item {
 
 
     public static final Component PATCHOULI_ERROR = tl("patchouli");

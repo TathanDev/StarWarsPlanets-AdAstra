@@ -5,12 +5,11 @@
   "max_distance_from_center": 80,
   "biomes": "#swplanets:has_structure/at_act",
   "step": "surface_structures",
-  "terrain_adaptation": "bury",
   "start_height": {
     "absolute": 0
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "use_expansion_hack": false,
-  "adapt_noise": false,
+  "adapt_noise": true,
   "spawn_overrides": {}
 }

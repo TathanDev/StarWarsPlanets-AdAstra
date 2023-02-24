@@ -1,5 +1,5 @@
 {
-  "temperature": -0.7,
+  "temperature": 0.1,
   "downfall": 0,
   "precipitation": "none",
   "effects": {
@@ -21,9 +21,6 @@
   },
   "features": [
     [
-      "minecraft:freeze_top_layer",
-      "minecraft:amethyst_geode",
-      "minecraft:glow_lichen",
       "swplanets:kyber_crystal_ore_tatooine"
     ]
   ]
