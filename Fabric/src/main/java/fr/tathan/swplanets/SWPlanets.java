@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 
 public class SWPlanets implements ModInitializer {
 
+
 	@Override
 	public void onInitialize() {
 

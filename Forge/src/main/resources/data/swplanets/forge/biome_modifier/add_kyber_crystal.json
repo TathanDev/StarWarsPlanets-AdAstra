@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#swplanets:starwars_biomes",
-  "features": "swplanets:kyber_crystal_ore_deepslate",
-  "step": "underground_ores"
-}

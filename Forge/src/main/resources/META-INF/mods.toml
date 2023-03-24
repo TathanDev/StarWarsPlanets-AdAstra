@@ -31,10 +31,4 @@ It add planets from Star Wars and Light Sabers :)
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.swplanets]]
-    modId="ad_astra"
-    mandatory=true
-    versionRage="[${ad_astra_version},)"
-    ordering="AFTER"
-    side="BOTH"
 

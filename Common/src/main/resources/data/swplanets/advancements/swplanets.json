@@ -13,7 +13,8 @@
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": false,
+    "background": "ad_astra:textures/block/steel_plating.png"
   },
   "criteria": {
     "tatooine": {
