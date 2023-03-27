@@ -35,9 +35,6 @@
       "minecraft:amethyst_geode",
       "minecraft:forest_rock"
     ],
-    [],
-    [],
-    [],
     [
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -67,8 +64,8 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
       "swplanets:kyber_crystal_ore"
+
     ],
-    [],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"
