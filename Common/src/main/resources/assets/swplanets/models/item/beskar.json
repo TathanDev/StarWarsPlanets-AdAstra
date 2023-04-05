@@ -1,0 +1,69 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "swplanets:item/beskar",
+		"particle": "swplanets:item/beskar"
+	},
+	"elements": [
+		{
+			"from": [7, 2, 4],
+			"to": [8, 14, 11],
+			"faces": {
+				"north": {"uv": [0, 6, 0.5, 12], "texture": "#1"},
+				"east": {"uv": [0, 0, 3.5, 6], "texture": "#1"},
+				"south": {"uv": [0.5, 6, 1, 12], "texture": "#1"},
+				"west": {"uv": [3.5, 0, 7, 6], "texture": "#1"},
+				"up": {"uv": [1.5, 9.5, 1, 6], "texture": "#1"},
+				"down": {"uv": [2, 6, 1.5, 9.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.9, 11, 5],
+			"to": [7.9, 13, 7],
+			"faces": {
+				"north": {"uv": [4, 6, 4.5, 7], "texture": "#1"},
+				"east": {"uv": [2, 6, 3, 7], "texture": "#1"},
+				"south": {"uv": [4.5, 6, 5, 7], "texture": "#1"},
+				"west": {"uv": [3, 6, 4, 7], "texture": "#1"},
+				"up": {"uv": [5.5, 7, 5, 6], "texture": "#1"},
+				"down": {"uv": [6, 6, 5.5, 7], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-105.34, 89.48, 85.9],
+			"translation": [0.25, 0.75, 0],
+			"scale": [0.57031, 0.4082, 0.38477]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-110.2, -89.5, -90.1],
+			"translation": [-0.25, 0.75, 0],
+			"scale": [0.57031, 0.4082, 0.38477]
+		},
+		"firstperson_righthand": {
+			"rotation": [-105.34, 89.48, 85.9],
+			"translation": [0.25, 0.75, 0],
+			"scale": [0.57031, 0.4082, 0.38477]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-110.2, -89.5, -90.1],
+			"translation": [-0.25, 0.75, 0],
+			"scale": [0.57031, 0.4082, 0.38477]
+		},
+		"ground": {
+			"scale": [1, 0.52148, 0.48047]
+		},
+		"gui": {
+			"rotation": [-180, 88.75, -180],
+			"translation": [0.75, 0, 0]
+		},
+		"head": {
+			"translation": [0, 5.25, 0]
+		},
+		"fixed": {
+			"rotation": [180, -86.75, 180]
+		}
+	}
+}
