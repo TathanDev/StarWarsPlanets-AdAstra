@@ -32,6 +32,14 @@
   "item.swplanets.mustafar_stone": "Mustafar Stone",
   "item.swplanets.mustafar_sand": "Mustafar Sand",
 
+  "item.swplanets.beskar": "Baskar",
+  "item.swplanets.darksaber": "Dark Saber",
+
+  "item.swplanets.beskar_ore_sandstone": "Beskar Ore",
+
+
+
+
 
 
   "item.swplanets.light_saber_base": "Light Saber Base",
@@ -68,6 +76,9 @@
   "block.swplanets.kyber_crystal_ore_sandstone": "Sandstone Kyber Crystal Ore ",
   "block.swplanets.mustafar_stone": "Mustafar Stone",
   "block.swplanets.mustafar_sand": "Mustafar Sand",
+  "block.swplanets.beskar_ore_sandstone": "Beskar Ore",
+
+
 
   "message.swplanets.error.patchouli": "I think &4patchouli&r is not installed. You need this mod to use this item",
 

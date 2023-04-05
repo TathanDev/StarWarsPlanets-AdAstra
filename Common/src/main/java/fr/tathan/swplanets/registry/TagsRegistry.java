@@ -10,6 +10,7 @@ public class TagsRegistry {
     public static final TagKey<Biome> STARWARS_PLANETS;
     public static final TagKey<Biome> TATOOINE_LIKE;
 
+
     public static void init() {
     }
 

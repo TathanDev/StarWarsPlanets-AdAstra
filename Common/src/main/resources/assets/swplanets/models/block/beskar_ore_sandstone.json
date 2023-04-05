@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/sandstone_bottom",
+    "up": "minecraft:block/sandstone_top",
+    "north": "swplanets:block/beskar_ore_sandstone",
+    "east": "swplanets:block/beskar_ore_sandstone",
+    "south": "swplanets:block/beskar_ore_sandstone",
+    "west": "swplanets:block/beskar_ore_sandstone",
+    "particle": "swplanets:block/beskar_ore_sandstone"
+  }
+}
+

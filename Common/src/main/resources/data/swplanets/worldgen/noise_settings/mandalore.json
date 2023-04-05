@@ -5,10 +5,10 @@
   "ore_veins_enabled": false,
   "legacy_random_source": true,
   "default_block": {
-    "Name": "minecraft:sandstone"
+    "Name": "minecraft:smooth_sandstone"
   },
   "default_fluid": {
-    "Name": "minecraft:water",
+    "Name": "minecraft:air",
     "Properties": {
       "level": "0"
     }
@@ -206,7 +206,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:sandstone"
+                        "Name": "minecraft:smooth_sandstone"
                       }
                     }
                   }

@@ -1,9 +1,6 @@
 package fr.tathan.swplanets;
 
-import fr.tathan.swplanets.registry.BlocksRegistry;
-import fr.tathan.swplanets.registry.ItemsRegistry;
-import fr.tathan.swplanets.registry.SoundsRegistry;
-import fr.tathan.swplanets.registry.TagsRegistry;
+import fr.tathan.swplanets.registry.*;
 
 public class CommonClass {
 
@@ -13,6 +10,7 @@ public class CommonClass {
         BlocksRegistry.init();
         SoundsRegistry.init();
         TagsRegistry.init();
+        ArmorMaterialRegistry.init();
         Constants.LOG.info("Hello There !");
     }
 

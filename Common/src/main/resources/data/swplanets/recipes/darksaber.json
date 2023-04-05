@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "D",
+    "D",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "swplanets:beskar"
+    }
+  },
+  "result": {
+    "item": "swplanets:darksaber",
+    "count": 1
+  }
+}

@@ -3,10 +3,12 @@ package fr.tathan.swplanets.registry;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.items.JediLightSaber;
 import fr.tathan.swplanets.items.SithLightSaber;
+import fr.tathan.swplanets.items.armour.TrooperArmorMaterial;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import org.apache.logging.log4j.util.TriConsumer;
@@ -33,7 +35,12 @@ public class ItemsRegistry {
     public static final RegistryObject<Item> KYLO_REN_LIGHT_SABER = ITEMS.register("light_saber_kylo_ren", () -> new SithLightSaber(Tiers.NETHERITE,3, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> DARK_MAUL_LIGHT_SABER = ITEMS.register("light_saber_dark_maul", () -> new SithLightSaber(Tiers.NETHERITE,3, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
 
+    public static final RegistryObject<Item> PLASTIC_PLATE = ITEMS.register("plastic_plate", () -> new Item(new Item.Properties().stacksTo(64)));
+
+    /** Mandalorian **/
     public static final RegistryObject<Item> DARKSABER = ITEMS.register("darksaber", () -> new SwordItem(Tiers.NETHERITE, 4, -2.5F, new Item.Properties().fireResistant().stacksTo(1).durability(4000)));
+    public static final RegistryObject<Item> BESKAR = ITEMS.register("beskar", () -> new Item(new Item.Properties().fireResistant().stacksTo(16)));
+    public static final RegistryObject<BlockItem> BESKAR_ORE_SANDSTONE_ITEM = ITEMS.register("beskar_ore_sandstone", () -> new BlockItem(BlocksRegistry.BESKAR_ORE_SANDSTONE.get(), new Item.Properties()));
 
     public static final RegistryObject<BlockItem> KYBER_CRYSTAl_ORE_ITEM = ITEMS.register("kyber_crystal_ore", () -> new BlockItem(BlocksRegistry.CRYSTAL_KYBER_ORE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> KYBER_CRYSTAl_ORE_SANDSTONE_ITEM = ITEMS.register("kyber_crystal_ore_sandstone", () -> new BlockItem(BlocksRegistry.CRYSTAL_KYBER_ORE_SANDSTONE.get(), new Item.Properties()));
@@ -41,6 +48,21 @@ public class ItemsRegistry {
     public static final RegistryObject<BlockItem> MUSTAFAR_SAND_ITEM = ITEMS.register("mustafar_sand", () -> new BlockItem(BlocksRegistry.MUSTAFAR_SAND.get(), new Item.Properties()));
 
     //public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
+
+    public static final RegistryObject<ArmorItem> STORMTROOPER_MASK = ITEMS.register("stormtrooper_mask",
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.HEAD,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> STORMTROOPER_CHESTPLATE = ITEMS.register("stormtrooper_chestplate",
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.CHEST,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> STORMTROOPER_LEGGINGS = ITEMS.register("stormtrooper_leggings",
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.LEGS,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> STORMTROOPER_BOOTS = ITEMS.register("stormtrooper_boots",
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.FEET,
+                    new Item.Properties()));
+
 
     public static void init() {
     }

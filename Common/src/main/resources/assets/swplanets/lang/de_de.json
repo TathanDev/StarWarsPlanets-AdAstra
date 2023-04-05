@@ -46,6 +46,13 @@
   "item.swplanets.plastic_plate": "Plastik Platte ",
   "item.swplanets.speeder": "Düsenschlitten",
 
+  "item.swplanets.beskar": "Baskar",
+  "item.swplanets.darksaber": "Dark Saber",
+
+  "item.swplanets.beskar_ore_sandstone": "Sandstein Beskar Erts",
+
+
+
   "entity.swplanets.speeder": "Düsenschlitten",
 
   "tooltip.swplanets.jedilightsaber.tooltip.shift": "Eine Waffe, die vom größten §1jedi verwendet wird",
@@ -58,6 +65,9 @@
   "block.swplanets.kyber_crystal_ore_sandstone": "Sandstein Kyber-Kristallerz",
   "block.swplanets.mustafar_stone": "Mustafar Stein",
   "block.swplanets.mustafar_sand": "Mustafar Sand",
+
+  "block.swplanets.beskar_ore_sandstone": "Sandstein Beskar Erts",
+
   "message.swplanets.error.patchouli": "&4Patchouli&r ist nicht installiert!",
   "itemGroup.swplanets.main": "Star Wars Planeten",
   "swplanets.tip.kyber_crystal.title": "Kyber-Kristall",
