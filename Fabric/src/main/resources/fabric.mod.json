@@ -31,9 +31,9 @@
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric": "*",
-    "minecraft": "1.19.3",
+    "minecraft": "1.19.4",
     "java": ">=17",
-    "ad_astra": ">=1.13.4"
+    "ad_astra": ">=1.14.1"
   },
   "suggests": {
     "another-mod": "*"

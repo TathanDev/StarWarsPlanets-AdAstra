@@ -3,6 +3,8 @@
   "downfall": 1,
   "precipitation": "rain",
   "category": "desert",
+  "has_precipitation": false,
+
   "effects": {
     "sky_color": -3044526,
     "fog_color": -3044526,

@@ -1,8 +1,8 @@
 package fr.tathan.swplanets;
 
 import fr.tathan.swplanets.registry.ItemsRegistry;
-import net.minecraft.network.chat.Component;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import fr.tathan.swplanets.registry.TabsRegistry;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -13,14 +13,31 @@ public class SWPlanets {
 
         Constants.LOG.info("Star Wars Planets 🚀!");
         CommonClass.init();
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
 
     }
-    public static void onRegisterCreativeTabs(CreativeModeTabEvent.Register event) {
-        ItemsRegistry.onRegisterCreativeTabs((loc, item, items) -> event.registerCreativeModeTab(loc, b -> b
-                .title(Component.translatable("itemGroup." + loc.getNamespace() + "." + loc.getPath()))
-                .icon(() -> item.get().getDefaultInstance())
-                .displayItems((featureFlagSet, output, bl) -> items.forEach(output::accept))
-                .build()));
+    public static void onRegisterCreativeTabs(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTab() == TabsRegistry.TAB.get()) {
+            event.accept(ItemsRegistry.STORMTROOPER_BOOTS);
+            event.accept(ItemsRegistry.STORMTROOPER_LEGGINGS);
+
+            event.accept(ItemsRegistry.STORMTROOPER_CHESTPLATE);
+            event.accept(ItemsRegistry.STORMTROOPER_BOOTS);
+            event.accept(ItemsRegistry.LIGHT_SABER_BASE);
+            event.accept(ItemsRegistry.DARK_MAUL_LIGHT_SABER);
+            event.accept(ItemsRegistry.RED_LIGHT_SABER);
+            event.accept(ItemsRegistry.KYLO_REN_LIGHT_SABER);
+            event.accept(ItemsRegistry.BLUE_LIGHT_SABER);
+            event.accept(ItemsRegistry.GREEN_LIGHT_SABER);
+            event.accept(ItemsRegistry.VIOLET_LIGHT_SABER);
+            event.accept(ItemsRegistry.KYBER_CRYSTAL);
+            event.accept(ItemsRegistry.KYBER_CRYSTAl_ORE_SANDSTONE_ITEM);
+            event.accept(ItemsRegistry.KYBER_CRYSTAl_ORE_SANDSTONE_ITEM);
+            event.accept(ItemsRegistry.BESKAR);
+            event.accept(ItemsRegistry.BESKAR_ORE_SANDSTONE_ITEM);
+            event.accept(ItemsRegistry.PLASTIC_PLATE);
+
+        }
+
     }
 }

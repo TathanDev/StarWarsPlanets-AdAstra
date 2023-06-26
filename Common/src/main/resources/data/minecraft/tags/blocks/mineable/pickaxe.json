@@ -2,7 +2,9 @@
 "replace": false,
 "values": [
 
-  "swplanets:kyber_crystal_ore"
+  "swplanets:kyber_crystal_ore",
+  "swplanets:kyber_crystal_ore_sandstone",
+  "swplanets:beskar_ore_sandstone"
 
   ]
 

@@ -50,17 +50,17 @@ public class ItemsRegistry {
     //public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> STORMTROOPER_MASK = ITEMS.register("stormtrooper_mask",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.HEAD,
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> STORMTROOPER_CHESTPLATE = ITEMS.register("stormtrooper_chestplate",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.CHEST,
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<Item> STORMTROOPER_LEGGINGS = ITEMS.register("stormtrooper_leggings",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.LEGS,
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<Item> STORMTROOPER_BOOTS = ITEMS.register("stormtrooper_boots",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, EquipmentSlot.FEET,
+            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
 

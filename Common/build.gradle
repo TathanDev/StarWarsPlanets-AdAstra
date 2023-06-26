@@ -31,6 +31,7 @@ repositories {
 dependencies {
      compileOnly group:'org.spongepowered', name:'mixin', version:'0.8.5'
      implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+     implementation "com.teamresourceful.resourcefullib:resourcefullib-forge-$rootProject.minecraft_version:$rootProject.resourcefullib_version"
 
     implementation "vazkii.patchouli:Patchouli-xplat:1.19.2-$rootProject.patchouli_version"
 

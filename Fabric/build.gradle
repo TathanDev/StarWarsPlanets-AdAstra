@@ -15,7 +15,7 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 
     /** Ad Astra*/
-    modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4452071"
+    modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4452009"
     //modImplementation "earth.terrarium:ad_astra-fabric-$rootProject.minecraft_version:$rootProject.ad_astra_version"
 
     /** Requirements*/
@@ -23,7 +23,7 @@ dependencies {
     modApi ("com.teamresourceful.resourcefullib:resourcefullib-fabric-$rootProject.minecraft_version:$rootProject.resourcefullib_version")
     modApi ("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-$rootProject.minecraft_version:$rootProject.resourcefulconfig_version")
     modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
-    modImplementation "vazkii.patchouli:Patchouli:1.19.2-77"
+   // modImplementation "vazkii.patchouli:Patchouli:1.19.2-77"
 
 
     implementation project(":Common")

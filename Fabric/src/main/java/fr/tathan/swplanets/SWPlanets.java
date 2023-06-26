@@ -13,10 +13,13 @@ public class SWPlanets implements ModInitializer {
 
 		Constants.LOG.info("Star Wars Planets 🚀!");
 		CommonClass.init();
+		/**
 		ItemsRegistry.onRegisterCreativeTabs((loc, item, items) -> FabricItemGroup.builder(loc)
 				.title(Component.translatable("itemGroup." + loc.getNamespace() + "." + loc.getPath()))
 				.icon(() -> item.get().getDefaultInstance())
-				.displayItems((featureFlagSet, output, bl) -> items.forEach(output::accept))
+				.displayItems((featureFlagSet, output) -> items.forEach(output::accept))
 				.build());
+		 */
 	}
+
 }

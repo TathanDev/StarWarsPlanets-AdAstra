@@ -3,6 +3,7 @@ import fr.tathan.swplanets.registry.ItemsRegistry;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
@@ -13,34 +14,43 @@ public class TrooperArmorMaterial implements ArmorMaterial {
     public TrooperArmorMaterial() {
     }
 
-    public int getDurabilityForSlot(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getIndex()] * 25;
+
+
+    @Override
+    public int getDurabilityForType(ArmorItem.Type type) {
+        return BASE_DURABILITY[type.ordinal()] * 37;
     }
 
-    public int getDefenseForSlot(EquipmentSlot slot) {
-        return PROTECTION_VALUES[slot.getIndex()];
+    @Override
+    public int getDefenseForType(ArmorItem.Type type) {
+        return PROTECTION_VALUES[type.ordinal()] * 25 ;
     }
 
+    @Override
     public int getEnchantmentValue() {
         return 14;
     }
 
+    @Override
     public SoundEvent getEquipSound() {
         return SoundEvents.ARMOR_EQUIP_LEATHER;
     }
 
+    @Override
     public Ingredient getRepairIngredient() {
         return Ingredient.of(ItemsRegistry.PLASTIC_PLATE.get());
     }
 
+    @Override
     public String getName() {
         return "stormtrooper";
     }
-
+    @Override
     public float getToughness() {
         return 0.0F;
     }
 
+    @Override
     public float getKnockbackResistance() {
         return 0.0F;
     }

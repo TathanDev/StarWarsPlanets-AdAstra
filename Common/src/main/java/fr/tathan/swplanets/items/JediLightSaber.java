@@ -33,7 +33,7 @@ public class JediLightSaber extends SwordItem {
         int random_sound = rand.nextInt(4);
 
 
-        if (!pAttacker.level.isClientSide) {
+        if (!pAttacker.level().isClientSide) {
             if (random_sound == 0) {
                 pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1f, 1f);
             } else if (random_sound == 1) {

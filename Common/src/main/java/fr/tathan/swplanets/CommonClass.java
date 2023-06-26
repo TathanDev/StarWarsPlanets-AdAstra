@@ -6,6 +6,7 @@ public class CommonClass {
 
     public static void init() {
 
+       // TabsRegistry.init();
         ItemsRegistry.init();
         BlocksRegistry.init();
         SoundsRegistry.init();
