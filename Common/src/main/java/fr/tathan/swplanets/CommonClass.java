@@ -12,6 +12,7 @@ public class CommonClass {
         SoundsRegistry.init();
         TagsRegistry.init();
         ArmorMaterialRegistry.init();
+        TabsRegistry.init();
         Constants.LOG.info("Hello There !");
     }
 

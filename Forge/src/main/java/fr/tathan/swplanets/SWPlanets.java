@@ -13,7 +13,7 @@ public class SWPlanets {
 
         Constants.LOG.info("Star Wars Planets 🚀!");
         CommonClass.init();
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
 
     }
     public static void onRegisterCreativeTabs(BuildCreativeModeTabContentsEvent event) {
