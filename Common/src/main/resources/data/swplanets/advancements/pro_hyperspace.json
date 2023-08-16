@@ -10,7 +10,6 @@
     "description": {
       "translate": "advancements.pro_hyperspace.descr"
     },
-    "background": "minecraft:textures/block/sand.png",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

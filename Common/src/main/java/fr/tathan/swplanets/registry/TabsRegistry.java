@@ -13,7 +13,7 @@ public class TabsRegistry {
 
     public static final RegistryObject<CreativeModeTab> TAB = CREATIVE_MODE_TABS.register("main",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0).icon(() -> new ItemStack(ItemsRegistry.BLUE_LIGHT_SABER.get()))
-                    .title(Component.literal("Falloutcraft")).build());
+                    .title(Component.literal("Star Wars Planets")).build());
 
     public static void init() {
     }

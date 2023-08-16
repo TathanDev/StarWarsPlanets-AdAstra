@@ -1,0 +1,49 @@
+{
+  "parent": "swplanets:beskar",
+  "display": {
+    "icon": {
+      "item": "swplanets:beskar_armor_helmet"
+    },
+    "title": {
+      "translate": "advancements.mandalorian.title"
+    },
+    "description": {
+      "translate": "advancements.mandalorian.descr"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "space_suit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "swplanets:beskar_armor_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "swplanets:beskar_armor_helmet"
+            ]
+          },
+          {
+            "items": [
+              "swplanets:beskar_armor_leggings"
+            ]
+          },
+          {
+            "items": [
+              "swplanets:beskar_armor_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  }
+}

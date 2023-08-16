@@ -2,18 +2,17 @@ package fr.tathan.swplanets.items.armour;
 import fr.tathan.swplanets.registry.ItemsRegistry;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
-public class TrooperArmorMaterial implements ArmorMaterial {
+public class BeskarArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private static final int[] PROTECTION_VALUES = new int[]{2, 5, 8, 3};
 
-    public TrooperArmorMaterial() {
+    public BeskarArmorMaterial() {
     }
-
+    
     @Override
     public int getDurabilityForType(ArmorItem.Type type) {
         return BASE_DURABILITY[type.ordinal()] * 37;
@@ -41,7 +40,7 @@ public class TrooperArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "stormtrooper";
+        return "beskar_armor";
     }
     @Override
     public float getToughness() {

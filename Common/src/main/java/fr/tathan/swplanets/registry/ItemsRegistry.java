@@ -64,6 +64,20 @@ public class ItemsRegistry {
                     new Item.Properties()));
 
 
+    /** Beskar*/
+    public static final RegistryObject<ArmorItem> BESKAR_HELMET = ITEMS.register("beskar_armor_helmet",
+            () -> new ArmorItem(ArmorMaterialRegistry.BESKAR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> BESKAR_CHESTPLATE = ITEMS.register("beskar_armor_chestplate",
+            () -> new ArmorItem(ArmorMaterialRegistry.BESKAR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BESKAR_LEGGINGS = ITEMS.register("beskar_armor_leggings",
+            () -> new ArmorItem(ArmorMaterialRegistry.BESKAR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BESKAR_BOOTS = ITEMS.register("beskar_armor_boots",
+            () -> new ArmorItem(ArmorMaterialRegistry.BESKAR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties()));
     public static void init() {
     }
 

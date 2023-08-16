@@ -24,6 +24,13 @@
   "advancements.craft_saber.title": "Möge die Macht mit Ihnen sein!",
   "advancements.craft_saber.descr": "Du bist jetzt ein Jedi! Oder vielleicht auch nicht...",
 
+  "advancements.beskar.title": "An other way !",
+  "advancements.beskar.descr": "You find beskar !",
+
+  "advancements.mandalorian.title": "This is the way !",
+  "advancements.mandalorian.descr": "You become a mandalorian",
+
+
   "item.swplanets.star_wars_opening_music_disc": "Schallplate",
   "item.swplanets.star_wars_opening_music_disc.desc": "John Williams - Star Wars Opening",
   "item.swplanets.kyber_crystal": "Kyber-Kristall",
@@ -51,6 +58,10 @@
 
   "item.swplanets.beskar_ore_sandstone": "Sandstein Beskar Erts",
 
+  "item.swplanets.beskar_armor_helmet": "Beskar Helmet",
+  "item.swplanets.beskar_armor_chestplate": "Beskar ChestPlate",
+  "item.swplanets.beskar_armor_leggings": "Beskar Legging",
+  "item.swplanets.beskar_armor_boots": "Beskar Boots",
 
 
   "entity.swplanets.speeder": "Düsenschlitten",

@@ -1,0 +1,31 @@
+{
+  "parent": "swplanets:swplanets",
+  "display": {
+    "icon": {
+      "item": "swplanets:beskar"
+    },
+    "title": {
+      "translate": "advancements.beskar.title"
+    },
+    "description": {
+      "translate": "advancements.beskar.descr"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "swplanets:beskar"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

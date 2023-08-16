@@ -22,7 +22,11 @@
   "advancements.craft_saber.title": "May the force be with you !",
   "advancements.craft_saber.descr": "You are now a Jedi ! Or maybe not...",
 
+  "advancements.beskar.title": "An other way !",
+  "advancements.beskar.descr": "You find beskar !",
 
+  "advancements.mandalorian.title": "This is the way !",
+  "advancements.mandalorian.descr": "You become a mandalorian",
 
   "item.swplanets.star_wars_opening_music_disc": "Music Disc",
   "item.swplanets.star_wars_opening_music_disc.desc": "John Williams - Star Wars Opening",
@@ -36,11 +40,6 @@
   "item.swplanets.darksaber": "Dark Saber",
 
   "item.swplanets.beskar_ore_sandstone": "Beskar Ore",
-
-
-
-
-
 
   "item.swplanets.light_saber_base": "Light Saber Base",
   "item.swplanets.light_saber_red": "Red Light Saber",
@@ -60,6 +59,11 @@
   "item.swplanets.stormtrooper_boots": "Stormtrooper Boots",
   "item.swplanets.plastic_plate": "Plastic Plate ",
   "item.swplanets.speeder": "Speeder",
+
+  "item.swplanets.beskar_armor_helmet": "Beskar Helmet",
+  "item.swplanets.beskar_armor_chestplate": "Beskar ChestPlate",
+  "item.swplanets.beskar_armor_leggings": "Beskar Legging",
+  "item.swplanets.beskar_armor_boots": "Beskar Boots",
 
   "entity.swplanets.speeder": "Speeder",
 

@@ -24,6 +24,12 @@
   "advancements.craft_saber.title": "Que la force soit avec vous !",
   "advancements.craft_saber.descr": "Vous êtes maintenant un Jedi ! Ou pas....",
 
+  "advancements.beskar.title": "Une autre voie !",
+  "advancements.beskar.descr": "Vous avez trouvé du Beskar !",
+
+  "advancements.mandalorian.title": "This is the way !",
+  "advancements.mandalorian.descr": "Vous êtes devenus un Mandalorien",
+
   "item.swplanets.star_wars_opening_music_disc": "Star Wars Opening Music Disc",
   "item.swplanets.star_wars_opening_music_disc.desc": "John Williams",
   "item.swplanets.kyber_crystal": "Cristal Kyber",
@@ -55,10 +61,16 @@
 
   "item.swplanets.stormtrooper_mask": "Casque de Stormtrooper",
   "item.swplanets.stormtrooper_chestplate": "Armure de Stormtrooper",
-  "item.swplanets.stormtrooper_leggings": "Stormtrooper ChestPlate",
-  "item.swplanets.stormtrooper_boots": "Stormtrooper ChestPlate",
+  "item.swplanets.stormtrooper_leggings": "Pantalon de Stormtrooper",
+  "item.swplanets.stormtrooper_boots": "Bottes de Stormtrooper",
   "item.swplanets.plastic_plate": "Plaque de Plastique ",
   "item.swplanets.speeder": "Speeder",
+
+  "item.swplanets.beskar_armor_helmet": "Casque en Beskar",
+  "item.swplanets.beskar_armor_chestplate": "Plastron en Beskar",
+  "item.swplanets.beskar_armor_leggings": "Pantalon en Beskar",
+  "item.swplanets.beskar_armor_boots": "Botte en Beskar",
+
 
   "entity.swplanets.speeder": "Speeder",
 
