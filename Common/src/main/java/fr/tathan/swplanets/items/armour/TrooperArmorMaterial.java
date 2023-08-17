@@ -9,7 +9,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public class TrooperArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[]{2, 5, 8, 3};
+    private static final int[] PROTECTION_VALUES = new int[]{2, 5, 5, 2};
 
     public TrooperArmorMaterial() {
     }
@@ -21,7 +21,7 @@ public class TrooperArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDefenseForType(ArmorItem.Type type) {
-        return PROTECTION_VALUES[type.ordinal()] * 25 ;
+        return PROTECTION_VALUES[type.ordinal()];
     }
 
     @Override
@@ -45,7 +45,7 @@ public class TrooperArmorMaterial implements ArmorMaterial {
     }
     @Override
     public float getToughness() {
-        return 0.0F;
+        return 2.0F;
     }
 
     @Override

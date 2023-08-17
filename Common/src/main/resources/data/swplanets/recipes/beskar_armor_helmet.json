@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "12"
+  ],
+  "key": {
+    "1": {
+      "item": "swplanets:beskar"
+    },
+    "2": {
+      "item": "swplanets:stormtrooper_mask"
+    }
+  },
+  "result": {
+    "item": "swplanets:beskar_armor_helmet"
+  }
+}

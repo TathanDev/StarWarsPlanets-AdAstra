@@ -8,7 +8,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public class BeskarArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[]{2, 5, 8, 3};
+    private static final int[] PROTECTION_VALUES = new int[]{4, 9, 7, 4};
 
     public BeskarArmorMaterial() {
     }
@@ -20,7 +20,7 @@ public class BeskarArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDefenseForType(ArmorItem.Type type) {
-        return PROTECTION_VALUES[type.ordinal()] * 25 ;
+        return PROTECTION_VALUES[type.ordinal()];
     }
 
     @Override
@@ -30,12 +30,12 @@ public class BeskarArmorMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ARMOR_EQUIP_LEATHER;
+        return SoundEvents.ARMOR_EQUIP_IRON;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.of(ItemsRegistry.PLASTIC_PLATE.get());
+        return Ingredient.of(ItemsRegistry.BESKAR.get());
     }
 
     @Override
@@ -44,11 +44,11 @@ public class BeskarArmorMaterial implements ArmorMaterial {
     }
     @Override
     public float getToughness() {
-        return 0.0F;
+        return 1.0F;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0.0F;
+        return 1.0F;
     }
 }
