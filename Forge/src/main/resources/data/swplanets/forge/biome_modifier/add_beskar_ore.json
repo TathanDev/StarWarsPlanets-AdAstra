@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "swplanets:mandalore_vestige",
+  "features": "swplanets:beskar_ore_sandstone",
+  "step": "underground_ores"
+}

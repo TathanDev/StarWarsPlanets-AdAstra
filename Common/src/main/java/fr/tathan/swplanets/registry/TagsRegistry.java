@@ -10,6 +10,7 @@ public class TagsRegistry {
     public static final TagKey<Biome> STARWARS_PLANETS;
     public static final TagKey<Biome> TATOOINE_LIKE;
 
+    public static final TagKey<Biome> MANDALORE_BIOME;
 
     public static void init() {
     }
@@ -17,6 +18,7 @@ public class TagsRegistry {
     static {
         STARWARS_PLANETS = TagKey.create(Registries.BIOME, new ResourceLocation(Constants.MODID, "starwars_planets"));
         TATOOINE_LIKE = TagKey.create(Registries.BIOME, new ResourceLocation(Constants.MODID, "tatooine_like"));
+        MANDALORE_BIOME = TagKey.create(Registries.BIOME, new ResourceLocation(Constants.MODID, "mandalore_biomes"));
 
     }
 

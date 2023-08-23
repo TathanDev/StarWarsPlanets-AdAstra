@@ -32,8 +32,7 @@
   [],
   [
     "minecraft:lake_lava_underground",
-    "minecraft:lake_lava_surface",
-    "swplanets:kyber_crystal_ore_deepslate"
+    "minecraft:lake_lava_surface"
   ]
   ]
 }

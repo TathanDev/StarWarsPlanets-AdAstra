@@ -22,9 +22,6 @@
     ]
   },
   "features": [
-    [
-      "swplanets:kyber_crystal_ore_tatooine",
-      "swplanets:beskar_ore_sandstone"
-    ]
+
   ]
 }
