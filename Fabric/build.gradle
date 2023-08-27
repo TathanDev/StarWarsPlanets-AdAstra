@@ -16,7 +16,7 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 
     /** Ad Astra*/
-    modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4452009"
+    modImplementation "curse.maven:adastra-$rootProject.ad_astra_projectid:4671592"
     //modImplementation "earth.terrarium:ad_astra-fabric-$rootProject.minecraft_version:$rootProject.ad_astra_version"
 
     /** Requirements*/

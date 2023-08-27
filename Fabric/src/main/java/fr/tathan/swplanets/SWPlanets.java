@@ -32,18 +32,18 @@ public class SWPlanets implements ModInitializer {
 
 		BiomeModifications.addFeature(
 				BiomeSelectors.tag(TagsRegistry.STARWARS_PLANETS),
-				GenerationStep.Decoration.VEGETAL_DECORATION,
+				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Constants.MODID, "kyber_crystal_ore_deepslate"))
 		);
 		BiomeModifications.addFeature(
 				BiomeSelectors.tag(TagsRegistry.TATOOINE_LIKE),
-				GenerationStep.Decoration.VEGETAL_DECORATION,
+				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Constants.MODID, "kyber_crystal_ore_sandstone"))
 		);
 
 		BiomeModifications.addFeature(
 				BiomeSelectors.tag(TagsRegistry.STARWARS_PLANETS),
-				GenerationStep.Decoration.VEGETAL_DECORATION,
+				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Constants.MODID, "beskar_ore_sandstone"))
 		);
 

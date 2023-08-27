@@ -1,7 +1,7 @@
 {
   "type": "forge:add_features",
   "biomes": "swplanets:tatooine_desert",
-  "features": "swplanets:kyber_crystal_ore_tatooine",
+  "features": "swplanets:kyber_crystal_ore_sandstone",
   "step": "underground_ores"
 }
 
