@@ -85,6 +85,7 @@ dependencies {
     implementation fg.deobf("curse.maven:adastra-$rootProject.ad_astra_projectid:4606233")
 
     implementation fg.deobf("curse.maven:jei-238222:4690097")
+    implementation fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE")
 
     //implementation fg.deobf("earth.terrarium:ad_astra-forge-$rootProject.minecraft_version:$rootProject.ad_astra_version")
     //runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.19.2-77")

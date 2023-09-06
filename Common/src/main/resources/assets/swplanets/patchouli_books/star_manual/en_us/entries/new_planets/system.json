@@ -12,7 +12,7 @@
     },
     {
       "type": "patchouli:image",
-      "images": ["beyond_earth:textures/sky/gui/milky_way.png"]
+      "images": ["ad_astra:textures/sky/milky_way.png"]
 
     }
   ]

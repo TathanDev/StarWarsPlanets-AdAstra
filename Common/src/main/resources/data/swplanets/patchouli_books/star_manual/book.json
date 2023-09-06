@@ -8,5 +8,6 @@
   "dont_generate_book": false,
   "show_progress": false,
   "use_blocky_font": true,
+  "use_resource_pack": true,
   "i18n": true
 }

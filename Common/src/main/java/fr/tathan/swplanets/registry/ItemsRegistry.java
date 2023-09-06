@@ -3,6 +3,7 @@ package fr.tathan.swplanets.registry;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.items.JediLightSaber;
 import fr.tathan.swplanets.items.SithLightSaber;
+import fr.tathan.swplanets.items.StarManual;
 import fr.tathan.swplanets.items.armour.TrooperArmorMaterial;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -47,7 +48,7 @@ public class ItemsRegistry {
     public static final RegistryObject<BlockItem> MUSTAFAR_STONE_ITEM = ITEMS.register("mustafar_stone", () -> new BlockItem(BlocksRegistry.MUSTAFAR_STONE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> MUSTAFAR_SAND_ITEM = ITEMS.register("mustafar_sand", () -> new BlockItem(BlocksRegistry.MUSTAFAR_SAND.get(), new Item.Properties()));
 
-    //public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
+    public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> STORMTROOPER_MASK = ITEMS.register("stormtrooper_mask",
             () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.HELMET,
