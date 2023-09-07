@@ -6,7 +6,6 @@
       "biome": "swplanets:mandalore_vestige",
       "type": "minecraft:fixed"
     },
-    "seed": 286956243,
     "settings": "swplanets:mandalore",
     "type": "minecraft:noise"
   }

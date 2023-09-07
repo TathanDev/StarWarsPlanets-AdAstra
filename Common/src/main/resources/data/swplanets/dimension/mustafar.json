@@ -6,7 +6,6 @@
       "biome": "swplanets:mustafar_hill",
       "type": "minecraft:fixed"
     },
-    "seed": 286956243,
     "settings": "swplanets:mustafar",
     "type": "minecraft:noise"
   }

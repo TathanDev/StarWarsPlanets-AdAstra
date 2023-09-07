@@ -6,7 +6,6 @@
       "biome": "swplanets:endor_taiga",
       "type": "minecraft:fixed"
     },
-    "seed": 286956243,
     "settings": "minecraft:overworld",
     "type": "minecraft:noise"
   }

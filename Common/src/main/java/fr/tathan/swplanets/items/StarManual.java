@@ -34,7 +34,10 @@ import vazkii.patchouli.api.PatchouliAPI;
 
             }
         } else {
-            PatchouliAPI.get().openBookGUI(new ResourceLocation(Constants.MODID, "star_manual"));
+            if (level.isClientSide) {
+                PatchouliAPI.get().openBookGUI(new ResourceLocation(Constants.MODID, "star_manual"));
+            }
+
         }
 
 

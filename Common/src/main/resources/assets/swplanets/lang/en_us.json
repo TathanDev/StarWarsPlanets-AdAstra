@@ -3,7 +3,7 @@
   "gui.swplanets.planet_selection.tatooine": "Tatooine",
   "gui.swplanets.planet_selection.kamino": "Kamino",
   "gui.swplanets.planet_selection.endor": "Endor",
-  "gui.swplanets.planet_selection.hot": "Hot",
+  "gui.swplanets.planet_selection.hot": "Hoth",
   "gui.swplanets.planet_selection.mustafar": "Mustafar",
   "gui.swplanets.planet_selection.mandalore": "Mandalore",
   "gui.swplanets.text.galaxy_far_away": "The Galaxy",
@@ -36,7 +36,7 @@
   "item.swplanets.mustafar_stone": "Mustafar Stone",
   "item.swplanets.mustafar_sand": "Mustafar Sand",
 
-  "item.swplanets.beskar": "Baskar",
+  "item.swplanets.beskar": "Beskar",
   "item.swplanets.darksaber": "Dark Saber",
 
   "item.swplanets.beskar_ore_sandstone": "Beskar Ore",
