@@ -2,5 +2,5 @@
     "galaxy": "swplanets:starwarus",
     "texture": "ad_astra:textures/sky/milky_way.png",
     "button_color": "blue",
-    "scale": 300
+    "scale": 250
 }

@@ -8,7 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Constants.MODID)
 public class SWPlanets {
-    
+
     public SWPlanets() {
 
         Constants.LOG.info("Star Wars Planets 🚀!");

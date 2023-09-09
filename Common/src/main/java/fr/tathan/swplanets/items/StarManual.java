@@ -16,7 +16,7 @@ import net.minecraft.world.level.Level;
 import vazkii.patchouli.api.PatchouliAPI;
 
 
- public class StarManual extends Item {
+public class StarManual extends Item {
 
 
     public static final Component PATCHOULI_ERROR = tl("patchouli");
