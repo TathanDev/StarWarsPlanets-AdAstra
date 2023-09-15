@@ -1,0 +1,15 @@
+{
+  "name": "swplanets:tatooine_village_house",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 100,
+      "element": {
+        "location": "swplanets:tatooine_village/small_tatooine_house",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
