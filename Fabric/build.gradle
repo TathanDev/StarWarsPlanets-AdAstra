@@ -2,6 +2,8 @@ plugins {
     id 'fabric-loom' version '1.0-SNAPSHOT'
     id 'maven-publish'
     id 'idea'
+    id "com.modrinth.minotaur" version "2.+"
+
 }
 
 archivesBaseName = "${mod_name}-fabric-${minecraft_version}"
@@ -76,4 +78,17 @@ publishing {
             url "file://" + System.getenv("local_maven")
         }
     }
+}
+
+
+modrinth {
+    token = System.getenv("MODRINTH_TOKEN") // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
+    projectId = "star-wars-planets-ad-astra"
+    versionName = "[Fabric] SWPlanets "// This can be the project ID or the slug. Either will work!
+    versionNumber = "${version}" // You don't need to set this manually. Will fail if Modrinth has this version already
+    versionType = "release" // This is the default -- can also be `beta` or `alpha`
+    uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
+    gameVersions = ["1.20.1"] // Must be an array, even with only one version
+    loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
+
 }
