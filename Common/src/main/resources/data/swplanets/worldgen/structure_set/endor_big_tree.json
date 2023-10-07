@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "swplanets:jawa_crawler",
+      "structure": "swplanets:endor_big_tree",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 1215976941467,
-    "spacing": 12,
-    "separation": 6,
+    "salt": 1215987941467,
+    "spacing": 3,
+    "separation": 2,
     "type": "minecraft:random_spread"
   }
 }
