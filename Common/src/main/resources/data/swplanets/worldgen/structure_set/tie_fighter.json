@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "swplanets:endor_small_tree",
+      "structure": "swplanets:tie_fighter",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 1215986941467,
-    "spacing": 2,
-    "separation": 1,
+    "salt": 1219987941467,
+    "spacing": 15,
+    "separation": 11,
     "type": "minecraft:random_spread"
   }
 }

@@ -3,7 +3,7 @@
   "biomes": "swplanets:endor_taiga",
   "step": "surface_structures",
   "spawn_overrides": {},
-  "start_pool": "swplanets:endor_small_tree/endor_small_tree_1",
+  "start_pool": "swplanets:endor_trees",
   "size": 3,
   "terrain_adaptation": "beard_thin",
   "start_height": {

@@ -1,11 +1,11 @@
 {
-  "name": "swplanets:endor_big_tree_1",
+  "name": "swplanets:tie_fighter",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
-        "location": "swplanets:endor_big_tree/endor_big_tree_1",
+        "location": "swplanets:tie_fighter",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
