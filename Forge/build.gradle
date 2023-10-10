@@ -123,7 +123,6 @@ publishing {
     }
 }
 
-
 modrinth {
     token = System.getenv("MODRINTH_TOKEN") // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
     projectId = "star-wars-planets-ad-astra"

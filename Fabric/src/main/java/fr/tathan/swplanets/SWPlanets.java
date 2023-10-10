@@ -42,7 +42,7 @@ public class SWPlanets implements ModInitializer {
 		);
 
 		BiomeModifications.addFeature(
-				BiomeSelectors.tag(TagsRegistry.STARWARS_PLANETS),
+				BiomeSelectors.tag(TagsRegistry.MANDALORE_BIOME),
 				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Constants.MODID, "beskar_ore_sandstone"))
 		);
