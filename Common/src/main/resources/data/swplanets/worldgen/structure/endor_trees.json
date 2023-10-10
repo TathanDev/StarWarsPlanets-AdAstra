@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "swplanets:endor_taiga",
+  "biomes": "#swplanets:has_structure/endor_trees",
   "step": "surface_structures",
   "spawn_overrides": {},
   "start_pool": "swplanets:endor_trees",
