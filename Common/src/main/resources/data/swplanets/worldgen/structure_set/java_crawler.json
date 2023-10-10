@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "swplanets:jawa_crawler",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1215976941467,
+    "spacing": 25,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

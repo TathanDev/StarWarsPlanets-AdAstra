@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "swplanets:endor_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1632136474,
+
+    "spacing": 30,
+
+    "separation": 10,
+
+    "type": "minecraft:random_spread"
+  }
+}

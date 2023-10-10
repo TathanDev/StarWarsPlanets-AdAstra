@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "swplanets:tie_fighter",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1219987941467,
+    "spacing": 15,
+    "separation": 11,
+    "type": "minecraft:random_spread"
+  }
+}
