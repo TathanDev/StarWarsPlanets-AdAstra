@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "swplanets:tatooine_desert",
-    "swplanet"
+    "swplanets:tatooine_desert"
   ]
 }
