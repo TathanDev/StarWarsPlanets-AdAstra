@@ -3,7 +3,6 @@
   "icon": "swplanets:textures/sky/hot.png",
   "category": "swplanets:new_planets",
   "sortnum": 6,
-  "advancement": "swplanets:hot_advancements",
   "pages": [
     {
 
@@ -13,7 +12,7 @@
     },
     {
       "type":"patchouli:image",
-      "images": ["swplanets:textures/gui/background/hot.png"],
+      "images": ["swplanets:textures/gui/background/hoth.png"],
       "border": true
 
     }

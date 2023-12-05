@@ -3,7 +3,6 @@
   "icon": "swplanets:textures/sky/mustafar.png",
   "category": "swplanets:new_planets",
   "sortnum": 5,
-  "advancement": "swplanets:mustafar_advancements",
   "pages": [
     {
 

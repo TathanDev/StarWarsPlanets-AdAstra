@@ -3,7 +3,6 @@
   "icon": "swplanets:textures/sky/endor.png",
   "category": "swplanets:new_planets",
   "sortnum": 4,
-  "advancement": "swplanets:endor_advancements",
   "pages": [
     {
 

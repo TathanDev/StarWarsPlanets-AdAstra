@@ -1,7 +1,7 @@
 {
   "name": "New Planets !",
   "description": "Travel Between Galaxies and discover new planets!",
-  "icon": "ad_astra:tier_4_rocket",
+  "icon": "ad_astra:tier_3_rocket",
   "priority":"true"
 
 }
