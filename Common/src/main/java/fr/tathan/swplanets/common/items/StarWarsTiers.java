@@ -11,7 +11,9 @@ import java.util.function.Supplier;
 
 public enum StarWarsTiers implements Tier {
     PLASTIC(3, 1561, 8.0F, 3.0F, 10, () -> Ingredient.of(ItemsRegistry.PLASTIC_PLATE.get())),
-    BESKAR(0, 2031, 12.0F, 0.0F, 22, () -> Ingredient.of(ItemsRegistry.BESKAR.get()));
+    BESKAR(0, 2031, 12.0F, 0.0F, 22, () -> Ingredient.of(ItemsRegistry.BESKAR.get())),
+    LIGHT_SABER(0, 2031, 12.0F, 0.0F, 22, () -> Ingredient.of(ItemsRegistry.KYBER_CRYSTAL.get()));
+
     private final int level;
     private final int uses;
     private final float speed;
