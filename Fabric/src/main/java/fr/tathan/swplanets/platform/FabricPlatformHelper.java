@@ -1,6 +1,6 @@
 package fr.tathan.swplanets.platform;
 
-import fr.tathan.swplanets.platform.services.IPlatformHelper;
+import fr.tathan.swplanets.common.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {

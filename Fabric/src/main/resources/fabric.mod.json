@@ -22,12 +22,11 @@
   "entrypoints": {
     "main": [
       "fr.tathan.swplanets.SWPlanets"
+    ],
+    "client": [
+      "fr.tathan.swplanets.SWPlanetsClient"
     ]
   },
-  "mixins": [
-    "swplanets.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric": "*",
