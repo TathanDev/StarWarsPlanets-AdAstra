@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "swplanets:tatooine_desert",
-    "swplanets:kamino_ocean"
+    "swplanets:tatooine_desert"
   ]
 }

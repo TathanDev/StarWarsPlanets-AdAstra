@@ -1,6 +1,6 @@
 package fr.tathan.swplanets;
-import fr.tathan.swplanets.registry.RegistrationProvider;
-import fr.tathan.swplanets.registry.RegistryObject;
+import fr.tathan.swplanets.common.registry.RegistrationProvider;
+import fr.tathan.swplanets.common.registry.RegistryObject;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

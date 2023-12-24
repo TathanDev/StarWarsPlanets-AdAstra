@@ -1,7 +1,8 @@
 package fr.tathan.swplanets;
 
-import fr.tathan.swplanets.registry.ItemsRegistry;
-import fr.tathan.swplanets.registry.TabsRegistry;
+import fr.tathan.swplanets.client.SWPlanetsClient;
+import fr.tathan.swplanets.common.registry.ItemsRegistry;
+import fr.tathan.swplanets.common.registry.TabsRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -14,6 +15,8 @@ public class SWPlanets {
         Constants.LOG.info("Star Wars Planets 🚀!");
         CommonClass.init();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerRenderers);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerEntityLayers);
 
     }
     public static void onRegisterCreativeTabs(BuildCreativeModeTabContentsEvent event) {
