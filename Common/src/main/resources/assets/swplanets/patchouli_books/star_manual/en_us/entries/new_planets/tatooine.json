@@ -3,7 +3,6 @@
   "icon": "swplanets:textures/sky/tatooine.png",
   "category": "swplanets:new_planets",
   "sortnum": 2,
-  "advancement": "swplanets:tatooine_advancements",
   "pages": [
     {
 

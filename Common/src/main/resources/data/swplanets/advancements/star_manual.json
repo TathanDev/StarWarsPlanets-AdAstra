@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "tier_3_rocket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_astra:tier_3_rocket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "swplanets:star_manual"
+    ]
+  }
+}
