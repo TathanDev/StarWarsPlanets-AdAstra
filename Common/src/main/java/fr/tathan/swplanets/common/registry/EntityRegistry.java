@@ -6,9 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
-import fr.tathan.swplanets.common.platform.Services;
 import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.projectile.SmallFireball;
 
 import java.util.function.Supplier;
 

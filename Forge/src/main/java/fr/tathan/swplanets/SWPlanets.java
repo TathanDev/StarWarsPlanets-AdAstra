@@ -15,8 +15,8 @@ public class SWPlanets {
         Constants.LOG.info("Star Wars Planets 🚀!");
         CommonClass.init();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerRenderers);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerEntityLayers);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerRenderers);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerEntityLayers);
 
     }
     public static void onRegisterCreativeTabs(BuildCreativeModeTabContentsEvent event) {

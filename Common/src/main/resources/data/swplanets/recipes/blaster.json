@@ -1,0 +1,23 @@
+{
+  "type":"crafting_shaped",
+  "pattern": [
+    "###",
+    "#O#",
+    " @ "
+  ],
+  "key": {
+    "#": {
+      "item":"swplanets:plastic_plate",
+      "data":0
+    },
+    "O":{
+      "item":"minecraft:flint_and_steel"
+    },
+    "@":{
+      "item":"minecraft:blaze_rod"
+    }
+  },
+  "result":{
+    "item":"swplanets:blaster"
+  }
+}
