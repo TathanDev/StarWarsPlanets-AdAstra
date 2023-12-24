@@ -101,8 +101,14 @@
 			"translation": [0, 4.25, 0]
 		},
 		"gui": {
-			"rotation": [0, -75.25, 0],
-			"translation": [0.25, 5.25, 0]
+			"rotation": [-180, -89.25, -180],
+			"translation": [1.25, 4.75, 0],
+			"scale": [1, 1.24609, 1.48438]
+		},
+		"fixed": {
+			"rotation": [0, 89.75, 0],
+			"translation": [-1.25, 4.75, 0],
+			"scale": [1, 1.24609, 1.48438]
 		}
 	},
 	"groups": [
