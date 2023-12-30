@@ -36,5 +36,8 @@
   },
   "suggests": {
     "another-mod": "*"
-  }
+  },
+  "mixins": [
+    "swplanets.fabric.mixins.json"
+  ]
 }

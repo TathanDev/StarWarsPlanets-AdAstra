@@ -105,11 +105,10 @@
   "biome.swplanets.hot_desert": "Desert of Hot",
   "biome.swplanets.kamino_ocean": "Ocean of Kamino",
   "biome.swplanets.mustafar_hill": "Mustafar Hills",
-  "biome.swplanets.tatooine_desert": "Tatooine Desert"
+  "biome.swplanets.tatooine_desert": "Tatooine Desert",
 
 
-
-
-
-
+  "tooltip.swplanets.shift": "§7Hold §6§oShift §7for more informations",
+  "tooltip.swplanets.blaster.lifetime.shift": "Laser lifetime : %s",
+  "tooltip.swplanets.blaster.zoom.shift": "Zoom : %s"
 }
