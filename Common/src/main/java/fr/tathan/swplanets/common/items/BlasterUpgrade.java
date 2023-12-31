@@ -5,12 +5,12 @@ import net.minecraft.world.item.Item;
 public class BlasterUpgrade extends Item {
 
     private final boolean zoom;
-    private final int lifeTime;
+    private final int distance;
 
-    public BlasterUpgrade(Properties $$0, boolean zoom, int lifeTime) {
+    public BlasterUpgrade(Properties $$0, boolean zoom, int distance) {
         super($$0);
         this.zoom = zoom;
-        this.lifeTime = lifeTime;
+        this.distance = distance;
     }
 
     public boolean getZoom() {
@@ -18,7 +18,7 @@ public class BlasterUpgrade extends Item {
     }
 
     public int getLifeTime() {
-        return lifeTime;
+        return distance;
     }
 
 }

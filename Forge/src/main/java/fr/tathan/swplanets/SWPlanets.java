@@ -5,6 +5,7 @@ import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import fr.tathan.swplanets.common.registry.TabsRegistry;
 import fr.tathan.swplanets.registry.BlockEntityRegistry;
 import fr.tathan.swplanets.registry.ForgeBlockRegistry;
+import fr.tathan.swplanets.registry.ForgeItemRegistry;
 import fr.tathan.swplanets.registry.ForgeMenuTypes;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,12 +22,8 @@ public class SWPlanets {
         ForgeBlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BlockEntityRegistry.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
         ForgeMenuTypes.MENUS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
+        ForgeItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
-
-
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerRenderers);
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanetsClient::registerEntityLayers);
 
     }
     public static void onRegisterCreativeTabs(BuildCreativeModeTabContentsEvent event) {
@@ -38,6 +35,9 @@ public class SWPlanets {
             event.accept(ItemsRegistry.STORMTROOPER_LEGGINGS);
             event.accept(ItemsRegistry.STORMTROOPER_BOOTS);
             event.accept(ItemsRegistry.BLASTER);
+            event.accept(ItemsRegistry.BLASTER_LIFETIME_UPGRADE);
+            event.accept(ItemsRegistry.BLASTER_ZOOM_UPGRADE);
+            event.accept(ForgeItemRegistry.BLASTER_UPGRADER_ITEM);
             event.accept(ItemsRegistry.LIGHT_SABER_BASE);
             event.accept(ItemsRegistry.DARK_MAUL_LIGHT_SABER);
             event.accept(ItemsRegistry.RED_LIGHT_SABER);

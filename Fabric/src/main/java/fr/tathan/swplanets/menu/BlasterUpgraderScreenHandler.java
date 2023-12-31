@@ -2,45 +2,42 @@ package fr.tathan.swplanets.menu;
 
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.blocks.entity.BlasterUpgraderEntity;
-import fr.tathan.swplanets.registry.ForgeBlockRegistry;
-import fr.tathan.swplanets.registry.ForgeMenuTypes;
+import fr.tathan.swplanets.registry.FabricScreenHandlers;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.*;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.inventory.SimpleContainerData;
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.items.SlotItemHandler;
-import org.jetbrains.annotations.Nullable;
 
-public class BlasterUpgraderMenu extends AbstractContainerMenu {
-
+public class BlasterUpgraderScreenHandler extends AbstractContainerMenu
+{
+    private final Inventory inventory;
     public final BlasterUpgraderEntity blockEntity;
-    private final Level level;
 
-    public BlasterUpgraderMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-        this(id, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()));
+    public BlasterUpgraderScreenHandler(int syncId, Inventory inventory, FriendlyByteBuf buf) {
+        this(syncId, inventory, inventory.player.level().getBlockEntity(buf.readBlockPos()));
     }
 
-    public BlasterUpgraderMenu(int id, Inventory inv, BlockEntity entity) {
-        super(ForgeMenuTypes.BLASTER_UPGRADER_MENU.get(), id);
-        checkContainerSize(inv, 3);
-        blockEntity = (BlasterUpgraderEntity) entity;
-        this.level = inv.player.level();
+    public BlasterUpgraderScreenHandler(int syncId, Inventory playerInventory,
+                                        BlockEntity blockEntity) {
+        super(FabricScreenHandlers.BLASTER_UPGRADER_SCREEN_HANDLER, syncId);
+        this.inventory = playerInventory;
+        checkContainerSize(playerInventory, 3);
 
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
+        inventory.startOpen(playerInventory.player);
+        this.blockEntity = ((BlasterUpgraderEntity) blockEntity);
 
-        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, 0, 26, 46));
-            this.addSlot(new SlotItemHandler(handler, 1, 75, 46));
-            this.addSlot(new SlotItemHandler(handler, 2, 133, 46));
-        });
-
-
+        this.addSlot(new Slot(inventory, 0, 26, 46));
+        this.addSlot(new Slot(inventory, 1, 75, 46));
+        this.addSlot(new Slot(inventory, 2, 133, 46));
+        addPlayerInventory(playerInventory);
+        addPlayerHotbar(playerInventory);
     }
+
 
     private static final int HOTBAR_SLOT_COUNT = 9;
     private static final int PLAYER_INVENTORY_ROW_COUNT = 3;
@@ -88,21 +85,25 @@ public class BlasterUpgraderMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                player, ForgeBlockRegistry.BLASTER_UPGRADER.get());
+        return this.inventory.stillValid(player);
     }
+
 
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 86 + i * 18));
+                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
+                Constants.LOG.error("Adding slot id: " + (l + i * 9 + 9));
+
             }
         }
     }
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
+            Constants.LOG.error("Adding slot id: " + (i));
+
         }
     }
 }

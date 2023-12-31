@@ -81,7 +81,7 @@ public class ItemsRegistry {
     // Blaster Upgrade
     public static final RegistryObject<Item> BLASTER_ZOOM_UPGRADE = ITEMS.register("blaster_zoom_upgrade", () -> new BlasterUpgrade(new Item.Properties().stacksTo(16), true, 0));
 
-    public static final RegistryObject<Item> BLASTER_LIFETIME_UPGRADE = ITEMS.register("blaster_lifetime_upgrade", () -> new BlasterUpgrade(new Item.Properties().stacksTo(16), false, 100));
+    public static final RegistryObject<Item> BLASTER_LIFETIME_UPGRADE = ITEMS.register("blaster_distance_upgrade", () -> new BlasterUpgrade(new Item.Properties().stacksTo(16), false, 100));
 
     public static void onRegisterCreativeTabs(TriConsumer<ResourceLocation, RegistryObject<Item>, List<Item>> consumer) {
         consumer.accept(new ResourceLocation(Constants.MODID, "main"), ItemsRegistry.BLUE_LIGHT_SABER, BuiltInRegistries.ITEM.stream().filter(i -> BuiltInRegistries.ITEM.getKey(i).getNamespace().equals(Constants.MODID)).toList());

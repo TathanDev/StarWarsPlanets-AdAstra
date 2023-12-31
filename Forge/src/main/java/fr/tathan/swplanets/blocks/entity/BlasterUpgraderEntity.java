@@ -70,6 +70,7 @@ public class BlasterUpgraderEntity extends BlockEntity implements MenuProvider{
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
     }
 
+
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();

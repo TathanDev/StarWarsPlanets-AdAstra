@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
     "swplanets:blaster_zoom_upgrade",
-    "swplanets:blaster_lifetime_upgrade"
+    "swplanets:blaster_distance_upgrade"
   ]
 }

@@ -22,7 +22,7 @@ import java.util.List;
 
 public class Blaster extends TieredItem {
 
-    public int lifetime = 50;
+    public int distance = 50;
     public boolean zoom = false;
 
     public Blaster(Properties properties) {
@@ -34,10 +34,11 @@ public class Blaster extends TieredItem {
 
         if (!level.isClientSide) {
 
-            LaserEntity laser = new LaserEntity(level, player, 0, 0, 0, this.getLifetime(), player.getName().getString());
+            LaserEntity laser = new LaserEntity(level, player, 0, 0, 0, this.distance, player.getName().getString());
             laser.setPos(player.getX(), player.getY() + 1.5, player.getZ());
             laser.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
             laser.setItem(ItemsRegistry.LASER_ITEM.get().getDefaultInstance());
+
             level.addFreshEntity(laser);
 
         }
@@ -58,9 +59,9 @@ public class Blaster extends TieredItem {
 
         if(Screen.hasShiftDown()) {
             components.add(Component.translatable("tooltip.swplanets.blaster.zoom.shift", this.zoom));
-            components.add(Component.translatable("tooltip.swplanets.blaster.lifetime.shift", getLifetime()));
+            components.add(Component.translatable("tooltip.swplanets.blaster.lifetime.shift", getDistance()));
         } else {
-            components.add(Component.translatable("tooltip.swplanets.shift", getLifetime()));
+            components.add(Component.translatable("tooltip.swplanets.shift"));
 
         }
         super.appendHoverText(stack, $$1, components, $$3);
@@ -89,19 +90,19 @@ public class Blaster extends TieredItem {
         return this.zoom;
     }
 
-    public int getLifetime() {
-        return this.lifetime;
+    public int getDistance() {
+        return this.distance;
     }
 
     public void setUpgrade(BlasterUpgrade upgradeItem) {
 
         if (upgradeItem.getLifeTime() > 30) {
-            this.lifetime = upgradeItem.getLifeTime();
+            this.distance = upgradeItem.getLifeTime();
         }
 
         this.zoom = upgradeItem.getZoom();
 
-        this.getDefaultInstance().getOrCreateTag().putInt("lifetime", this.lifetime);
+        this.getDefaultInstance().getOrCreateTag().putInt("distance", this.distance);
         this.getDefaultInstance().getOrCreateTag().putBoolean("zoom", this.zoom);
     }
 }

@@ -1,22 +1,20 @@
 package fr.tathan.swplanets.menu;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
 import fr.tathan.swplanets.Constants;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.screens.inventory.BlastFurnaceScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class BlasterUpgraderScreen extends AbstractContainerScreen<BlasterUpgraderMenu> {
+public class BlasterUpgraderScreen extends AbstractContainerScreen<BlasterUpgraderScreenHandler> {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(Constants.MODID,"textures/gui/blaster_upgrader.png");
 
 
-    public BlasterUpgraderScreen(BlasterUpgraderMenu p_97741_, Inventory p_97742_, Component p_97743_) {
+    public BlasterUpgraderScreen(BlasterUpgraderScreenHandler p_97741_, Inventory p_97742_, Component p_97743_) {
         super(p_97741_, p_97742_, p_97743_);
         this.imageWidth = 175;
         this.imageHeight = 165;

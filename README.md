@@ -12,12 +12,12 @@
   </p>
 </a>
 
-An **Ad Astra!** adding star wars planets !
+An **Ad Astra!** addon adding planets from Star Wars, lightsabers and more !
 
-For the moment, I'm working on Tatooine ⏳, Kamino 💧, Endor 🌴, Hoth 🧊 and Mustafar 🔥
+For the moment, I'm working on Tatooine ⏳, Endor 🌴, Hoth 🧊 and Mustafar 🔥
 
 This addon is for Forge and Fabric ! 
-But it's not finish for the moment :/
+
 
 The mod link : https://www.curseforge.com/minecraft/mc-mods/star-wars-planets-adastra
 

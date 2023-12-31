@@ -60,6 +60,9 @@
   "item.swplanets.stormtrooper_boots": "Stormtrooper Boots",
   "item.swplanets.plastic_plate": "Plastic Plate ",
   "item.swplanets.speeder": "Speeder",
+  "item.swplanets.blaster_zoom_upgrade": "Blaster Zoom Upgrade",
+  "item.swplanets.blaster_distance_upgrade": "Blaster Distance Upgrade",
+  "item.swplanets.blaster_upgrader": "Blaster Upgrader",
 
   "item.swplanets.beskar_armor_helmet": "Beskar Helmet",
   "item.swplanets.beskar_armor_chestplate": "Beskar ChestPlate",
@@ -109,6 +112,6 @@
 
 
   "tooltip.swplanets.shift": "§7Hold §6§oShift §7for more informations",
-  "tooltip.swplanets.blaster.lifetime.shift": "Laser lifetime : %s",
-  "tooltip.swplanets.blaster.zoom.shift": "Zoom : %s"
+  "tooltip.swplanets.blaster.lifetime.shift": "§7Laser lifetime : §6§o%s",
+  "tooltip.swplanets.blaster.zoom.shift": "§7Zoom : §6§o%s"
 }
