@@ -60,6 +60,9 @@
   "item.swplanets.stormtrooper_boots": "Stormtrooper Boots",
   "item.swplanets.plastic_plate": "Plastic Plate ",
   "item.swplanets.speeder": "Speeder",
+  "item.swplanets.blaster_zoom_upgrade": "Blaster Zoom Upgrade",
+  "item.swplanets.blaster_distance_upgrade": "Blaster Distance Upgrade",
+  "item.swplanets.blaster_upgrader": "Blaster Upgrader",
 
   "item.swplanets.beskar_armor_helmet": "Beskar Helmet",
   "item.swplanets.beskar_armor_chestplate": "Beskar ChestPlate",
@@ -105,11 +108,10 @@
   "biome.swplanets.hot_desert": "Desert of Hot",
   "biome.swplanets.kamino_ocean": "Ocean of Kamino",
   "biome.swplanets.mustafar_hill": "Mustafar Hills",
-  "biome.swplanets.tatooine_desert": "Tatooine Desert"
+  "biome.swplanets.tatooine_desert": "Tatooine Desert",
 
 
-
-
-
-
+  "tooltip.swplanets.shift": "§7Hold §6§oShift §7for more informations",
+  "tooltip.swplanets.blaster.lifetime.shift": "§7Laser lifetime : §6§o%s",
+  "tooltip.swplanets.blaster.zoom.shift": "§7Zoom : §6§o%s"
 }

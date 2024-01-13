@@ -15,7 +15,7 @@ credits=""
 authors="TATHAN"
 description='''
 This Mod is an Addon for Ad Astra!.
-It add planets from Star Wars and Light Sabers :)
+It add planets from Star Wars, Light Sabers and more :)
 '''
 [[dependencies.swplanets]]
     modId="forge"

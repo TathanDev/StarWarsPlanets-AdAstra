@@ -22,8 +22,8 @@ public class SithLightSaber extends SwordItem {
 
 
         if (pAttacker instanceof Player player) {
-         player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1.0f, 1.0f);
-         }
+            player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1.0f, 1.0f);
+        }
         return super.hurtEnemy(pStack, pTarget, pAttacker);
 
     }
