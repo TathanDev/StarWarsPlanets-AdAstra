@@ -50,7 +50,6 @@ public class SWPlanets {
             event.accept(ItemsRegistry.KYBER_CRYSTAl_ORE_SANDSTONE_ITEM);
             event.accept(ItemsRegistry.BESKAR_ORE_SANDSTONE_ITEM);
             event.accept(ItemsRegistry.BESKAR);
-
             event.accept(ItemsRegistry.BESKAR_HELMET);
             event.accept(ItemsRegistry.BESKAR_CHESTPLATE);
             event.accept(ItemsRegistry.BESKAR_LEGGINGS);

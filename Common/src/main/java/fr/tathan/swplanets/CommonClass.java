@@ -15,6 +15,7 @@ public class CommonClass {
         TabsRegistry.init();
         EntityRegistry.init();
         Constants.LOG.info("Hello There !");
+
     }
 
 }

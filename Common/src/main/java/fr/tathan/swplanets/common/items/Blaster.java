@@ -31,17 +31,22 @@ public class Blaster extends TieredItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand handIn) {
+        player.startUsingItem(handIn);
+        return InteractionResultHolder.consume(player.getItemInHand(handIn));
 
+    }
+
+    @Override
+    public void releaseUsing(ItemStack stack, Level level, LivingEntity entity, int $$3) {
         if (!level.isClientSide) {
 
             LaserEntity laser = new LaserEntity(level, player, 0, 0, 0, this.distance, player.getName().getString());
-            laser.setPos(player.getX(), player.getY() + 1.5, player.getZ());
-            laser.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+            laser.setPos(entity.getX(), entity.getY() + 1.5, entity.getZ());
+            laser.setOwner(entity);
+            laser.shootFromRotation(entity, entity.getXRot(), entity.getYRot(), 0.0F, 3.0F, 1.0F);
             laser.setItem(ItemsRegistry.LASER_ITEM.get().getDefaultInstance());
-
             level.addFreshEntity(laser);
 
-        }
         return ItemUtils.startUsingInstantly(level, player, handIn);
 
     }
@@ -50,7 +55,14 @@ public class Blaster extends TieredItem {
     public UseAnim getUseAnimation(ItemStack stack) {
         if (this.zoom) {
             return UseAnim.SPYGLASS;
+        } else {
+            return UseAnim.BOW;
         }
+    }
+
+
+    public int getUseDuration(ItemStack p_40680_) {
+        return 200;
         return super.getUseAnimation(stack);
     }
 
@@ -80,10 +92,6 @@ public class Blaster extends TieredItem {
     @Override
     public int getUseDuration(ItemStack stack) {
         return 1200;
-    }
-
-    private void stopUsing(LivingEntity $$0) {
-        $$0.playSound(SoundEvents.SPYGLASS_STOP_USING, 1.0F, 1.0F);
     }
 
     public boolean getZoom() {
