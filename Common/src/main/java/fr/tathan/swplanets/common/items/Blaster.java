@@ -14,12 +14,9 @@ import net.minecraft.world.level.Level;
 
 public class Blaster extends TieredItem {
 
-
-
     public Blaster(Properties properties) {
         super(StarWarsTiers.PLASTIC, properties);
     }
-
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand handIn) {
@@ -47,6 +44,7 @@ public class Blaster extends TieredItem {
         return UseAnim.BOW;
     }
 
+    @Override
     public int getUseDuration(ItemStack p_40680_) {
         return 200;
     }
