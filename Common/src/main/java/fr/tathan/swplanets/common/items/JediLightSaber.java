@@ -3,6 +3,7 @@ package fr.tathan.swplanets.common.items;
 
 import fr.tathan.swplanets.common.registry.SoundsRegistry;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
@@ -23,22 +24,8 @@ public class JediLightSaber extends SwordItem {
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
         pTarget.setSecondsOnFire(6);
-
-        Random rand = new Random();
-
-        int random_sound = rand.nextInt(4);
-
-
         if (!pAttacker.level().isClientSide) {
-            if (random_sound == 0) {
-                pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1f, 1f);
-            } else if (random_sound == 1) {
-                pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_2.get(), 1f, 1f);
-            } else if (random_sound == 2) {
-                pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_3.get(), 1f, 1f);
-            } else if (random_sound == 3) {
-                pAttacker.playSound(SoundsRegistry.SABER_ATTACK_SOUND_4.get(), 1f, 1f);
-            }
+            pAttacker.level().playSeededSound(null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(), SoundsRegistry.SABER_ATTACK_SOUND.get(), SoundSource.PLAYERS, 1.0F, 1.0F, 0);
         }
 
         return super.hurtEnemy(pStack, pTarget, pAttacker);

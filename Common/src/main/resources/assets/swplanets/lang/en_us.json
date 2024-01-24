@@ -113,5 +113,9 @@
 
   "tooltip.swplanets.shift": "§7Hold §6§oShift §7for more informations",
   "tooltip.swplanets.blaster.lifetime.shift": "§7Laser lifetime : §6§o%s",
-  "tooltip.swplanets.blaster.zoom.shift": "§7Zoom : §6§o%s"
+  "tooltip.swplanets.blaster.zoom.shift": "§7Zoom : §6§o%s",
+
+
+  "sounds.swplanets.blaster_sound": "Blaster Sound",
+  "sounds.swplanets.saber_attack_sound": "Saber Attack Sound"
 }

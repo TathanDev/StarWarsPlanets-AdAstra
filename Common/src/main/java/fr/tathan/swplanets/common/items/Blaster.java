@@ -46,12 +46,13 @@ public class Blaster extends TieredItem {
     @Override
     public void releaseUsing(ItemStack stack, Level level, LivingEntity entity, int $$3) {
         if (!level.isClientSide) {
-
+            level.playSeededSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundsRegistry.BLASTER_SOUND.get(), SoundSource.PLAYERS, 1.0F, 1.0F, 0);
             LaserEntity laser = new LaserEntity(level, entity, 0, 0, 0, 60, entity.getName().getString());
             laser.setPos(entity.getX(), entity.getY() + 1.5, entity.getZ());
             laser.shootFromRotation(entity, entity.getXRot(), entity.getYRot(), 0.0F, 3.0F, 1.0F);
             laser.setItem(ItemsRegistry.LASER_ITEM.get().getDefaultInstance());
             level.addFreshEntity(laser);
+
 
         }
 
@@ -97,8 +98,8 @@ public class Blaster extends TieredItem {
     }
 
     @Override
-    public ItemStack finishUsingItem(ItemStack $$0, Level $$1, LivingEntity $$2) {
-        $$2.playSound(SoundsRegistry.BLASTER_SOUND.get(), 1.0F, 1.0F);
+    public ItemStack finishUsingItem(ItemStack $$0, Level level, LivingEntity $$2) {
+
         return $$0;
     }
 

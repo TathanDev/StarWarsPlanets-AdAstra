@@ -1,33 +1,16 @@
-
 {
-
   "blaster_sound": {
-    "subtitle": "sounds.tutorialmod.sound_block_break",
+    "subtitle": "sounds.swplanets.blaster_sound",
     "sounds": [
       "swplanets:blaster_sound"
     ]
   },
-  "saber_attack_sound_1": {
-    "subtitle": "sounds.tutorialmod.sound_block_step",
+  "saber_attack_sound": {
+    "subtitle": "sounds.swplanets.saber_attack_sound",
     "sounds": [
-      "swplanets:saber_attack_sound_1"
-    ]
-  },
-  "saber_attack_sound_2": {
-    "subtitle": "sounds.tutorialmod.sound_block_place",
-    "sounds": [
-      "swplanets:saber_attack_sound_2"
-    ]
-  },
-  "saber_attack_sound_3": {
-    "subtitle": "sounds.tutorialmod.sound_block_hit",
-    "sounds": [
-      "swplanets:saber_attack_sound_3"
-    ]
-  },
-  "saber_attack_sound_4": {
-    "subtitle": "sounds.tutorialmod.sound_block_fall",
-    "sounds": [
+      "swplanets:saber_attack_sound_1",
+      "swplanets:saber_attack_sound_2",
+      "swplanets:saber_attack_sound_3",
       "swplanets:saber_attack_sound_4"
     ]
   }

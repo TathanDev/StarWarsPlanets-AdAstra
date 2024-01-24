@@ -2,6 +2,7 @@ package fr.tathan.swplanets.common.items;
 
 import fr.tathan.swplanets.common.registry.SoundsRegistry;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -21,8 +22,8 @@ public class SithLightSaber extends SwordItem {
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
 
 
-        if (pAttacker instanceof Player player) {
-            player.playSound(SoundsRegistry.SABER_ATTACK_SOUND_1.get(), 1.0f, 1.0f);
+        if (!pAttacker.level().isClientSide) {
+            pAttacker.level().playSeededSound(null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(), SoundsRegistry.SABER_ATTACK_SOUND.get(), SoundSource.PLAYERS, 1.0F, 1.0F, 0);
         }
         return super.hurtEnemy(pStack, pTarget, pAttacker);
 
