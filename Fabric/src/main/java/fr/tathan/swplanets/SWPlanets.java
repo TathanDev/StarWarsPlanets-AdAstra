@@ -1,9 +1,7 @@
 package fr.tathan.swplanets;
 
 import fr.tathan.swplanets.common.registry.TagsRegistry;
-import fr.tathan.swplanets.registry.FabricBlockEntityRegistry;
-import fr.tathan.swplanets.registry.FabricBlockRegistry;
-import fr.tathan.swplanets.registry.FabricScreenHandlers;
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -21,9 +19,7 @@ public class SWPlanets implements ModInitializer {
 
 		Constants.LOG.info("Star Wars Planets 🚀!");
 		CommonClass.init();
-		FabricBlockRegistry.init();
-		FabricBlockEntityRegistry.init();
-		FabricScreenHandlers.init();
+
 		/**
 		ItemsRegistry.onRegisterCreativeTabs((loc, item, items) -> FabricItemGroup.builder(loc)
 				.title(Component.translatable("itemGroup." + loc.getNamespace() + "." + loc.getPath()))

@@ -33,7 +33,7 @@ public class ItemsRegistry {
     public static final RegistryObject<Item> PLASTIC_PLATE = ITEMS.register("plastic_plate", () -> new Item(new Item.Properties().stacksTo(64)));
 
     /** Mandalorian **/
-    public static final RegistryObject<Item> DARKSABER = ITEMS.register("darksaber", () -> new SwordItem(StarWarsTiers.BESKAR, 4, -2.5F, new Item.Properties().fireResistant().stacksTo(1)));
+    public static final RegistryObject<Item> DARKSABER = ITEMS.register("darksaber", () -> new SwordItem(StarWarsTiers.BESKAR, 8, -2.5F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> BESKAR = ITEMS.register("beskar", () -> new Item(new Item.Properties().fireResistant().stacksTo(16)));
     public static final RegistryObject<BlockItem> BESKAR_ORE_SANDSTONE_ITEM = ITEMS.register("beskar_ore_sandstone", () -> new BlockItem(BlocksRegistry.BESKAR_ORE_SANDSTONE.get(), new Item.Properties()));
 
@@ -41,7 +41,6 @@ public class ItemsRegistry {
     public static final RegistryObject<BlockItem> KYBER_CRYSTAl_ORE_SANDSTONE_ITEM = ITEMS.register("kyber_crystal_ore_sandstone", () -> new BlockItem(BlocksRegistry.CRYSTAL_KYBER_ORE_SANDSTONE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> MUSTAFAR_STONE_ITEM = ITEMS.register("mustafar_stone", () -> new BlockItem(BlocksRegistry.MUSTAFAR_STONE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> MUSTAFAR_SAND_ITEM = ITEMS.register("mustafar_sand", () -> new BlockItem(BlocksRegistry.MUSTAFAR_SAND.get(), new Item.Properties()));
-    public static final RegistryObject<Item> BLASTER = ITEMS.register("blaster", () -> new Blaster(new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> LASER_ITEM = ITEMS.register("laser_item", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> STAR_MANUAL = ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
@@ -78,10 +77,13 @@ public class ItemsRegistry {
     public static void init() {
     }
 
+    /** Blaster */
+    //Blasters
+    public static final RegistryObject<Item> BLASTER = ITEMS.register("blaster", () -> new Blaster(new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> BLASTER_ZOOM = ITEMS.register("blaster_zoom", () -> new Blaster(new Item.Properties().durability(2000), true));
+
     // Blaster Upgrade
     public static final RegistryObject<Item> BLASTER_ZOOM_UPGRADE = ITEMS.register("blaster_zoom_upgrade", () -> new BlasterUpgrade(new Item.Properties().stacksTo(16), true, 0));
-
-    public static final RegistryObject<Item> BLASTER_LIFETIME_UPGRADE = ITEMS.register("blaster_distance_upgrade", () -> new BlasterUpgrade(new Item.Properties().stacksTo(16), false, 100));
 
     public static void onRegisterCreativeTabs(TriConsumer<ResourceLocation, RegistryObject<Item>, List<Item>> consumer) {
         consumer.accept(new ResourceLocation(Constants.MODID, "main"), ItemsRegistry.BLUE_LIGHT_SABER, BuiltInRegistries.ITEM.stream().filter(i -> BuiltInRegistries.ITEM.getKey(i).getNamespace().equals(Constants.MODID)).toList());

@@ -4,6 +4,7 @@ import fr.tathan.swplanets.Constants;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 
 public class SoundsRegistry {
 
@@ -14,6 +15,7 @@ public class SoundsRegistry {
     public static final RegistryObject<SoundEvent> SABER_ATTACK_SOUND_2 = SOUNDS.register("saber_attack_sound_2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Constants.MODID, "saber_attack_sound_2")));
     public static final RegistryObject<SoundEvent> SABER_ATTACK_SOUND_3 = SOUNDS.register("saber_attack_sound_3", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Constants.MODID, "saber_attack_sound_3")));
     public static final RegistryObject<SoundEvent> SABER_ATTACK_SOUND_4 = SOUNDS.register("saber_attack_sound_4", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Constants.MODID, "saber_attack_sound_4")));
+    public static final RegistryObject<SoundEvent> BLASTER_SOUND = SOUNDS.register("blaster_sound", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Constants.MODID, "blaster_sound")));
 
 
     public static void init() {

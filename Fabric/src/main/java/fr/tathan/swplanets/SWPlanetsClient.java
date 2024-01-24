@@ -1,8 +1,6 @@
 package fr.tathan.swplanets;
 
 import fr.tathan.swplanets.common.registry.EntityRegistry;
-import fr.tathan.swplanets.menu.BlasterUpgraderScreen;
-import fr.tathan.swplanets.registry.FabricScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -16,7 +14,6 @@ public class SWPlanetsClient implements ClientModInitializer {
             return new ThrownItemRenderer<>(p_174060_, 0.75F, true);
         });
 
-        MenuScreens.register(FabricScreenHandlers.BLASTER_UPGRADER_SCREEN_HANDLER, BlasterUpgraderScreen::new);
 
     }
 }

@@ -4,9 +4,11 @@ package fr.tathan.swplanets.common.items;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.entity.LaserEntity;
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
+import fr.tathan.swplanets.common.registry.SoundsRegistry;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -22,11 +24,16 @@ import java.util.List;
 
 public class Blaster extends TieredItem {
 
-    public int distance = 50;
+
     public boolean zoom = false;
 
     public Blaster(Properties properties) {
         super(StarWarsTiers.PLASTIC, properties);
+    }
+
+    public Blaster(Properties properties, boolean zoom) {
+        super(StarWarsTiers.PLASTIC, properties);
+        this.zoom = zoom;
     }
 
     @Override
@@ -40,12 +47,12 @@ public class Blaster extends TieredItem {
     public void releaseUsing(ItemStack stack, Level level, LivingEntity entity, int $$3) {
         if (!level.isClientSide) {
 
-            LaserEntity laser = new LaserEntity(level, entity, 0, 0, 0, this.distance, entity.getName().getString());
+            LaserEntity laser = new LaserEntity(level, entity, 0, 0, 0, 60, entity.getName().getString());
             laser.setPos(entity.getX(), entity.getY() + 1.5, entity.getZ());
-            laser.setOwner(entity);
             laser.shootFromRotation(entity, entity.getXRot(), entity.getYRot(), 0.0F, 3.0F, 1.0F);
             laser.setItem(ItemsRegistry.LASER_ITEM.get().getDefaultInstance());
             level.addFreshEntity(laser);
+
         }
 
     }
@@ -69,7 +76,7 @@ public class Blaster extends TieredItem {
 
         if(Screen.hasShiftDown()) {
             components.add(Component.translatable("tooltip.swplanets.blaster.zoom.shift", this.zoom));
-            components.add(Component.translatable("tooltip.swplanets.blaster.lifetime.shift", getDistance()));
+
         } else {
             components.add(Component.translatable("tooltip.swplanets.shift"));
 
@@ -82,19 +89,17 @@ public class Blaster extends TieredItem {
         return this.zoom;
     }
 
-    public int getDistance() {
-        return this.distance;
-    }
 
     public void setUpgrade(BlasterUpgrade upgradeItem) {
 
-        if (upgradeItem.getLifeTime() > 30) {
-            this.distance = upgradeItem.getLifeTime();
-        }
-
         this.zoom = upgradeItem.getZoom();
-
-        this.getDefaultInstance().getOrCreateTag().putInt("distance", this.distance);
-        this.getDefaultInstance().getOrCreateTag().putBoolean("zoom", this.zoom);
+        this.getDefaultInstance().getOrCreateTagElement("upgrade").putBoolean("zoom", this.zoom);
     }
+
+    @Override
+    public ItemStack finishUsingItem(ItemStack $$0, Level $$1, LivingEntity $$2) {
+        $$2.playSound(SoundsRegistry.BLASTER_SOUND.get(), 1.0F, 1.0F);
+        return $$0;
+    }
+
 }

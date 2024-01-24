@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "swplanets:blaster"
+    },
+    {
+      "item": "swplanets:blaster_zoom_upgrade"
+    }
+  ],
+  "result": {
+    "item": "swplanets:blaster_zoom"
+  }
+}

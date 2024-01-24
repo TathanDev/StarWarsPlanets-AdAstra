@@ -28,6 +28,7 @@ public class LaserEntity extends SmallFireball {
         this.life = 0;
         this.lifetime = lifetime;
         this.owner = owner;
+
     }
 
     public LaserEntity(Level $$0, double $$1, double $$2, double $$3, double $$4, double $$5, double $$6, int lifetime) {
@@ -78,7 +79,8 @@ public class LaserEntity extends SmallFireball {
             this.clearFire();
         }
 
-        ++this.life;
+        if(this.isInWater()) this.life += 6; else ++this.life;
+
         if(!this.level().isClientSide && this.life > this.lifetime ) {
             this.discard();
         }
