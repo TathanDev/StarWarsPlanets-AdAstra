@@ -1,0 +1,116 @@
+{
+  "gui.swplanets.planet_selection.solar_system_button": "머나먼 은하",
+  "gui.swplanets.planet_selection.tatooine": "타투인",
+  "gui.swplanets.planet_selection.kamino": "카미노",
+  "gui.swplanets.planet_selection.endor": "엔도",
+  "gui.swplanets.planet_selection.hot": "호스",
+  "gui.swplanets.planet_selection.mustafar": "무스타파",
+  "gui.swplanets.planet_selection.mandalore": "만달로어",
+  "gui.swplanets.text.galaxy_far_away": "머나먼 은하",
+  "gui.swplanets.text.outer_rims": "아우터 림",
+  "gui.swplanets.text.extragalactics": "은하 바깥 지대",
+
+  "advancements.pro_hyperspace.title": "초광속 항해의 달인!",
+  "advancements.pro_hyperspace.descr": "머나먼 은하의 모든 행성들을 방문하세요",
+
+  "advancements.swplanets.title": "새로운 은하",
+  "advancements.swplanets.descr": "은하계에 오신 것을 환영합니다!",
+
+  "advancements.find_kyber.title": "오! 정말 빛나는 걸!",
+  "advancements.find_kyber.descr": "카이버 크리스탈을 발견하세요!",
+
+  "advancements.craft_saber.title": "포스가 당신과 함께하길...",
+  "advancements.craft_saber.descr": "당신은 이제 제다이 기사단입니다... 아닐수도 있구요... :)",
+
+  "advancements.beskar.title": "다른 길",
+  "advancements.beskar.descr": "베스카를 발견하세요!",
+
+  "advancements.mandalorian.title": "길",
+  "advancements.mandalorian.descr": "만달로어인이 되세요",
+
+  "item.swplanets.star_wars_opening_music_disc": "음반",
+  "item.swplanets.star_wars_opening_music_disc.desc": "John Williams - Star Wars Opening",
+  "item.swplanets.kyber_crystal": "카이버 크리스탈",
+  "item.swplanets.kyber_crystal_ore": "카이버 크리스탈 광석",
+  "item.swplanets.kyber_crystal_ore_sandstone": "사암에 파묻힌 카이버 크리스탈 광석",
+  "item.swplanets.mustafar_stone": "무스타파 암석",
+  "item.swplanets.mustafar_sand": "무스타파 모래",
+
+  "item.swplanets.beskar": "베스카",
+  "item.swplanets.darksaber": "어둠의 검",
+
+  "item.swplanets.beskar_ore_sandstone": "베스카 광석",
+
+  "item.swplanets.light_saber_base": "광선검 틀",
+  "item.swplanets.light_saber_red": "붉은색 광선검",
+  "item.swplanets.light_saber_blue": "푸른색 광선검",
+  "item.swplanets.light_saber_green": "녹색 광선검",
+  "item.swplanets.light_saber_violet": "보라색 광선검 ",
+  "item.swplanets.light_saber_dark_maul": "다스 몰의 광선검",
+  "item.swplanets.light_saber_kylo_ren": "카일로 렌의 광선검",
+
+  "item.swplanets.star_manual": "스타 매뉴얼",
+
+  "item.swplanets.blaster": "블래스터",
+
+  "item.swplanets.stormtrooper_mask": "스톰트루퍼 헬멧",
+  "item.swplanets.stormtrooper_chestplate": "스톰투르퍼 갑옷",
+  "item.swplanets.stormtrooper_leggings": "스톰트루퍼 레깅스",
+  "item.swplanets.stormtrooper_boots": "스톰트루퍼 부츠",
+  "item.swplanets.plastic_plate": "플라스틱 판",
+  "item.swplanets.speeder": "스피더",
+  "item.swplanets.blaster_zoom_upgrade": "블래스터 줌 업그레이드",
+  "item.swplanets.blaster_distance_upgrade": "블래스터 거리 업그레이드",
+  "item.swplanets.blaster_upgrader": "블래스터 업그레이드",
+
+  "item.swplanets.beskar_armor_helmet": "베스카 헬멧",
+  "item.swplanets.beskar_armor_chestplate": "베스카 갑옷",
+  "item.swplanets.beskar_armor_leggings": "베스카 레깅스",
+  "item.swplanets.beskar_armor_boots": "베스카 부츠",
+
+  "entity.swplanets.speeder": "스피더",
+
+  "tooltip.swplanets.jedilightsaber.tooltip.shift": "가장 우수한 제다이가 사용하는 광선검",
+  "tooltip.swplanets.jedilightsaber.tooltip.shift.two": "당신에게 포스가 함께할 겁니다.",
+
+  "tooltip.swplanets.sithlightsaber.tooltip.shift": "가장 어두운 시스가 쓰는 광선검",
+  "tooltip.swplanets.sithlightsaber.tooltip.shift.two": "포스의 어두운 면을 받아들이십시오.",
+
+
+
+  "block.swplanets.kyber_crystal_ore": "카이버 크리스탈 광석",
+  "block.swplanets.kyber_crystal_cluster": "카이버 크리스탈 군집",
+  "block.swplanets.kyber_crystal_ore_sandstone": "사암에 파묻힌 카이버 크리스탈 광석",
+  "block.swplanets.mustafar_stone": "무스타파 암석",
+  "block.swplanets.mustafar_sand": "무스타파 모래",
+  "block.swplanets.beskar_ore_sandstone": "베스카 광석",
+
+
+
+  "message.swplanets.error.patchouli": "Patchouli를 설치해주세요",
+
+  "itemGroup.swplanets.main": "Star Wars Planets",
+
+  "swplanets.tip.kyber_crystal.title": "카이버 크리스탈들",
+  "swplanets.tip.kyber_crystal": "은하계의 무한한 에너지원",
+
+  "swplanets.tip.sith_saber": "은하계에서 가장 위험한 사람들이 사용하는 은하계에서 가장 위험한 무기",
+  "swplanets.tip.sith_saber.title": "시스 광선검",
+
+  "swplanets.tip.jedi_saber": "은하계의 수호자들이 사용하는 강한 무기",
+  "swplanets.tip.jedi_saber.title": "제다이 광선검",
+
+  "swplanets.tip.tatooine_houses": "당신은 타투인에서 마을을 찾을 수 있습니다.",
+  "swplanets.tip.tatooine_houses.title": "타투인 마을",
+
+  "biome.swplanets.endor_taiga": "엔도 타이가",
+  "biome.swplanets.hot_desert": "호스 사막",
+  "biome.swplanets.kamino_ocean": "카미노 바다",
+  "biome.swplanets.mustafar_hill": "무스타파 언덕",
+  "biome.swplanets.tatooine_desert": "타투인 사막",
+
+
+  "tooltip.swplanets.shift": "§7Shift를 눌러 더 많은 정보를 얻으세요",
+  "tooltip.swplanets.blaster.lifetime.shift": "§7남은 쿨타임 : §6§o%s",
+  "tooltip.swplanets.blaster.zoom.shift": "§7줌 : §6§o%s"
+}
