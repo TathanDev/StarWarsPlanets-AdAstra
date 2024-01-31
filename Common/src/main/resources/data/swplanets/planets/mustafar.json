@@ -1,0 +1,10 @@
+{
+    "dimension": "swplanets:mustafar",
+    "gravity": 9.807,
+    "orbit": "swplanets:mustafar_orbit",
+    "oxygen": true,
+    "solar_power": 16,
+    "solar_system": "swplanets:outer_rims",
+    "temperature": 25,
+    "tier": 4
+}

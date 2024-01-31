@@ -1,0 +1,10 @@
+{
+    "dimension": "swplanets:endor",
+    "gravity": 9.807,
+    "orbit": "swplanets:endor_orbit",
+    "oxygen": true,
+    "solar_power": 16,
+    "solar_system": "swplanets:outer_rims",
+    "temperature": 15,
+    "tier": 4
+}
