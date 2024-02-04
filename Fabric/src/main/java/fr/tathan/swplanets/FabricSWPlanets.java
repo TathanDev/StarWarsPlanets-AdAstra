@@ -1,19 +1,15 @@
 package fr.tathan.swplanets;
 
-import fr.tathan.swplanets.common.registry.TabsRegistry;
 import fr.tathan.swplanets.common.registry.TagsRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
-public class SWPlanets implements ModInitializer {
+public class FabricSWPlanets implements ModInitializer {
 
 
 	@Override
@@ -21,14 +17,6 @@ public class SWPlanets implements ModInitializer {
 
 		Constants.LOG.info("Star Wars Planets 🚀!");
 		CommonClass.init();
-
-		/**
-		ItemsRegistry.onRegisterCreativeTabs((loc, item, items) -> FabricItemGroup.builder(loc)
-				.title(Component.translatable("itemGroup." + loc.getNamespace() + "." + loc.getPath()))
-				.icon(() -> item.get().getDefaultInstance())
-				.displayItems((featureFlagSet, output) -> items.forEach(output::accept))
-				.build());
-		 */
 
 		BiomeModifications.addFeature(
 				BiomeSelectors.tag(TagsRegistry.STARWARS_PLANETS),

@@ -1,9 +1,6 @@
 package fr.tathan.swplanets.client.screens;
 
-import earth.terrarium.adastra.AdAstra;
 import earth.terrarium.adastra.client.screens.base.MachineScreen;
-import earth.terrarium.adastra.common.blockentities.machines.NasaWorkbenchBlockEntity;
-import earth.terrarium.adastra.common.menus.machines.NasaWorkbenchMenu;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.blocks.entities.BlasterUpgraderEntity;
 import fr.tathan.swplanets.common.menu.BlasterUpgraderMenu;

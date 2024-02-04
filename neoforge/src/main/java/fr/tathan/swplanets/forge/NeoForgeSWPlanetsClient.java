@@ -1,4 +1,4 @@
-package fr.tathan.swplanets;
+package fr.tathan.swplanets.forge;
 
 import earth.terrarium.adastra.client.AdAstraClient;
 import net.neoforged.api.distmarker.Dist;

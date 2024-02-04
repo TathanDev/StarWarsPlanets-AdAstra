@@ -20,19 +20,18 @@ dependencies {
     val fabricLoaderVersion: String by project
     val fabricApiVersion: String by project
     val modMenuVersion: String by project
-    val trinketsVersion: String by project
+    val reiVersion: String by project
 
     modImplementation(group = "net.fabricmc", name = "fabric-loader", version = fabricLoaderVersion)
     modApi(group = "net.fabricmc.fabric-api", name = "fabric-api", version = "$fabricApiVersion+$minecraftVersion")
 
+    modLocalRuntime(group = "me.shedaniel", name = "RoughlyEnoughItems-fabric", version = reiVersion)
+
     modApi(group = "com.terraformersmc", name = "modmenu", version = modMenuVersion)
-    modImplementation(group = "maven.modrinth", name = "energized-power", version = "gDKMKHBG")
 
-    // modCompileOnly(group = "maven.modrinth", name = "fwaystones", version = "3.1.2+mc1.20")
-    // modCompileOnly(group = "maven.modrinth", name = "owo-lib", version = "0.11.1+1.20")
+    modLocalRuntime(group = "RebornCore", name = "RebornCore-1.20", version = "5.10.2") { isTransitive = false }
+    modLocalRuntime(group = "TechReborn", name = "TechReborn-1.20", version = "5.10.2") { isTransitive = false }
 
-    modImplementation(group = "dev.emi", name = "trinkets", version = trinketsVersion)
-
-    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.4.0")
-    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.4.0")
+    modLocalRuntime(group = "maven.modrinth", name = "jade", version = "dxGKPrkW")
+    modLocalRuntime(group = "maven.modrinth", name = "dcwa", version = "5.0") // Disable custom world advice
 }

@@ -3,7 +3,6 @@ import dev.architectury.plugin.ArchitectPluginExtension
 import groovy.json.StringEscapeUtils
 import net.fabricmc.loom.api.LoomGradleExtensionAPI
 import net.fabricmc.loom.task.RemapJarTask
-import java.net.URI
 
 plugins {
     java
@@ -19,14 +18,17 @@ architectury {
     minecraft = minecraftVersion
 }
 
+val stationsFile: String = file("stations.json").absolutePath
+
 subprojects {
     apply(plugin = "maven-publish")
     apply(plugin = "dev.architectury.loom")
     apply(plugin = "architectury-plugin")
+    apply(plugin = "com.github.johnrengelman.shadow")
 
     val minecraftVersion: String by project
-    val modId: String by project
     val modLoader = project.name
+    val modId = rootProject.name
     val isCommon = modLoader == rootProject.projects.common.name
 
     base {
@@ -35,20 +37,18 @@ subprojects {
 
     configure<LoomGradleExtensionAPI> {
         silentMojangMappingsLicense()
+
     }
 
     repositories {
-        maven(url = "https://maven.architectury.dev/")
-        maven(url = "https://maven.neoforged.net/releases")
-        maven(url = "https://maven.resourcefulbees.com/repository/maven-public/")
-        maven(url = "https://maven.twelveiterations.com/repository/maven-public/")
-        maven(url = "https://maven.terraformersmc.com/")
-        maven(url = "https://maven.ladysnake.org/releases")
+        mavenCentral()
+        maven(url = "https://maven.teamresourceful.com/repository/maven-public/")
+        maven(url = "https://maven.neoforged.net/releases/")
+        maven(url = "https://maven.firstdarkdev.xyz/snapshots")
         maven {
-            url = URI("https://jitpack.io")
+            url = uri("https://www.cursemaven.com")
             content {
-                includeGroup("com.github.LlamaLad7")
-                includeGroup("com.github.llamalad7.mixinextras")
+                includeGroup("curse.maven")
             }
         }
         exclusiveContent {
@@ -62,26 +62,18 @@ subprojects {
                 includeGroup("maven.modrinth")
             }
         }
-        maven {
-            url = uri("https://jm.gserv.me/repository/maven-public/")
-            content {
-                includeGroup("info.journeymap")
-            }
-        }
     }
 
     dependencies {
+        val mixinExtrasVersion: String by project
         val resourcefulLibVersion: String by project
         val resourcefulConfigVersion: String by project
         val botariumVersion: String by project
-        val adastraVersion: String by project
         val jeiVersion: String by project
-        val balmVersion: String by project
-        val waystonesVersion: String by project
-        val prometheusVersion: String by project
-        val argonautsVersion: String by project
         val reiVersion: String by project
-        val parchmentMcVersion: String by project
+        val patchouliVersion: String by project
+        val shimmerVersion: String by project
+        val adastraVersion: String by project
 
         "minecraft"("::$minecraftVersion")
 
@@ -91,34 +83,27 @@ subprojects {
 
             officialMojangMappings()
 
-            parchment(create(group = "org.parchmentmc.data", name = "parchment-$parchmentMcVersion", version = parchmentVersion))
+            parchment(create(group = "org.parchmentmc.data", name = "parchment-1.20.3", version = parchmentVersion))
         })
 
-        compileOnly(group = "com.teamresourceful", name = "yabn", version = "1.0.3")
         "modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion)
         "modApi"(group = "com.teamresourceful.resourcefulconfig", name = "resourcefulconfig-$modLoader-$minecraftVersion", version = resourcefulConfigVersion)
-
-        if (isCommon) {
-            // "modCompileOnly"(group = "earth.terrarium.prometheus", name = "prometheus-$modLoader-1.20", version = prometheusVersion) { isTransitive = false }
-            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-api", version = reiVersion)
-            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-default-plugin", version = reiVersion)
-            implementation("io.github.llamalad7:mixinextras-common:0.3.2")
-        } else {
-            // "modLocalRuntime"(group = "earth.terrarium.prometheus", name = "prometheus-$modLoader-1.20", version = prometheusVersion)
-            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-$modLoader", version = reiVersion)
-            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-api-$modLoader", version = reiVersion)
-            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-default-plugin-$modLoader", version = reiVersion)
-        }
-
         "modApi"(group = "earth.terrarium.botarium", name = "botarium-$modLoader-$minecraftVersion", version = botariumVersion)
         "modApi"(group = "earth.terrarium.adastra", name = "adastra-$modLoader-$minecraftVersion", version = adastraVersion)
 
-        "modCompileOnly"(group = "net.blay09.mods", name = "balm-$modLoader", version = balmVersion) {
-            exclude(group = "net.blay09.mods", module = "shared-bridge")
-        }
+        if (isCommon) {
+            implementation(group = "javazoom", name = "jlayer", version = "1.0.1")
+            "modApi"(group = "mezz.jei", name = "jei-$minecraftVersion-common-api", version = jeiVersion)
+            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-api", version = reiVersion)
+            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-default-plugin", version = reiVersion)
+            implementation("annotationProcessor"(group = "io.github.llamalad7", name = "mixinextras-common", version = mixinExtrasVersion))
 
-        "modCompileOnly"(group = "net.blay09.mods", name = "waystones-$modLoader", version = waystonesVersion) {
-            exclude(group = "net.blay09.mods", module = "shared-bridge")
+        } else {
+            "include"(implementation(group = "javazoom", name = "jlayer", version = "1.0.1"))
+            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-api-$modLoader", version = reiVersion)
+            "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-default-plugin-$modLoader", version = reiVersion)
+//            "modLocalRuntime"(group = "vazkii.patchouli", name = "Patchouli", version = "$minecraftVersion-$patchouliVersion-${modLoader.uppercase()}")
+//            "modLocalRuntime"(group = "com.lowdragmc.shimmer", name = "Shimmer-$modLoader", version = "$minecraftVersion-$shimmerVersion") { isTransitive = false }
         }
     }
 
@@ -142,7 +127,6 @@ subprojects {
     }
 
     if (!isCommon) {
-        apply(plugin = "com.github.johnrengelman.shadow")
         configure<ArchitectPluginExtension> {
             platformSetupLoomIde()
         }
@@ -156,6 +140,9 @@ subprojects {
             "shadowJar"(ShadowJar::class) {
                 archiveClassifier.set("dev-shadow")
                 configurations = listOf(shadowCommon)
+
+                exclude(".cache/**") // Remove datagen cache from jar.
+                exclude("**/adastra/datagen/**") // Remove data gen code from jar.
             }
 
             "remapJar"(RemapJarTask::class) {
@@ -163,6 +150,8 @@ subprojects {
                 inputFile.set(named<ShadowJar>("shadowJar").flatMap { it.archiveFile })
             }
         }
+    } else {
+        sourceSets.main.get().resources.srcDir("src/main/generated/resources")
     }
 
     publishing {
@@ -172,7 +161,7 @@ subprojects {
                 from(components["java"])
 
                 pom {
-                    name.set("Tempad $modLoader")
+                    name.set("Ad Astra $modLoader")
                     url.set("https://github.com/terrarium-earth/$modId")
 
                     scm {
@@ -183,7 +172,7 @@ subprojects {
 
                     licenses {
                         license {
-                            name.set("ARR")
+                            name.set("Terrarium Licence (https://gist.github.com/CodexAdrian/4bb2a1868bb2d2a91ca74ea40424e69d)")
                         }
                     }
                 }
@@ -191,7 +180,7 @@ subprojects {
         }
         repositories {
             maven {
-                setUrl("https://maven.resourcefulbees.com/repository/terrarium/")
+                setUrl("https://maven.teamresourceful.com/repository/terrarium/")
                 credentials {
                     username = System.getenv("MAVEN_USER")
                     password = System.getenv("MAVEN_PASS")
@@ -216,7 +205,7 @@ resourcefulGradle {
                     "version" to version,
                     "changelog" to StringEscapeUtils.escapeJava(changelog),
                     "fabric_link" to fabricLink,
-                    "forge_link" to forgeLink
+                    "forge_link" to forgeLink,
             ))
         }
     }

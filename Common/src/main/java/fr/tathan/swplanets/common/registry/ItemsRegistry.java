@@ -3,19 +3,13 @@ package fr.tathan.swplanets.common.registry;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
-import earth.terrarium.adastra.AdAstra;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.items.*;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
-import org.apache.logging.log4j.util.TriConsumer;
-
-import java.util.List;
 
 public class ItemsRegistry {
 

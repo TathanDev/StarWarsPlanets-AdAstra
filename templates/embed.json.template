@@ -7,23 +7,22 @@
                     "type": 2,
                     "label": "Fabric",
                     "style": 5,
-                    "url": "https://modrinth.com/mod/tempad/version/${fabric_link}"
+                    "url": "https://modrinth.com/mod/ad-astra/version/${fabric_link}"
                 },
                 {
                     "type": 2,
                     "label": "NeoForge",
                     "style": 5,
-                    "url": "https://modrinth.com/mod/tempad/version/${forge_link}"
+                    "url": "https://modrinth.com/mod/ad-astra/version/${forge_link}"
                 }
             ]
-
         }
     ],
     "embeds": [
         {
-            "title": "Tempad",
+            "title": "Ad Astra",
             "description": "**Changelog:**\\n${changelog}",
-            "color": 5814783,
+            "color": 13997660,
             "fields": [
                 {
                     "name": "Minecraft Version",
@@ -37,14 +36,14 @@
                 }
             ],
             "footer": {
-                "text": "Follow the project on Modrinth at mods.gay/tempad",
+                "text": "Follow the project on Modrinth at mods.gay/ad-astra",
                 "icon_url": "https://i.imgur.com/3hVj8nM.png"
             },
             "thumbnail": {
-                "url": "https://media.forgecdn.net/avatars/500/177/637818622588372032.gif"
+                "url": "https://cdn.modrinth.com/data/3ufwT9JF/2a15f23b7ffa2d50fc6ae1c42029a728ce3e2847.jpeg"
             }
         }
     ],
     "username": "Terrarium Releases",
-    "avatar_url": "https://cdn.modrinth.com/user/6ZoP9xY8/845ab3625ed09a90b58b4ec6089c92d8e459ca09.png"
+    "avatar_url": "https://cdn.discordapp.com/avatars/955572264823300096/3c226580b871a57b6da095fea1cccf1e.webp"
 }

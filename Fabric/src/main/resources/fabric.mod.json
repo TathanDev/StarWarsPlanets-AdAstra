@@ -20,7 +20,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "fr.tathan.swplanets.SWPlanets"
+            "fr.tathan.swplanets.FabricSWPlanets"
         ],
         "client": [
             "fr.tathan.swplanets.FabricSWPlanetsClient"

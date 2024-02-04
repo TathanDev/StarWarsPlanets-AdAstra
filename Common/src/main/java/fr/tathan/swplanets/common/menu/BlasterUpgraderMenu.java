@@ -5,9 +5,7 @@ import earth.terrarium.adastra.common.menus.slots.CustomSlot;
 import fr.tathan.swplanets.common.blocks.entities.BlasterUpgraderEntity;
 import fr.tathan.swplanets.common.registry.MenusRegistry;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
-import org.jetbrains.annotations.Nullable;
 
 public class BlasterUpgraderMenu extends BaseContainerMenu<BlasterUpgraderEntity> {
     public BlasterUpgraderMenu( int id, Inventory inventory, BlasterUpgraderEntity entity) {
