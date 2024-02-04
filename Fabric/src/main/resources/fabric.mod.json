@@ -1,42 +1,42 @@
 {
-  "schemaVersion": 1,
-  "id": "swplanets",
-  "version": "${version}",
+    "schemaVersion": 1,
+    "id": "swplanets",
+    "version": "${version}",
 
-  "name": "Star Wars Planets ",
-  "description": "This Mod is an Addon for Ad Astra!.\nIt add planets from Star Wars, Light Sabers and more :)",
-  "authors": [
-    "TATHAN"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/star-wars-planets-ad-astra/",
-    "sources": "https://github.com/TathanDev/StarWarsPlanets",
-    "issues": "https://github.com/TathanDev/StarWarsPlanets-AdAstra/issues"
-  },
-
-  "license": "CC0-1.0",
-  "icon": "logo.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "fr.tathan.swplanets.SWPlanets"
+    "name": "Star Wars Planets ",
+    "description": "This Mod is an Addon for Ad Astra!.\nIt add planets from Star Wars, Light Sabers and more :)",
+    "authors": [
+        "TATHAN"
     ],
-    "client": [
-      "fr.tathan.swplanets.SWPlanetsClient"
+    "contact": {
+        "homepage": "https://www.curseforge.com/minecraft/mc-mods/star-wars-planets-ad-astra/",
+        "sources": "https://github.com/TathanDev/StarWarsPlanets",
+        "issues": "https://github.com/TathanDev/StarWarsPlanets-AdAstra/issues"
+    },
+
+    "license": "CC0-1.0",
+    "icon": "swplanets.png",
+
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "fr.tathan.swplanets.SWPlanets"
+        ],
+        "client": [
+            "fr.tathan.swplanets.FabricSWPlanetsClient"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.14.11",
+        "fabric": "*",
+        "minecraft": ">=1.20.1",
+        "java": ">=17",
+        "ad_astra": ">=1.14.1"
+    },
+    "suggests": {
+        "another-mod": "*"
+    },
+    "mixins": [
+        "swplanets.mixins.json"
     ]
-  },
-  "depends": {
-    "fabricloader": ">=0.14.11",
-    "fabric": "*",
-    "minecraft": ">=1.20.1",
-    "java": ">=17",
-    "ad_astra": ">=1.14.1"
-  },
-  "suggests": {
-    "another-mod": "*"
-  },
-  "mixins": [
-    "swplanets.fabric.mixins.json"
-  ]
 }

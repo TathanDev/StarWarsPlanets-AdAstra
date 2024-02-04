@@ -1,5 +1,1 @@
 accessWidener	v1	named
-
-accessible class net/minecraft/world/inventory/MenuType$MenuSupplier
-accessible class net/minecraft/world/inventory/MenuType
-accessible method net/minecraft/world/inventory/MenuType MenuType (Lnet/minecraft/world/inventory/MenuType$MenuSupplier;Lnet/minecraft/world/flag/FeatureFlagSet;)V

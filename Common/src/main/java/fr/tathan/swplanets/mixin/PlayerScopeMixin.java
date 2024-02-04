@@ -1,7 +1,5 @@
 package fr.tathan.swplanets.mixin;
 
-import com.mojang.datafixers.kinds.Const;
-import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.items.Blaster;
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import net.minecraft.world.InteractionHand;

@@ -1,27 +1,23 @@
 package fr.tathan.swplanets.common.items;
 
-
-import fr.tathan.swplanets.Constants;
-import fr.tathan.swplanets.common.entity.LaserEntity;
+import fr.tathan.swplanets.common.entities.LaserEntity;
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import fr.tathan.swplanets.common.registry.SoundsRegistry;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-
-
 public class Blaster extends TieredItem {
 
 

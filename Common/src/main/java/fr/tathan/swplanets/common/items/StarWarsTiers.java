@@ -1,9 +1,7 @@
 package fr.tathan.swplanets.common.items;
 
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 

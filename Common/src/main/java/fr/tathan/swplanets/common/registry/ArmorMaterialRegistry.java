@@ -1,7 +1,7 @@
 package fr.tathan.swplanets.common.registry;
 
-import fr.tathan.swplanets.common.items.armour.TrooperArmorMaterial;
 import fr.tathan.swplanets.common.items.armour.BeskarArmorMaterial;
+import fr.tathan.swplanets.common.items.armour.TrooperArmorMaterial;
 import net.minecraft.world.item.ArmorMaterial;
 
 public class ArmorMaterialRegistry {
