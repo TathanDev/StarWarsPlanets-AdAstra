@@ -16,7 +16,5 @@ public class SWPlanetsDataGenerator {
         PackOutput packOutput = generator.getPackOutput();
 
         generator.addProvider(event.includeClient(), new PlanetsRendererProvider(packOutput));
-
-
     }
 }

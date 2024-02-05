@@ -1,8 +1,0 @@
-{
-    "galaxy": "swplanets:galaxy_far_away",
-    "solar_system": "swplanets:outer_rims",
-    "texture": "swplanets:textures/sky/mustafar.png",
-    "speed": 88,
-    "scale": 8,
-    "radius": 1.0
-}

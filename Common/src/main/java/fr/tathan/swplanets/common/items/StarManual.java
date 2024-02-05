@@ -1,6 +1,7 @@
 package fr.tathan.swplanets.common.items;
 
 
+import com.teamresourceful.resourcefullib.common.utils.modinfo.ModInfoUtils;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.platform.Services;
 import net.minecraft.network.chat.Component;
@@ -15,20 +16,17 @@ import net.minecraft.world.level.Level;
 
 public class StarManual extends Item {
 
-
     public static final Component PATCHOULI_ERROR = tl("patchouli");
 
     public StarManual(Properties properties) {
         super(properties);
     }
 
-
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player playerIn, InteractionHand handIn) {
-        if (!Services.PLATFORM.isModLoaded("patchouli")) {
+        if (!ModInfoUtils.isModLoaded("patchouli")) {
             if (level.isClientSide) {
                 playerIn.displayClientMessage(PATCHOULI_ERROR, false);
-
             }
         } else {
             if (level.isClientSide) {
@@ -37,15 +35,11 @@ public class StarManual extends Item {
 
         }
 
-
         return new InteractionResultHolder<>(InteractionResult.SUCCESS, playerIn.getItemInHand(handIn));
-
     }
 
     public static Component tl(String text) {
         return Component.translatable("message." + Constants.MODID + ".error." + text);
     }
-
-
 
 }

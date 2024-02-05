@@ -18,9 +18,8 @@ public class TabsRegistry {
 
     public static final Supplier<CreativeModeTab> TAB = new ResourcefulCreativeTab(new ResourceLocation(Constants.MODID, "main"))
         .setItemIcon(ItemsRegistry.BLUE_LIGHT_SABER)
-        .addRegistry(ItemsRegistry.ITEMS)
+        .addRegistry(ItemsRegistry.TAB_ITEMS)
         .build();
-
-    public static void init() {} // NO-OP
+    public static void init() {}
 
 }

@@ -3,6 +3,7 @@ package fr.tathan.swplanets.common.registry;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
+import earth.terrarium.adastra.common.items.ZipGunItem;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.entities.LaserEntity;
 import net.minecraft.core.registries.BuiltInRegistries;

@@ -25,7 +25,7 @@ import java.util.function.BiConsumer;
 
 public class PlanetsRendererProvider extends ModCodecProvider<PlanetRenderer> {
 
-    public static final ResourceKey<Registry<PlanetRenderer>> PLANET_REGISTRY = ResourceKey.createRegistryKey(new ResourceLocation(Constants.MODID, "sex"));
+    public static final ResourceKey<Registry<PlanetRenderer>> PLANET_REGISTRY = ResourceKey.createRegistryKey(new ResourceLocation(Constants.MODID, "planets_renderer"));
     public static final int DEFAULT_SUNRISE_COLOR = 0xd85f33;
 
     public static final SimpleWeightedRandomList<Integer> COLORED_STARS = SimpleWeightedRandomList.<Integer>builder()
@@ -146,6 +146,6 @@ public class PlanetsRendererProvider extends ModCodecProvider<PlanetRenderer> {
 
     @Override
     public @NotNull String getName() {
-        return "Planet Renderers";
+        return "Planets Renderers";
     }
 }

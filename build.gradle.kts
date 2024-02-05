@@ -142,7 +142,7 @@ subprojects {
                 configurations = listOf(shadowCommon)
 
                 exclude(".cache/**") // Remove datagen cache from jar.
-                exclude("**/adastra/datagen/**") // Remove data gen code from jar.
+                exclude("**/swplanets/datagen/**") // Remove data gen code from jar.
             }
 
             "remapJar"(RemapJarTask::class) {
