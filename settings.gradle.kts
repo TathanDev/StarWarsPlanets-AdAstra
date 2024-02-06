@@ -1,6 +1,6 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "adastra"
+rootProject.name = "swplanets"
 
 pluginManagement {
     repositories {

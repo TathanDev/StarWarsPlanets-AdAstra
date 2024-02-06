@@ -11,6 +11,8 @@ plugins {
     id("dev.architectury.loom") version "1.4-SNAPSHOT" apply false
     id("architectury-plugin") version "3.4-SNAPSHOT"
     id("com.github.johnrengelman.shadow") version "7.1.2" apply false
+    id("com.modrinth.minotaur") version "2.+"
+
 }
 
 architectury {
@@ -25,9 +27,10 @@ subprojects {
     apply(plugin = "dev.architectury.loom")
     apply(plugin = "architectury-plugin")
     apply(plugin = "com.github.johnrengelman.shadow")
+    apply(plugin = "com.modrinth.minotaur")
 
     val minecraftVersion: String by project
-    val modLoader = project.name
+    val  modLoader = project.name
     val modId = rootProject.name
     val isCommon = modLoader == rootProject.projects.common.name
 
@@ -74,6 +77,8 @@ subprojects {
         val patchouliVersion: String by project
         val shimmerVersion: String by project
         val adastraVersion: String by project
+
+        val version: String by project
 
         "minecraft"("::$minecraftVersion")
 
@@ -188,6 +193,22 @@ subprojects {
             }
         }
     }
+
+    modrinth {
+        token.set(System.getenv("MODRINTH_TOKEN")) // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
+        projectId = "star-wars-planets-ad-astra" // This can be the project ID or the slug. Either will work!
+        versionNumber.set("$version") // You don't need to set this manually. Will fail if Modrinth has this version already
+        versionType.set("beta") // This is the default -- can also be `beta` or `alpha`
+        versionName = "[$modLoader] SWPlanets ${version}"// This can be the project ID or the slug. Either will work!
+
+        uploadFile.set(tasks.findByPath("remapJar")) // With Loom, this MUST be set to `remapJar` instead of `jar`!
+        gameVersions.addAll("1.20.4") // Must be an array, even with only one version
+        loaders.add("$modLoader") // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
+        dependencies { // A special DSL for creating dependencies
+            required.project("ad-astra") // Creates a new required dependency on Fabric API
+        }
+    }
+
 }
 
 resourcefulGradle {

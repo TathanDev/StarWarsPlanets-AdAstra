@@ -3,14 +3,13 @@ package fr.tathan.swplanets.common.registry;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
+import earth.terrarium.adastra.AdAstra;
+import earth.terrarium.adastra.common.items.armor.base.CustomDyeableArmorItem;
 import earth.terrarium.adastra.common.registry.ModItems;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.items.*;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 
 public class ItemsRegistry {
 
@@ -50,19 +49,18 @@ public class ItemsRegistry {
     public static final RegistryEntry<Item> STAR_MANUAL = TAB_ITEMS.register("star_manual", () -> new StarManual(new Item.Properties()));
 
     public static final RegistryEntry<ArmorItem> STORMTROOPER_MASK = TAB_ITEMS.register("stormtrooper_mask",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new CustomDyeableArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryEntry<Item> STORMTROOPER_CHESTPLATE = TAB_ITEMS.register("stormtrooper_chestplate",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.CHESTPLATE,
+            () -> new CustomDyeableArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryEntry<Item> STORMTROOPER_LEGGINGS = TAB_ITEMS.register("stormtrooper_leggings",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.LEGGINGS,
+            () -> new CustomDyeableArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryEntry<Item> STORMTROOPER_BOOTS = TAB_ITEMS.register("stormtrooper_boots",
-            () -> new ArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.BOOTS,
+            () -> new CustomDyeableArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties()));
-
 
     /** Beskar*/
     public static final RegistryEntry<ArmorItem> BESKAR_HELMET = TAB_ITEMS.register("beskar_armor_helmet",
@@ -87,6 +85,5 @@ public class ItemsRegistry {
     // Blaster Upgrade
     public static final RegistryEntry<Item> BLASTER_ZOOM_UPGRADE = TAB_ITEMS.register("blaster_zoom_upgrade", () -> new BlasterUpgrade(new Item.Properties().stacksTo(16), true, 0));
 
-    //public static final RegistryEntry<Item> BLASTER_UPGRADER = ITEMS.register("blaster_upgrader", () -> new BlockItem(BlocksRegistry.BLASTER_UPGRADER.get(), new Item.Properties()));
 
 }

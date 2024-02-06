@@ -1,6 +1,6 @@
 {
     "dimension": "swplanets:mandalore",
-    "gravity": 9.807,
+    "gravity": 3.0,
     "orbit": "swplanets:mandalore_orbit",
     "oxygen": true,
     "solar_power": 16,

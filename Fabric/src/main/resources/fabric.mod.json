@@ -20,7 +20,8 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "fr.tathan.swplanets.FabricSWPlanets"
+            "fr.tathan.swplanets.FabricSWPlanets::onInitialize",
+            "fr.tathan.swplanets.CommonClass::postInit"
         ],
         "client": [
             "fr.tathan.swplanets.FabricSWPlanetsClient"

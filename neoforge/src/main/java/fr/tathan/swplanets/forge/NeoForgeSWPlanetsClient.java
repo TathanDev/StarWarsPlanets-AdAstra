@@ -1,6 +1,7 @@
 package fr.tathan.swplanets.forge;
 
 import earth.terrarium.adastra.client.AdAstraClient;
+import fr.tathan.swplanets.client.SWPlanetsClient;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -11,6 +12,6 @@ public class NeoForgeSWPlanetsClient {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(AdAstraClient::init);
+        event.enqueueWork(SWPlanetsClient::init);
     }
 }
