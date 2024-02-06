@@ -96,6 +96,11 @@ subprojects {
         "modApi"(group = "earth.terrarium.botarium", name = "botarium-$modLoader-$minecraftVersion", version = botariumVersion)
         "modApi"(group = "earth.terrarium.adastra", name = "adastra-$modLoader-$minecraftVersion", version = adastraVersion)
 
+        "modCompileOnly"(group = "earth.terrarium.cadmus", name = "cadmus-$modLoader-$minecraftVersion", version = "1.2.1") {
+            isTransitive = false
+        }
+
+
         if (isCommon) {
             implementation(group = "javazoom", name = "jlayer", version = "1.0.1")
             "modApi"(group = "mezz.jei", name = "jei-$minecraftVersion-common-api", version = jeiVersion)
@@ -199,13 +204,14 @@ subprojects {
         projectId = "star-wars-planets-ad-astra" // This can be the project ID or the slug. Either will work!
         versionNumber.set("$version") // You don't need to set this manually. Will fail if Modrinth has this version already
         versionType.set("beta") // This is the default -- can also be `beta` or `alpha`
-        versionName = "[$modLoader] SWPlanets ${version}"// This can be the project ID or the slug. Either will work!
+        versionName = "[${modLoader.uppercase()}] SWPlanets ${version}"// This can be the project ID or the slug. Either will work!
 
         uploadFile.set(tasks.findByPath("remapJar")) // With Loom, this MUST be set to `remapJar` instead of `jar`!
         gameVersions.addAll("1.20.4") // Must be an array, even with only one version
         loaders.add("$modLoader") // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
         dependencies { // A special DSL for creating dependencies
-            required.project("ad-astra") // Creates a new required dependency on Fabric API
+            required.project("ad-astra", "resourceful-lib", "resourceful-config", "botarium")
+
         }
     }
 
