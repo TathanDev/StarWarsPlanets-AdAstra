@@ -12,6 +12,6 @@ public class SWPlanetsClient {
 
     private static void registerScreens() {
         MenuScreens.register(MenusRegistry.BLASTER_UPGRADER.get(), BlasterUpgraderScreen::new);
-
     }
+
 }

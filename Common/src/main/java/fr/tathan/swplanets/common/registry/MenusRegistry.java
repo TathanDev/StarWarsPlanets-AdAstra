@@ -25,5 +25,6 @@ public class MenusRegistry {
             inventory,
             BaseContainerMenu.getBlockEntityFromBuf(inventory.player.level(), buf, clazz)
         ));
+
     }
 }
