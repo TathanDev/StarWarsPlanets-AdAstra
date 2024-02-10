@@ -86,6 +86,7 @@ dependencies {
     implementation fg.deobf("curse.maven:create-328085:4835191")
     implementation fg.deobf( "com.terraformersmc:modmenu:$rootProject.modmenu_version")
     implementation fg.deobf(group: "earth.terrarium.botarium", name: "botarium-forge-1.20.1", version: "2.3.0")
+    implementation fg.deobf("vazkii.patchouli:Patchouli:1.20.1-$rootProject.patchouli_version-FORGE")
 
     implementation fg.deobf("com.teamresourceful.resourcefullib:resourcefullib-forge-1.20.1:$rootProject.resourcefullib_version")
     implementation fg.deobf("com.teamresourceful.resourcefulconfig:resourcefulconfig-forge-1.20.1:$rootProject.resourcefulconfig_version")
