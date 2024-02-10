@@ -1,0 +1,11 @@
+
+{
+    "dimension": "swplanets:hot",
+    "gravity": 9.807,
+    "orbit": "swplanets:hot_orbit",
+    "oxygen": true,
+    "solar_power": 16,
+    "solar_system": "swplanets:outer_rims",
+    "temperature": -10,
+    "tier": 4
+}

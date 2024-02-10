@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import vazkii.patchouli.api.PatchouliAPI;
+//import vazkii.patchouli.api.PatchouliAPI;
 
 
 public class StarManual extends Item {
@@ -34,7 +34,7 @@ public class StarManual extends Item {
             }
         } else {
             if (level.isClientSide) {
-                PatchouliAPI.get().openBookGUI(new ResourceLocation(Constants.MODID, "star_manual"));
+                //PatchouliAPI.get().openBookGUI(new ResourceLocation(Constants.MODID, "star_manual"));
             }
 
         }

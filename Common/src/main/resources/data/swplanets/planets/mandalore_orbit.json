@@ -1,0 +1,9 @@
+{
+    "dimension": "swplanets:mandalore_orbit",
+    "gravity": 0.0,
+    "oxygen": false,
+    "solar_power": 32,
+    "solar_system": "swplanets:outer_rims",
+    "temperature": -270,
+    "tier": 4
+}
