@@ -5,6 +5,24 @@
       "swplanets:blaster_sound"
     ]
   },
+  "light_saber_sound_1": {
+    "subtitle": "sounds.swplanets.saber_attack_sound",
+    "sounds": [
+      "swplanets:light_saber_sound_1"
+    ]
+  },
+  "light_saber_sound_2": {
+    "subtitle": "sounds.swplanets.saber_attack_sound",
+    "sounds": [
+      "swplanets:light_saber_sound_2"
+    ]
+  },
+  "light_saber_sound_3": {
+    "subtitle": "sounds.swplanets.saber_attack_sound",
+    "sounds": [
+      "swplanets:light_saber_sound_3"
+    ]
+  },
   "saber_attack_sound": {
     "subtitle": "sounds.swplanets.saber_attack_sound",
     "sounds": [
