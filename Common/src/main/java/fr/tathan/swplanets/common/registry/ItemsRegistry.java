@@ -21,6 +21,8 @@ public class ItemsRegistry {
 
 
     /**Jedi Light Saber*/
+    //public static final RegistryObject<Item> NEW_LIGHT_SABER = ITEMS.register("new_light_saber", () -> new JediLightSaber(StarWarsTiers.LIGHT_SABER,3, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
+
     public static final RegistryObject<Item> BLUE_LIGHT_SABER = ITEMS.register("light_saber_blue", () -> new JediLightSaber(StarWarsTiers.LIGHT_SABER,3, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> GREEN_LIGHT_SABER = ITEMS.register("light_saber_green", () -> new JediLightSaber(StarWarsTiers.LIGHT_SABER,3, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> VIOLET_LIGHT_SABER = ITEMS.register("light_saber_violet", () -> new JediLightSaber(StarWarsTiers.LIGHT_SABER,3, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
