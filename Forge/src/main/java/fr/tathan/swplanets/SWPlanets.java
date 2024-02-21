@@ -1,9 +1,12 @@
 package fr.tathan.swplanets;
 
-
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import fr.tathan.swplanets.common.registry.TabsRegistry;
+import fr.tathan.swplanets.pack.PackLoader;
+import net.minecraft.server.packs.PackType;
+import net.minecraftforge.event.AddPackFindersEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -16,6 +19,7 @@ public class SWPlanets {
         CommonClass.init();
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(SWPlanets::onRegisterCreativeTabs);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::discoverResourcePacks);
 
     }
     public static void onRegisterCreativeTabs(BuildCreativeModeTabContentsEvent event) {
@@ -51,5 +55,10 @@ public class SWPlanets {
 
         }
 
+    }
+    public void discoverResourcePacks(AddPackFindersEvent event) {
+        if (event.getPackType() == PackType.CLIENT_RESOURCES) {
+            event.addRepositorySource(new PackLoader(ModList.get().getModFileById(Constants.MODID).getFile()));
+        }
     }
 }
