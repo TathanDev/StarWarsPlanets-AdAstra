@@ -1,6 +1,5 @@
 package fr.tathan.swplanets.common.items;
 
-
 import fr.tathan.swplanets.common.registry.SoundsRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
@@ -10,7 +9,6 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.Random;
 
 public class JediLightSaber extends SwordItem {
 
@@ -24,7 +22,6 @@ public class JediLightSaber extends SwordItem {
         if (!pAttacker.level().isClientSide) {
             pAttacker.level().playSeededSound(null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(), SoundsRegistry.SABER_ATTACK_SOUND.get(), SoundSource.PLAYERS, 1.0F, 1.0F, 0);
         }
-
         return super.hurtEnemy(pStack, pTarget, pAttacker);
 
     }
@@ -34,5 +31,4 @@ public class JediLightSaber extends SwordItem {
         pTooltipComponents.add(Component.translatable("tooltip.swplanets.jedilightsaber.tooltip.shift.two"));
 
     }
-
 }

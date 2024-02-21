@@ -143,5 +143,9 @@ modrinth {
     gameVersions = ["1.20.1"] // Must be an array, even with only one version
     loaders = ["forge"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
     changelog = mod_changelog
+    dependencies { // A special DSL for creating dependencies
+        required.project "ad-astra" // Creates a new required dependency on Fabric API
+        optional.project "better-combat"
+    }
 
 }

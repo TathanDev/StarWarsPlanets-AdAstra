@@ -79,7 +79,7 @@ public class LaserEntity extends SmallFireball {
             this.clearFire();
         }
 
-        if(this.isInWater()) this.life += 6; else ++this.life;
+        if(this.isInWater()) this.discard();
 
         if(!this.level().isClientSide && this.life > this.lifetime ) {
             this.discard();
