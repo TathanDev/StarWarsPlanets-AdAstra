@@ -14,6 +14,7 @@ public class TagsRegistry {
 
     public static final TagKey<Item> BLASTERS;
     public static final TagKey<Item> BLASTER_UPGRADE;
+    public static final TagKey<Item> LIGHT_SABERS;
 
     public static void init() {
     }
@@ -25,6 +26,7 @@ public class TagsRegistry {
 
         BLASTERS = TagKey.create(Registries.ITEM, new ResourceLocation(Constants.MODID, "blasters"));
         BLASTER_UPGRADE = TagKey.create(Registries.ITEM, new ResourceLocation(Constants.MODID, "blaster_upgrade"));
+        LIGHT_SABERS = TagKey.create(Registries.ITEM, new ResourceLocation(Constants.MODID, "light_sabers"));
     }
 
 

@@ -28,16 +28,10 @@ public class FabricSWPlanets implements ModInitializer {
 				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Constants.MODID, "kyber_crystal_ore_sandstone"))
 		);
-
 		BiomeModifications.addFeature(
 				BiomeSelectors.tag(TagsRegistry.MANDALORE_BIOME),
 				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Constants.MODID, "beskar_ore_sandstone"))
 		);
-
-
-
 	}
-
-
 }

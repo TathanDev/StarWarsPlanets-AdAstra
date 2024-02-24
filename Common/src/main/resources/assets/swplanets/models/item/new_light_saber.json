@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "swplanets:item/blue_light_saber",
+		"5": "swplanets:item/red_light_saber",
 		"particle": "swplanets:item/blue_light_saber"
 	},
 	"elements": [
@@ -10,12 +10,12 @@
 			"from": [6, 0, 7],
 			"to": [10, 7, 11],
 			"faces": {
-				"north": {"uv": [6, 0, 8, 3.5], "texture": "#1"},
-				"east": {"uv": [6, 3.5, 8, 7], "texture": "#1"},
-				"south": {"uv": [6, 7, 8, 10.5], "texture": "#1"},
-				"west": {"uv": [8, 0, 10, 3.5], "texture": "#1"},
-				"up": {"uv": [10, 5.5, 8, 3.5], "texture": "#1"},
-				"down": {"uv": [10, 5.5, 8, 7.5], "texture": "#1"}
+				"north": {"uv": [6, 0, 8, 3.5], "texture": "#5"},
+				"east": {"uv": [6, 3.5, 8, 7], "texture": "#5"},
+				"south": {"uv": [6, 7, 8, 10.5], "texture": "#5"},
+				"west": {"uv": [8, 0, 10, 3.5], "texture": "#5"},
+				"up": {"uv": [10, 5.5, 8, 3.5], "texture": "#5"},
+				"down": {"uv": [10, 5.5, 8, 7.5], "texture": "#5"}
 			}
 		},
 		{
@@ -23,12 +23,12 @@
 			"to": [7.6, 31, 11.3],
 			"rotation": {"angle": 45, "axis": "y", "origin": [6, 6, 7]},
 			"faces": {
-				"north": {"uv": [0, 0, 1.5, 12], "texture": "#1"},
-				"east": {"uv": [1.5, 0, 3, 12], "texture": "#1"},
-				"south": {"uv": [3, 0, 4.5, 12], "texture": "#1"},
-				"west": {"uv": [4.5, 0, 6, 12], "texture": "#1"},
-				"up": {"uv": [9.5, 9, 8, 7.5], "texture": "#1"},
-				"down": {"uv": [9.5, 9, 8, 10.5], "texture": "#1"}
+				"north": {"uv": [0, 0, 1.5, 12], "texture": "#5"},
+				"east": {"uv": [1.5, 0, 3, 12], "texture": "#5"},
+				"south": {"uv": [3, 0, 4.5, 12], "texture": "#5"},
+				"west": {"uv": [4.5, 0, 6, 12], "texture": "#5"},
+				"up": {"uv": [9.5, 9, 8, 7.5], "texture": "#5"},
+				"down": {"uv": [9.5, 9, 8, 10.5], "texture": "#5"}
 			}
 		}
 	],
