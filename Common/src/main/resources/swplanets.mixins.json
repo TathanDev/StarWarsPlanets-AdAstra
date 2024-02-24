@@ -7,6 +7,7 @@
     "PlayerScopeMixin"
   ],
   "client": [
+    "PlayerAttackMixin"
   ],
   "server": [
   ],
