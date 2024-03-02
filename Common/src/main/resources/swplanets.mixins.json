@@ -4,7 +4,8 @@
   "package": "fr.tathan.swplanets.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "PlayerScopeMixin"
+    "PlayerScopeMixin",
+    "CrashReportMixin"
   ],
   "client": [
     "PlayerAttackMixin"

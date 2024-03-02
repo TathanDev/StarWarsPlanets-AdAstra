@@ -3,14 +3,11 @@ package fr.tathan.swplanets.common.registry;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
-import earth.terrarium.adastra.AdAstra;
 import earth.terrarium.adastra.common.items.armor.base.CustomDyeableArmorItem;
-import earth.terrarium.adastra.common.registry.ModItems;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.items.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.*;
-
 public class ItemsRegistry {
 
    // public static final RegistrationProvider<Item> ITEMS = RegistrationProvider.get(Registries.ITEM, Constants.MODID);
