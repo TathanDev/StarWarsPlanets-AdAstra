@@ -162,43 +162,39 @@ subprojects {
         sourceSets.main.get().resources.srcDir("src/main/generated/resources")
     }
 
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                artifactId = "$modId-$modLoader-$minecraftVersion"
-                from(components["java"])
+    if (!isCommon) {
+        publishing {
+            publications {
+                create<MavenPublication>("maven") {
+                    artifactId = "$modId-$modLoader-$minecraftVersion"
+                    from(components["java"])
 
-                pom {
-                    name.set("Ad Astra $modLoader")
-                    url.set("https://github.com/terrarium-earth/$modId")
+                    pom {
+                        name.set("Star Wars Planets $modLoader")
+                        url.set("https://github.com/TathanDev/StarWarsPlanets-AdAstra/")
 
-                    scm {
-                        connection.set("git:https://github.com/terrarium-earth/$modId.git")
-                        developerConnection.set("git:https://github.com/terrarium-earth/$modId.git")
-                        url.set("https://github.com/terrarium-earth/$modId")
-                    }
-
-                    licenses {
-                        license {
-                            name.set("Terrarium Licence (https://gist.github.com/CodexAdrian/4bb2a1868bb2d2a91ca74ea40424e69d)")
+                        scm {
+                            connection.set("git:https://github.com/TathanDev/StarWarsPlanets-AdAstra.git")
+                            developerConnection.set("git:https://github.com/TathanDev/StarWarsPlanets-AdAstra.git")
+                            url.set("https://github.com/TathanDev/StarWarsPlanets-AdAstra")
                         }
                     }
                 }
             }
-        }
-        repositories {
-            maven {
-                setUrl("https://maven.teamresourceful.com/repository/terrarium/")
-                credentials {
-                    username = System.getenv("MAVEN_USER")
-                    password = System.getenv("MAVEN_PASS")
+            repositories {
+                maven {
+                    setUrl("https://maven.odysseyus.fr/releases/")
+                    credentials {
+                        username = System.getenv("MAVEN_USER")
+                        password = System.getenv("MAVEN_PASS")
+                    }
                 }
             }
         }
     }
 
     modrinth {
-        token.set(System.getenv("MODRINTH_TOKEN")) // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
+        token.set(System.getenv("MODRINTH_TOKEN"))
         projectId = "star-wars-planets-ad-astra" // This can be the project ID or the slug. Either will work!
         versionNumber.set("$version") // You don't need to set this manually. Will fail if Modrinth has this version already
         versionType.set("release") // This is the default -- can also be `beta` or `alpha`
