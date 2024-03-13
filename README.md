@@ -1,15 +1,15 @@
-# Ad Astra
+# Star Wars Planets
 
-To add this library to your project, do the following:
+Want to add SWPlanets to your dev environment ? Sure !
 
 Kotlin DSL:
 ```kotlin
 repositories {
-    maven(url = "https://maven.teamresourceful.com/repository/maven-public/")
+    maven(url = "https://maven.odysseyus.fr/releases/")
 }
 
 dependencies {
-    "modImplementation"(group = "earth.terrarium.adastra", name = "adastra-$modLoader-$minecraftVersion", version = adAstraVersion)
+    "modImplementation"(group = "fr.tathan.swplanets", name = "swplanets-[MODLOADER]-[MINECRAFT_VERSION]", version = [MOD_VERSION])
 }
 ```
 
@@ -17,11 +17,12 @@ Groovy DSL:
 ```groovy
 repositories {
     maven {
-        url "https://maven.teamresourceful.com/repository/maven-public/"
+      name "odysseyusMaven"
+      url "https://maven.odysseyus.fr/releases"
     }
 }
 
 dependencies {
-    "modImplementation" group: "earth.terrarium.adastra", name: "adastra-$modLoader-$minecraftVersion", version: adAstraVersion
+  implementation "fr.tathan.swplanets:swplanets-[MODLOADER]-[MINECRAFT_VERSION]:[MOD_VERSION]"
 }
 ```
