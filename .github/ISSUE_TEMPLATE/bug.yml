@@ -1,0 +1,82 @@
+name: Bug Report
+description: Find a bug ? You are at the right place !
+title: "Bug: "
+labels: [ bug ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to this Bug Report !
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of the mod are you on?
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod Loader
+      description: What modloader are you using?
+      multiple: true
+      options:
+        - NeoForge
+        - Fabric
+        - Forge
+        - Quilt
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: bug
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs 
+      description: |
+        Please include any relevant logs.
+        You can find logs/crash report in your game directory under `logs` or `crash-reports` folder.
+        You can use a paste site like [Hastebin](https://hastebin.com/), [Pastebin](https://pastebin.com/), or [GitHub Gist](https://gist.github.com/) to upload your logs.
+
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to Reproduce?
+      description: Steps to reproduce the behavior. Do not send exit codes, send the actual log
+      placeholder: |
+        1. Use theses mods : ....
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: false
+
+
+  - type: checkboxes
+    id: reminder
+    attributes:
+      label: Small Reminder
+      description: Before submitting, please ensure you have done the following
+      options:
+        - label: You have the latest version of the mod
+          required: true
+        - label: You have the latest version of Ad Astra
+          required: true
+        - label: You have verified that you have installed all the required dependencies for the mod
+          required: true
+        - label: I have verified that I do not have Optifine installed. Optifine breaks with Ad Astra.
+          required: true
+        - label: The error come for this mod and not an other.
+          required: true
