@@ -92,7 +92,7 @@ subprojects {
         "modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion)
         "modApi"(group = "com.teamresourceful.resourcefulconfig", name = "resourcefulconfig-$modLoader-$minecraftVersion", version = resourcefulConfigVersion)
         "modApi"(group = "earth.terrarium.botarium", name = "botarium-$modLoader-$minecraftVersion", version = botariumVersion)
-        "modApi"(group = "earth.terrarium.adastra", name = "adastra-$modLoader-$minecraftVersion", version = adastraVersion)
+        "modImplementation"(group = "earth.terrarium.adastra", name = "adastra-$modLoader-$minecraftVersion", version = adastraVersion)
 
         "modCompileOnly"(group = "earth.terrarium.cadmus", name = "cadmus-$modLoader-$minecraftVersion", version = "1.2.1") {
             isTransitive = false

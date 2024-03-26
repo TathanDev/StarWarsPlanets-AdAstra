@@ -30,12 +30,16 @@ dependencies {
     val minecraftVersion: String by project
     val neoforgeVersion: String by project
     val jeiVersion: String by project
+    val adastraVersion: String by project
+
 
     neoForge(group = "net.neoforged", name = "neoforge", version = neoforgeVersion)
 
     modLocalRuntime(group = "mezz.jei", name = "jei-$minecraftVersion-neoforge", version = jeiVersion) {
         isTransitive = false
     }
+    "modImplementation"(group = "earth.terrarium.adastra", name = "adastra-neoforge-$minecraftVersion", version = adastraVersion)
+
 
 //    modLocalRuntime(group = "maven.modrinth", name = "jade", version = "13.2.2")
 //    modLocalRuntime(group = "maven.modrinth", name = "mekanism", version = "10.4.2.16")
