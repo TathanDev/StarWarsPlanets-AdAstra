@@ -27,7 +27,7 @@ import com.teamresourceful.resourcefulconfig.web.annotations.WebInfo;
         }
 )
 
-public class SWPlanetsConfig {
+public final class SWPlanetsConfig {
 
     @ConfigEntry(
             id = "explosionUpgradeRadius",

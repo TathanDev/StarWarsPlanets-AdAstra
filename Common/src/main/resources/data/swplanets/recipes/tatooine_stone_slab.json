@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
   "pattern": [
     "###"
   ],
@@ -10,7 +9,7 @@
     }
   },
   "result": {
-    "id": "swplanets:tatooine_stone_slab",
+    "item": "swplanets:tatooine_stone_slab",
     "count": 6
   }
 }

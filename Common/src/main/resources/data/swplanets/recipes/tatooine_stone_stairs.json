@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
   "pattern": [
     "#  ",
     "## ",
@@ -12,7 +11,7 @@
     }
   },
   "result": {
-    "id": "swplanets:tatooine_stone_stairs",
+    "item": "swplanets:tatooine_stone_stairs",
     "count": 4
   }
 }
