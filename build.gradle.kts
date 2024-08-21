@@ -79,6 +79,7 @@ subprojects {
         val patchouliVersion: String by project
         val shimmerVersion: String by project
         val adastraVersion: String by project
+        val cadmusVersion: String by project
 
         val version: String by project
 
@@ -96,9 +97,9 @@ subprojects {
         "modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion)
         "modApi"(group = "com.teamresourceful.resourcefulconfig", name = "resourcefulconfig-$modLoader-$minecraftVersion", version = resourcefulConfigVersion)
         "modApi"(group = "earth.terrarium.botarium", name = "botarium-$modLoader-$minecraftVersion", version = botariumVersion)
-        "modImplementation"(group = "earth.terrarium.adastra", name = "adastra-$modLoader-$minecraftVersion", version = adastraVersion)
+        "modImplementation"(group = "earth.terrarium.adastra", name = "ad_astra-$modLoader-$minecraftVersion", version = adastraVersion)
 
-        "modCompileOnly"(group = "earth.terrarium.cadmus", name = "cadmus-$modLoader-$minecraftVersion", version = "1.2.1") {
+        "modCompileOnly"(group = "earth.terrarium.cadmus", name = "cadmus-$modLoader-$minecraftVersion", version = cadmusVersion) {
             isTransitive = false
         }
 

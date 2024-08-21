@@ -8,8 +8,7 @@
     "CrashReportMixin"
   ],
   "client": [
-    "PlayerAttackMixin",
-    "PlanetRendererScreenMixin"
+    "PlayerAttackMixin"
   ],
   "server": [
   ],

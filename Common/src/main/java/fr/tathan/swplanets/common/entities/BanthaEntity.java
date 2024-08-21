@@ -171,7 +171,7 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
     @Override
     public void tick() {
         super.tick();
-        if (this.isDashing() && this.dashCooldown < 50 && (this.onGround() || this.isInLiquid() || this.isPassenger())) {
+        if (this.isDashing() && this.dashCooldown < 50 && (this.onGround() || this.getBlockStateOn().liquid() || this.isPassenger())) {
             this.setDashing(false);
         }
 
@@ -311,7 +311,6 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
     @Override
     public void handleStartJump(int jumpPower) {
         this.playSound(SoundEvents.CAMEL_DASH, 1.0F, this.getVoicePitch());
-        this.gameEvent(GameEvent.ENTITY_ACTION);
         this.setDashing(true);
     }
 
@@ -341,19 +340,15 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
-        if (state.is(BlockTags.CAMEL_SAND_STEP_SOUND_BLOCKS)) {
-            this.playSound(SoundEvents.CAMEL_STEP_SAND, 1.0F, 1.0F);
-        } else {
-            this.playSound(SoundEvents.CAMEL_STEP, 1.0F, 1.0F);
-        }
+        this.playSound(SoundEvents.CAMEL_STEP, 1.0F, 1.0F);
 
     }
 
     @Override
-    public Vec3 getPassengerRidingPosition(Entity entity) {
-        return this.position().add(0, 1.6, 0);
+    protected void positionRider(Entity passenger, MoveFunction callback) {
+        passenger.position().add(0, 1.6, 0);
+        super.positionRider(passenger, callback);
     }
-
 
     @Override
     public boolean isFood(ItemStack stack) {
@@ -404,7 +399,8 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
     }
 
     public boolean canBanthaChangePose() {
-        return this.wouldNotSuffocateAtTargetPose(this.isBanthaSitting() ? Pose.STANDING : Pose.SITTING);
+        //TODO need better check
+        return true;
     }
 
     @Override
@@ -469,24 +465,24 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
         super.actuallyHurt(damageSource, damageAmount);
     }
 
-    @Override
-    protected Vector3f getPassengerAttachmentPoint(Entity entity, EntityDimensions dimensions, float scale) {
-        int i = Math.max(this.getPassengers().indexOf(entity), 0);
-        boolean bl = i == 0;
-        float f = 0.5F;
-        float g = (float)(this.isRemoved() ? 0.009999999776482582 : this.getBodyAnchorAnimationYOffset(bl, 0.0F, dimensions, scale));
-        if (this.getPassengers().size() > 1) {
-            if (!bl) {
-                f = -0.7F;
-            }
-
-            if (entity instanceof Animal) {
-                f += 0.2F;
-            }
-        }
-
-        return new Vector3f(0.0F, g, f * scale);
-    }
+//    @Override
+//    protected Vector3f getPassengerAttachmentPoint(Entity entity, EntityDimensions dimensions, float scale) {
+//        int i = Math.max(this.getPassengers().indexOf(entity), 0);
+//        boolean bl = i == 0;
+//        float f = 0.5F;
+//        float g = (float)(this.isRemoved() ? 0.009999999776482582 : this.getBodyAnchorAnimationYOffset(bl, 0.0F, dimensions, scale));
+//        if (this.getPassengers().size() > 1) {
+//            if (!bl) {
+//                f = -0.7F;
+//            }
+//
+//            if (entity instanceof Animal) {
+//                f += 0.2F;
+//            }
+//        }
+//
+//        return new Vector3f(0.0F, g, f * scale);
+//    }
 
     @Override
     public float getScale() {
@@ -578,7 +574,6 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
         if (!this.isBanthaSitting()) {
             this.playSound(SoundEvents.CAMEL_SIT, 1.0F, this.getVoicePitch());
             this.setPose(Pose.SITTING);
-            this.gameEvent(GameEvent.ENTITY_ACTION);
             this.resetLastPoseChangeTick(-this.level().getGameTime());
         }
     }
@@ -587,14 +582,12 @@ public class BanthaEntity extends AbstractHorse implements PlayerRideableJumping
         if (this.isBanthaSitting()) {
             this.playSound(SoundEvents.CAMEL_STAND, 1.0F, this.getVoicePitch());
             this.setPose(Pose.STANDING);
-            this.gameEvent(GameEvent.ENTITY_ACTION);
             this.resetLastPoseChangeTick(this.level().getGameTime());
         }
     }
 
     public void standUpInstantly() {
         this.setPose(Pose.STANDING);
-        this.gameEvent(GameEvent.ENTITY_ACTION);
         this.resetLastPoseChangeTickToFullStand(this.level().getGameTime());
     }
 

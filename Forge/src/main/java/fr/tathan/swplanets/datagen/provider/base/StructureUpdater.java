@@ -27,7 +27,7 @@ import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.util.datafix.DataFixTypes;
 import net.minecraft.util.datafix.DataFixers;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.ByteArrayOutputStream;
@@ -70,7 +70,7 @@ public class StructureUpdater implements DataProvider {
     }
 
     private void process(ResourceLocation loc, Resource resource, CachedOutput cache) throws IOException {
-        CompoundTag inputNBT = NbtIo.readCompressed(resource.open(), NbtAccounter.unlimitedHeap());
+        CompoundTag inputNBT = NbtIo.readCompressed(resource.open());
         CompoundTag converted = updateNBT(inputNBT);
         if (!converted.equals(inputNBT)) {
             Constants.LOGGER.info("Found outdated NBT file: {}", loc);

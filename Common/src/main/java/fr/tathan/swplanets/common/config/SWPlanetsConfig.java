@@ -1,16 +1,32 @@
 package fr.tathan.swplanets.common.config;
 
-import com.teamresourceful.resourcefulconfig.api.annotations.Comment;
-import com.teamresourceful.resourcefulconfig.api.annotations.Config;
-import com.teamresourceful.resourcefulconfig.api.annotations.ConfigEntry;
-import com.teamresourceful.resourcefulconfig.api.annotations.ConfigInfo;
-import com.teamresourceful.resourcefulconfig.api.types.options.EntryType;
-import fr.tathan.swplanets.common.config.info.SWPlanetsConfigInfo;
+import com.teamresourceful.resourcefulconfig.common.annotations.Comment;
+import com.teamresourceful.resourcefulconfig.common.annotations.Config;
+import com.teamresourceful.resourcefulconfig.common.annotations.ConfigEntry;
+import com.teamresourceful.resourcefulconfig.common.config.EntryType;
+import com.teamresourceful.resourcefulconfig.web.annotations.Gradient;
+import com.teamresourceful.resourcefulconfig.web.annotations.Link;
+import com.teamresourceful.resourcefulconfig.web.annotations.WebInfo;
 
-@ConfigInfo.Provider(SWPlanetsConfigInfo.class)
 @Config(
         value = "swplanets"
 )
+@WebInfo(
+        title = "Star Wars Planets",
+        description = "May the config be with you !",
+
+        icon = "planet",
+        gradient = @Gradient(value = "45deg", first = "#7F4DEE", second = "#E7797A"),
+
+        links = {
+                @Link(value = "https://discord.gg/Rc7Mxcy2m3", icon = "gamepad-2", title = "Discord"),
+                @Link(value = "https://github.com/TathanDev/StarWarsPlanets-AdAstra/", icon = "github", title = "GitHub"),
+
+                @Link(value = "https://curseforge.com/minecraft/mc-mods/star-wars-planets-ad-astra", icon = "curseforge", title = "CurseForge"),
+                @Link(value = "https://modrinth.com/mod/star-wars-planets-ad-astra", icon = "modrinth", title = "Modrinth"),
+        }
+)
+
 public class SWPlanetsConfig {
 
     @ConfigEntry(

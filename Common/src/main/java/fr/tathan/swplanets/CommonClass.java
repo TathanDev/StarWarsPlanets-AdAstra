@@ -11,7 +11,7 @@ public class CommonClass {
 
     public static void init() {
 
-        Constants.CONFIGURATOR.register(SWPlanetsConfig.class);
+        Constants.CONFIGURATOR.registerConfig(SWPlanetsConfig.class);
 
         // TabsRegistry.init();
         BlocksRegistry.BLOCKS.init();
@@ -31,11 +31,10 @@ public class CommonClass {
     }
 
     public static void postInit() {
-        Map<Item, CauldronInteraction> map = CauldronInteraction.WATER.map();
-        map.put(ItemsRegistry.STORMTROOPER_BOOTS.get(), CauldronInteraction.DYED_ITEM);
-        map.put(ItemsRegistry.STORMTROOPER_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
-        map.put(ItemsRegistry.STORMTROOPER_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
-        map.put(ItemsRegistry.STORMTROOPER_MASK.get(), CauldronInteraction.DYED_ITEM);
+        CauldronInteraction.WATER.put(ItemsRegistry.STORMTROOPER_BOOTS.get(), CauldronInteraction.DYED_ITEM);
+        CauldronInteraction.WATER.put(ItemsRegistry.STORMTROOPER_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
+        CauldronInteraction.WATER.put(ItemsRegistry.STORMTROOPER_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
+        CauldronInteraction.WATER.put(ItemsRegistry.STORMTROOPER_MASK.get(), CauldronInteraction.DYED_ITEM);
         EntityRegistry.registerSpawnPlacements();
     }
 }

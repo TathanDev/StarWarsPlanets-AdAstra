@@ -105,7 +105,8 @@ public class BanthaAi {
         protected void start(ServerLevel level, BanthaEntity entity, long gameTime) {
             if (entity.isBanthaSitting()) {
                 entity.standUp();
-            } else if (!entity.isPanicking()) {
+                //TODO check panick
+            } else {
                 entity.sitDown();
             }
 

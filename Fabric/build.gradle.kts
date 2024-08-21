@@ -27,11 +27,10 @@ dependencies {
 
     modLocalRuntime(group = "me.shedaniel", name = "RoughlyEnoughItems-fabric", version = reiVersion)
 
-    modApi(group = "com.terraformersmc", name = "modmenu", version = modMenuVersion)
+    modLocalRuntime(group = "com.terraformersmc", name = "modmenu", version = modMenuVersion)
 
-    modLocalRuntime(group = "RebornCore", name = "RebornCore-1.20", version = "5.10.2") { isTransitive = false }
-    modLocalRuntime(group = "TechReborn", name = "TechReborn-1.20", version = "5.10.2") { isTransitive = false }
+    // modLocalRuntime(group = "RebornCore", name = "RebornCore-1.20", version = "5.10.2") { isTransitive = false }
+    // modLocalRuntime(group = "TechReborn", name = "TechReborn-1.20", version = "5.10.2") { isTransitive = false }
 
-    modLocalRuntime(group = "maven.modrinth", name = "jade", version = "dxGKPrkW")
-    modLocalRuntime(group = "maven.modrinth", name = "dcwa", version = "5.0") // Disable custom world advice
+    //modLocalRuntime(group = "maven.modrinth", name = "jade", version = "lwgbRGaY")
 }

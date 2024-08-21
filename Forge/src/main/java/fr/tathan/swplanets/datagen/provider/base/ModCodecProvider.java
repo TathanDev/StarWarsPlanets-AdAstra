@@ -3,7 +3,6 @@ package fr.tathan.swplanets.datagen.provider.base;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.JsonOps;
 import com.teamresourceful.resourcefullib.common.lib.Constants;
-import earth.terrarium.adastra.client.neoforge.AdAstraClientNeoForge;
 import net.minecraft.core.Registry;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;

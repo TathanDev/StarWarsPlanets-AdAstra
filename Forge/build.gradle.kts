@@ -1,8 +1,12 @@
 architectury {
-    neoForge()
+    forge()
 }
 
 loom {
+    forge {
+        mixinConfig("swplanets.mixins.json")
+    }
+
     runs {
         create("data") {
             data()
@@ -16,29 +20,29 @@ loom {
 val common: Configuration by configurations.creating {
     configurations.compileClasspath.get().extendsFrom(this)
     configurations.runtimeClasspath.get().extendsFrom(this)
-    configurations["developmentNeoForge"].extendsFrom(this)
+    configurations["developmentForge"].extendsFrom(this)
 }
 
 dependencies {
     common(project(":common", configuration = "namedElements")) {
         isTransitive = false
     }
-    shadowCommon(project(path = ":common", configuration = "transformProductionNeoForge")) {
+    shadowCommon(project(path = ":common", configuration = "transformProductionForge")) {
         isTransitive = false
     }
 
     val minecraftVersion: String by project
-    val neoforgeVersion: String by project
+    val forgeVersion: String by project
     val jeiVersion: String by project
     val adastraVersion: String by project
 
 
-    neoForge(group = "net.neoforged", name = "neoforge", version = neoforgeVersion)
+    forge(group = "net.minecraftforge", name = "forge", version = "$minecraftVersion-$forgeVersion")
 
-    modLocalRuntime(group = "mezz.jei", name = "jei-$minecraftVersion-neoforge", version = jeiVersion) {
+    modLocalRuntime(group = "mezz.jei", name = "jei-$minecraftVersion-forge", version = jeiVersion) {
         isTransitive = false
     }
-    "modImplementation"(group = "earth.terrarium.adastra", name = "adastra-neoforge-$minecraftVersion", version = adastraVersion)
+    "modImplementation"(group = "earth.terrarium.adastra", name = "ad_astra-forge-$minecraftVersion", version = adastraVersion)
 
 
 //    modLocalRuntime(group = "maven.modrinth", name = "jade", version = "13.2.2")
