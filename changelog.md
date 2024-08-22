@@ -1,8 +1,6 @@
-## Star Wars Planets 1.4.3 (1.20.4)
+## Star Wars Planets 1.4.3 (1.20.1)
 
-This new version add a new feature : trading for Jawas !
+All the 1.20.4 feature for 1.20.1 like Jawas, Banthas, blasters and more !
 
 **Changelogs :**
-- Better Skyboxes (Tatooine and Endor)
-- Trades for Jawas !
-- Change Beskar texture
+- All the 1.20.4 feature for 1.20.1

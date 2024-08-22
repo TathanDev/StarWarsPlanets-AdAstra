@@ -43,6 +43,7 @@ dependencies {
         isTransitive = false
     }
     "modImplementation"(group = "earth.terrarium.adastra", name = "ad_astra-forge-$minecraftVersion", version = adastraVersion)
+    forgeRuntimeLibrary(include(group = "io.github.llamalad7", name = "mixinextras-forge", version = "0.4.1"))
 
 
 //    modLocalRuntime(group = "maven.modrinth", name = "jade", version = "13.2.2")
@@ -50,7 +51,6 @@ dependencies {
 
     forgeRuntimeLibrary("com.teamresourceful:yabn:1.0.3")
     forgeRuntimeLibrary("com.teamresourceful:bytecodecs:1.0.2")
-
     forgeRuntimeLibrary(group = "javazoom", name = "jlayer", version = "1.0.1")
 }
 

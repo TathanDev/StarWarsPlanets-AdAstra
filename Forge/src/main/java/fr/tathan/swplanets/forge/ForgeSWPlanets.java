@@ -8,23 +8,24 @@ import fr.tathan.swplanets.common.registry.EntityRegistry;
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 @Mod(Constants.MODID)
-public class NeoForgeSWPlanets {
+public class ForgeSWPlanets {
 
-    public NeoForgeSWPlanets(IEventBus bus) {
+    public ForgeSWPlanets() {
+
         Constants.LOG.info("Hello There ✨!");
         CommonClass.init();
-        bus.addListener((BuildCreativeModeTabContentsEvent event) -> {
+        MinecraftForge.EVENT_BUS.addListener((BuildCreativeModeTabContentsEvent event) -> {
             if (event.getTab() == BuiltInRegistries.CREATIVE_MODE_TAB.get(CreativeModeTabs.TOOLS_AND_UTILITIES)) ItemsRegistry.ITEMS.stream().map(RegistryEntry::get).forEach(event::accept);
         });
-        bus.addListener(NeoForgeSWPlanets::commonSetup);
-        bus.addListener(NeoForgeSWPlanets::onAttributes);
+        MinecraftForge.EVENT_BUS.addListener(ForgeSWPlanets::commonSetup);
+        MinecraftForge.EVENT_BUS.addListener(ForgeSWPlanets::onAttributes);
 
     }
 
