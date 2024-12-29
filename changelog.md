@@ -1,6 +1,9 @@
-## Star Wars Planets 1.4.3 (1.20.1)
+## Star Wars Planets 1.4.5 (1.20.1)
 
-All the 1.20.4 feature for 1.20.1 like Jawas, Banthas, blasters and more !
+**Added**
+- Chines translation (thanks to print_4144 !)
 
-**Changelogs :**
-- All the 1.20.4 feature for 1.20.1
+**Changes**
+- Add more overworld resources in jawa's chests
+- Bantha Loot
+- Stormtrooper suit can now contain oxygen
