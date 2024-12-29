@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "swplanets:stormtrooper_chestplate",
+    "swplanets:stormtrooper_mask",
+    "swplanets:stormtrooper_leggings",
+    "swplanets:stormtrooper_boots"
+
+  ]
+}

@@ -3,6 +3,7 @@ package fr.tathan.swplanets.common.registry;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
+import earth.terrarium.adastra.common.items.armor.SpaceSuitItem;
 import earth.terrarium.adastra.common.items.armor.base.CustomDyeableArmorItem;
 import fr.tathan.swplanets.Constants;
 import fr.tathan.swplanets.common.items.*;
@@ -46,8 +47,8 @@ public class ItemsRegistry {
                     new Item.Properties()));
 
     public static final RegistryEntry<Item> STORMTROOPER_CHESTPLATE = TAB_ITEMS.register("stormtrooper_chestplate",
-            () -> new CustomDyeableArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties()));
+            () -> new SpaceSuitItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    1200L, new Item.Properties()));
     public static final RegistryEntry<Item> STORMTROOPER_LEGGINGS = TAB_ITEMS.register("stormtrooper_leggings",
             () -> new CustomDyeableArmorItem(ArmorMaterialRegistry.STORMTROOPER_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
