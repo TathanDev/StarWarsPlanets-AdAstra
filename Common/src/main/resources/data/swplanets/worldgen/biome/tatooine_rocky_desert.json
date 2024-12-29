@@ -85,12 +85,7 @@
   "spawn_costs": {},
   "spawners": {
     "ambient": [
-      {
-        "type": "swplanets:bantha",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 100
-      }
+
     ],
     "axolotls": [],
     "creature": [],
