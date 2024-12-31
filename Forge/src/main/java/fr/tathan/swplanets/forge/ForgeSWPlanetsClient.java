@@ -2,9 +2,13 @@ package fr.tathan.swplanets.forge;
 
 import fr.tathan.swplanets.client.SWPlanetsClient;
 import fr.tathan.swplanets.common.registry.EntityRegistry;
+import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.world.item.DyeableArmorItem;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -25,6 +29,11 @@ public class ForgeSWPlanetsClient {
     @SubscribeEvent
     public static void onRegisterRendererDefinitions(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(EntityRegistry.LASER.get(), ThrownItemRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void onSetupItemColors(RegisterColorHandlersEvent.Item event) {
+        event.register((stack, i) -> i > 0 ? -1 : ((DyeableArmorItem) stack.getItem()).getColor(stack), new ItemLike[]{ItemsRegistry.STORMTROOPER_MASK.get(), ItemsRegistry.STORMTROOPER_CHESTPLATE.get(), ItemsRegistry.STORMTROOPER_LEGGINGS.get(), ItemsRegistry.STORMTROOPER_BOOTS.get()});
 
     }
 }
