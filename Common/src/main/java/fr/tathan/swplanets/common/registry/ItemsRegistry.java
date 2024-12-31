@@ -26,7 +26,7 @@ public class ItemsRegistry {
     public static final RegistryEntry<Item> GREEN_LIGHT_SABER = TAB_ITEMS.register("light_saber_green", () -> new JediLightSaber(StarWarsTiers.LIGHT_SABER, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryEntry<Item> VIOLET_LIGHT_SABER = TAB_ITEMS.register("light_saber_violet", () -> new JediLightSaber(StarWarsTiers.LIGHT_SABER, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
 
-    /** Sith Light Sabers **/
+ /** Sith Light Sabers **/
     public static final RegistryEntry<Item> RED_LIGHT_SABER = TAB_ITEMS.register("light_saber_red", () -> new SithLightSaber(StarWarsTiers.LIGHT_SABER, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryEntry<Item> KYLO_REN_LIGHT_SABER = TAB_ITEMS.register("light_saber_kylo_ren", () -> new SithLightSaber(StarWarsTiers.LIGHT_SABER, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryEntry<Item> DARK_MAUL_LIGHT_SABER = TAB_ITEMS.register("light_saber_dark_maul", () -> new SithLightSaber(StarWarsTiers.LIGHT_SABER, -2.4F, new Item.Properties().fireResistant().stacksTo(1)));

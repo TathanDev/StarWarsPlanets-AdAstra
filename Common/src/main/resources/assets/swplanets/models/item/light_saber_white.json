@@ -1,9 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "swplanets:item/green_light_saber",
+		"layer0": "swplanets:item/white_light_saber",
+		"1": "swplanets:item/white_light_saber",
 		"2": "swplanets:item/light_saber_base",
-		"particle": "swplanets:item/green_light_saber"
+		"particle": "swplanets:item/red_light_saber"
 	},
 	"elements": [
 		{
@@ -23,12 +24,12 @@
 			"to": [7.6, 31, 11.3],
 			"rotation": {"angle": 45, "axis": "y", "origin": [6, 6, 7]},
 			"faces": {
-				"north": {"uv": [0, 0, 1.5, 12], "texture": "#1"},
-				"east": {"uv": [1.5, 0, 3, 12], "texture": "#1"},
-				"south": {"uv": [3, 0, 4.5, 12], "texture": "#1"},
-				"west": {"uv": [4.5, 0, 6, 12], "texture": "#1"},
-				"up": {"uv": [9.5, 9, 8, 7.5], "texture": "#1"},
-				"down": {"uv": [9.5, 9, 8, 10.5], "texture": "#1"}
+				"north": {"uv": [0, 0, 1.5, 12], "texture": "#layer0"},
+				"east": {"uv": [1.5, 0, 3, 12], "texture": "#layer0"},
+				"south": {"uv": [3, 0, 4.5, 12], "texture": "#layer0"},
+				"west": {"uv": [4.5, 0, 6, 12], "texture": "#layer0"},
+				"up": {"uv": [9.5, 9, 8, 7.5], "texture": "#layer0"},
+				"down": {"uv": [9.5, 9, 8, 10.5], "texture": "#layer0"}
 			}
 		}
 	],
