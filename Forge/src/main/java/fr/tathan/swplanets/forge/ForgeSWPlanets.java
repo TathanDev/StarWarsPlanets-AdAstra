@@ -4,6 +4,8 @@ package fr.tathan.swplanets.forge;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import fr.tathan.swplanets.CommonClass;
 import fr.tathan.swplanets.Constants;
+import fr.tathan.swplanets.common.entities.BanthaEntity;
+import fr.tathan.swplanets.common.entities.JawaEntity;
 import fr.tathan.swplanets.common.registry.EntityRegistry;
 import fr.tathan.swplanets.common.registry.ItemsRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -34,7 +36,9 @@ public class ForgeSWPlanets {
     }
 
     public static void onAttributes(EntityAttributeCreationEvent event) {
-        EntityRegistry.registerAttributes((entityType, attribute) -> event.put(entityType.get(), attribute.get().build()));
+        event.put(EntityRegistry.JAWA.get(), JawaEntity.addAttributes().build());
+        event.put(EntityRegistry.BANTHA.get(), BanthaEntity.addAttributes().build());
+        Constants.LOG.info("entity attributes registered!");
     }
 
 

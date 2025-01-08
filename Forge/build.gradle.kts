@@ -43,7 +43,7 @@ dependencies {
         isTransitive = false
     }
     "modImplementation"(group = "earth.terrarium.adastra", name = "ad_astra-forge-$minecraftVersion", version = adastraVersion)
-    forgeRuntimeLibrary(include(group = "io.github.llamalad7", name = "mixinextras-forge", version = "0.4.1"))
+    runtimeOnly(include(group = "io.github.llamalad7", name = "mixinextras-forge", version = "0.4.1"))
 
 
 //    modLocalRuntime(group = "maven.modrinth", name = "jade", version = "13.2.2")
